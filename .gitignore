@@ -1,0 +1,12 @@
+node_modules/
+.nuxt/
+.output/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# Roadmap is a local file, not for git
+ROADMAP.md

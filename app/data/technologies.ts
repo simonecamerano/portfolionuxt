@@ -1,0 +1,60 @@
+import type { TechItem } from '~/types'
+
+export const technologies: TechItem[] = [
+  {
+    name: 'Vue.js',
+    abbr: 'VUE',
+    color: '#42b883',
+    bgColor: 'rgba(66,184,131,0.08)',
+    borderColor: 'rgba(66,184,131,0.22)',
+  },
+  {
+    name: 'Nuxt',
+    abbr: 'NUXT',
+    color: '#00dc82',
+    bgColor: 'rgba(0,220,130,0.08)',
+    borderColor: 'rgba(0,220,130,0.22)',
+  },
+  {
+    name: 'TypeScript',
+    abbr: 'TS',
+    color: '#3b82f6',
+    bgColor: 'rgba(59,130,246,0.08)',
+    borderColor: 'rgba(59,130,246,0.22)',
+  },
+  {
+    name: 'JavaScript',
+    abbr: 'JS',
+    color: '#f7df1e',
+    bgColor: 'rgba(247,223,30,0.08)',
+    borderColor: 'rgba(247,223,30,0.22)',
+  },
+  {
+    name: 'Tailwind CSS',
+    abbr: 'TW',
+    color: '#38bdf8',
+    bgColor: 'rgba(56,189,248,0.08)',
+    borderColor: 'rgba(56,189,248,0.22)',
+  },
+  {
+    name: 'Node.js',
+    abbr: 'NODE',
+    color: '#68a063',
+    bgColor: 'rgba(104,160,99,0.08)',
+    borderColor: 'rgba(104,160,99,0.22)',
+  },
+  {
+    name: 'React',
+    abbr: 'REACT',
+    color: '#61dafb',
+    bgColor: 'rgba(97,218,251,0.08)',
+    borderColor: 'rgba(97,218,251,0.22)',
+  },
+  {
+    name: 'Git & GitHub',
+    abbr: 'GIT',
+    color: '#f05032',
+    bgColor: 'rgba(240,80,50,0.08)',
+    borderColor: 'rgba(240,80,50,0.22)',
+  },
+]

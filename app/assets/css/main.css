@@ -1,0 +1,237 @@
+@import '@fontsource/inter/latin-300.css';
+@import '@fontsource/inter/latin-400.css';
+@import '@fontsource/inter/latin-500.css';
+@import '@fontsource/inter/latin-600.css';
+@import '@fontsource/inter/latin-700.css';
+@import '@fontsource/inter/latin-800.css';
+@import '@fontsource/inter/latin-900.css';
+
+/* ─── Reset & Base ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0a0a0f;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #f0f0f5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+#__nuxt {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+  html,
+  body,
+  #__nuxt {
+    overflow-x: hidden;
+  }
+}
+
+/* ─── Scrollbar ────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.7);
+}
+
+/* ─── Selection ────────────────────────────────────────────────── */
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: #f0f0f5;
+}
+
+/* ─── Focus ────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid rgba(139, 92, 246, 0.7);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ─── Glassmorphism ────────────────────────────────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(10, 10, 15, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+/* ─── Text gradient ────────────────────────────────────────────── */
+.text-gradient {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Card hover ───────────────────────────────────────────────── */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 64px rgba(139, 92, 246, 0.18);
+  border-color: rgba(139, 92, 246, 0.45) !important;
+}
+
+/* ─── Scroll reveal ────────────────────────────────────────────── */
+.motion-preload {
+  opacity: 0;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for reveal children */
+.stagger-children .reveal:nth-child(1) { transition-delay: 0ms; }
+.stagger-children .reveal:nth-child(2) { transition-delay: 80ms; }
+.stagger-children .reveal:nth-child(3) { transition-delay: 160ms; }
+.stagger-children .reveal:nth-child(4) { transition-delay: 240ms; }
+.stagger-children .reveal:nth-child(5) { transition-delay: 320ms; }
+.stagger-children .reveal:nth-child(6) { transition-delay: 400ms; }
+.stagger-children .reveal:nth-child(7) { transition-delay: 480ms; }
+.stagger-children .reveal:nth-child(8) { transition-delay: 560ms; }
+
+/* ─── Page transitions ─────────────────────────────────────────── */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+/* ─── Input focus ring ─────────────────────────────────────────── */
+.input-field:focus {
+  border-color: rgba(139, 92, 246, 0.55) !important;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12);
+}
+
+/* ─── Rendered README (prose-project) ─────────────────────────── */
+.prose-project {
+  color: #9a9aaa;
+  line-height: 1.8;
+  font-size: 0.9375rem;
+}
+.prose-project h1,
+.prose-project h2,
+.prose-project h3,
+.prose-project h4 {
+  color: #f0f0f5;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.prose-project h1 { font-size: 1.75rem; }
+.prose-project h2 { font-size: 1.35rem; border-bottom: 1px solid rgba(255,255,255,0.07); padding-bottom: 0.4rem; }
+.prose-project h3 { font-size: 1.1rem; color: #d0d0e0; }
+.prose-project p  { margin-bottom: 1rem; }
+.prose-project a  {
+  color: #818cf8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-project a:hover { color: #a5b4fc; }
+.prose-project ul,
+.prose-project ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.prose-project ul { list-style: disc; }
+.prose-project ol { list-style: decimal; }
+.prose-project li { margin-bottom: 0.35rem; }
+.prose-project code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 0.15em 0.45em;
+  color: #c4b5fd;
+}
+.prose-project pre {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+.prose-project pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #e2e8f0;
+  font-size: 0.875rem;
+}
+.prose-project blockquote {
+  border-left: 3px solid rgba(139,92,246,0.5);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #6a6a7a;
+  font-style: italic;
+}
+.prose-project img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+.prose-project hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin: 2rem 0;
+}
+/* Hide GitHub badge images (shields.io) that render poorly in dark theme */
+.prose-project img[src*="shields.io"],
+.prose-project img[src*="badge"] {
+  display: inline-block;
+  opacity: 0.7;
+}
