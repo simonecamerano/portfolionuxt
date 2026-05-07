@@ -12,22 +12,22 @@ useSeoMeta({
 })
 
 const storyParagraphs = [
-  'Il mio percorso non e stato lineare. Da ragazzo passavo molto tempo a cercare di capire come funzionasse GNU/Linux, ma la vita mi ha portato presto nel mondo del lavoro e per oltre venti anni ho fatto parte della Grande Distribuzione Organizzata.',
-  'In quel contesto ho ricoperto ruoli operativi, di responsabilita e commerciali. Ho imparato a gestire persone, priorita, clienti, fornitori, problemi concreti e giornate in cui le soluzioni non possono restare teoriche.',
-  'A un certo punto ho capito che volevo costruire qualcosa che mi rappresentasse di piu. Lo sviluppo web e arrivato gradualmente: prima da autodidatta, poi con percorsi piu strutturati, progetti personali e tante ore passate a trasformare curiosita in competenze.',
-  'Quello che mi ha conquistato del codice e il potere creativo: partire da un problema o da un idea e arrivare a qualcosa di reale, usabile, misurabile. Ogni progetto diventa una sfida tecnica, ma anche un esercizio di attenzione verso le persone che lo useranno.',
+  'Il mio percorso non è stato lineare. Da ragazzo passavo molto tempo a cercare di capire come funzionasse GNU/Linux, ma la vita mi ha portato presto nel mondo del lavoro e per oltre vent\'anni ho fatto parte della Grande Distribuzione Organizzata.',
+  'In quel contesto ho ricoperto ruoli operativi, di responsabilità e commerciali. Ho imparato a gestire persone, priorità, clienti, fornitori, problemi concreti e giornate in cui le soluzioni non possono restare teoriche.',
+  'A un certo punto ho capito che volevo costruire qualcosa che mi rappresentasse di più. Lo sviluppo web è arrivato gradualmente: prima da autodidatta, poi con percorsi più strutturati, progetti personali e tante ore passate a trasformare curiosità in competenze.',
+  'Quello che mi ha conquistato del codice è il potere creativo: partire da un problema o da un\'idea e arrivare a qualcosa di reale, usabile, misurabile. Ogni progetto diventa una sfida tecnica, ma anche un esercizio di attenzione verso le persone che lo useranno.',
 ]
 
 const timeline = [
   {
-    title: 'Oltre venti anni nella GDO',
+    title: 'Oltre vent\'anni nella GDO',
     period: '1999 - oggi',
-    text: 'Ruoli operativi, responsabilita di reparto, gestione fornitori, formazione e attenzione quotidiana al cliente.',
+    text: 'Ruoli operativi, responsabilità di reparto, gestione fornitori, formazione e attenzione quotidiana al cliente.',
   },
   {
     title: 'Primi passi nello sviluppo',
     period: 'Studio autonomo',
-    text: 'Python, Django, Linux, tutorial, prove pratiche e piccoli deploy: il punto in cui la curiosita e diventata metodo.',
+    text: 'Python, Django, Linux, tutorial, prove pratiche e piccoli deploy: il punto in cui la curiosità è diventata metodo.',
   },
   {
     title: 'Percorso Full-Stack',
@@ -38,8 +38,8 @@ const timeline = [
 
 const principles = [
   {
-    title: 'Qualita non negoziabile',
-    text: 'Preferisco dedicare piu tempo a fare bene una cosa invece di consegnare soluzioni fragili da sistemare dopo.',
+    title: 'Qualità non negoziabile',
+    text: 'Preferisco dedicare il giusto tempo a fare bene una cosa invece di consegnare soluzioni fragili da sistemare dopo.',
   },
   {
     title: 'Utenti reali, non condizioni ideali',
@@ -47,11 +47,11 @@ const principles = [
   },
   {
     title: 'Il team conta',
-    text: 'Il lavoro migliore nasce quando sviluppatori, designer e stakeholder comunicano presto, chiaramente e senza ego.',
+    text: 'Il lavoro migliore nasce quando sviluppatori, designer e stakeholder comunicano presto, chiaramente e senza egoismi.',
   },
   {
     title: 'Apprendimento continuo',
-    text: 'La tecnologia cambia velocemente: restare curioso, leggere documentazione e ammettere cio che non si sa fa parte del mestiere.',
+    text: 'La tecnologia cambia velocemente: restare curioso, leggere documentazione e ammettere ciò che non si sa fa parte del mestiere.',
   },
 ]
 
@@ -89,7 +89,7 @@ const hobbies = [
   },
   {
     title: 'Musica',
-    text: 'Jazz in cuffia mentre programmo, basso, chitarra e strumenti suonati con piu entusiasmo che perfezione.',
+    text: 'Jazz in cuffia mentre programmo, basso, chitarra e strumenti suonati con più entusiasmo che perfezione.',
   },
   {
     title: 'Aria aperta',
@@ -126,11 +126,11 @@ const hobbies = [
             Chi sono
           </span>
           <h1 class="text-5xl md:text-6xl font-extrabold text-[#f0f0f5] leading-[1.05] tracking-tight max-w-3xl">
-            Reinventarsi non e tardi se sai
+            Reinventarsi. Non è tardi se sai
             <span class="text-gradient"> dove vuoi arrivare.</span>
           </h1>
           <p class="text-[#8a8a9a] text-lg leading-relaxed mt-6 max-w-2xl">
-            Credo nel valore della curiosita, della perseveranza e nella forza di costruire
+            Credo nel valore della curiosità, della perseveranza e nella forza di costruire
             nuove competenze. Il mio percorso unisce esperienza sul campo, attenzione alle
             persone e passione per lo sviluppo web.
           </p>
@@ -199,7 +199,7 @@ const hobbies = [
         <div>
           <span class="text-sm font-semibold text-gradient">Percorso</span>
           <h2 class="text-3xl md:text-4xl font-extrabold text-[#f0f0f5] tracking-tight mt-3 mb-8">
-            Come sono arrivato qui
+            Il mio percorso
           </h2>
           <div class="flex flex-col gap-5">
             <div

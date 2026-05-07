@@ -82,7 +82,7 @@ export const projects: Project[] = [
     title: 'Sunnee Kids',
     category: 'Frontend',
     description:
-      'Configuratore di borracce personalizzate per bambini con focus sull\'eco-sostenibilita. UI colorata e scelta guidata del design del prodotto.',
+      'Configuratore di borracce personalizzate per bambini con focus sull\'eco-sostenibilità. UI colorata e scelta guidata del design del prodotto.',
     image: '/images/sunnee.png',
     tags: ['Vue 3', 'Configurator', 'CSS'],
     link: 'https://sunnee.vercel.app',

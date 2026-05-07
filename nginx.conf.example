@@ -1,4 +1,4 @@
-# Sostituisci tuil-tuo-dominio.com con il tuo dominio reale
+# Sostituisci il-tuo-dominio.com con il tuo dominio reale
 # Salva in /etc/nginx/sites-available/simonecamerano e fai symlink in sites-enabled
 
 server {
