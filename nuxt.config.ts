@@ -30,6 +30,13 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg?v=1' },
       ],
+      script: [
+        {
+          defer: true,
+          src: 'https://analytics.simonecamerano.dev/script.js',
+          'data-website-id': '9cfee0ec-69ed-48d2-98bc-93514009862f',
+        },
+      ],
     },
   },
 })
