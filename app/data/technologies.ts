@@ -57,4 +57,32 @@ export const technologies: TechItem[] = [
     bgColor: 'rgba(240,80,50,0.08)',
     borderColor: 'rgba(240,80,50,0.22)',
   },
+  {
+    name: 'OpenAI',
+    abbr: 'OAI',
+    color: '#412991',
+    bgColor: 'rgba(65,41,145,0.08)',
+    borderColor: 'rgba(65,41,145,0.22)',
+  },
+  {
+    name: 'DeepSeek',
+    abbr: 'DS',
+    color: '#4D6BFE',
+    bgColor: 'rgba(77,107,254,0.08)',
+    borderColor: 'rgba(77,107,254,0.22)',
+  },
+  {
+    name: 'Ollama',
+    abbr: 'OL',
+    color: '#e0e0e0',
+    bgColor: 'rgba(224,224,224,0.06)',
+    borderColor: 'rgba(224,224,224,0.16)',
+  },
+  {
+    name: 'Docker',
+    abbr: 'DO',
+    color: '#2496ED',
+    bgColor: 'rgba(36,150,237,0.08)',
+    borderColor: 'rgba(36,150,237,0.22)',
+  },
 ]

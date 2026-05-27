@@ -44,10 +44,10 @@
           :transition="{ duration: 0.65, delay: 0.1, ease: 'easeOut' }"
           class="motion-preload text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-[#f0f0f5]"
         >
-          Creo esperienze digitali
-          <span class="text-gradient"> veloci, moderne</span>
+          Progetto e costruisco sistemi AI-native,
+          <span class="text-gradient"> pipeline di automazione</span>
           <br class="hidden sm:block" />
-          e orientate al valore.
+          e prodotti full stack.
         </h1>
 
         <!-- Subheadline -->
@@ -58,8 +58,8 @@
           :transition="{ duration: 0.6, delay: 0.2, ease: 'easeOut' }"
           class="motion-preload text-lg text-[#6a6a7a] leading-relaxed max-w-xl"
         >
-          Web developer specializzato in Vue, Nuxt e TypeScript.
-          Trasformo idee in prodotti digitali eleganti e performanti.
+          Automazione intelligente, workflow multi-agente e sviluppo full stack.
+          Con un background di 26 anni nelle operations.
         </p>
 
         <!-- CTAs -->
@@ -153,14 +153,14 @@
               </div>
               <div class="pl-5 flex flex-col gap-1">
                 <div><span style="color: #38bdf8;">name</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"Simone Camerano"</span><span style="color: #94a3b8;">,</span></div>
-                <div><span style="color: #38bdf8;">role</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"Web Developer"</span><span style="color: #94a3b8;">,</span></div>
-                <div><span style="color: #38bdf8;">stack</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"Vue"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Node"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"TS"</span><span style="color: #94a3b8;">],</span></div>
-                <div><span style="color: #38bdf8;">passion</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"clean code"</span><span style="color: #94a3b8;">,</span></div>
+                <div><span style="color: #38bdf8;">role</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"AI Workflow Engineer"</span><span style="color: #94a3b8;">,</span></div>
+                <div><span style="color: #38bdf8;">stack</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"Node"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Vue"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"LLMs"</span><span style="color: #94a3b8;">],</span></div>
+                <div><span style="color: #38bdf8;">focus</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"AI systems"</span><span style="color: #94a3b8;">,</span></div>
                 <div><span style="color: #38bdf8;">available</span><span style="color: #94a3b8;">: </span><span style="color: #34d399;">true</span><span style="color: #94a3b8;">,</span></div>
               </div>
               <div style="color: #34d399;">}</div>
               <div class="mt-2 flex items-center gap-1.5" style="color: #4a4a6a;">
-                <span>// disponibile per freelance</span>
+                <span>// aperto a collaborazioni freelance</span>
                 <span class="inline-block w-[2px] h-4 rounded-sm" style="background: #8b5cf6; animation: blink 1.1s step-end infinite;" />
               </div>
             </div>

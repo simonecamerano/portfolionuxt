@@ -12,10 +12,10 @@ useSeoMeta({
 })
 
 const storyParagraphs = [
-  'Il mio percorso non è stato lineare. Da ragazzo passavo molto tempo a cercare di capire come funzionasse GNU/Linux, ma la vita mi ha portato presto nel mondo del lavoro e per oltre vent\'anni ho fatto parte della Grande Distribuzione Organizzata.',
-  'In quel contesto ho ricoperto ruoli operativi, di responsabilità e commerciali. Ho imparato a gestire persone, priorità, clienti, fornitori, problemi concreti e giornate in cui le soluzioni non possono restare teoriche.',
-  'A un certo punto ho capito che volevo costruire qualcosa che mi rappresentasse di più. Lo sviluppo web è arrivato gradualmente: prima da autodidatta, poi con percorsi più strutturati, progetti personali e tante ore passate a trasformare curiosità in competenze.',
-  'Quello che mi ha conquistato del codice è il potere creativo: partire da un problema o da un\'idea e arrivare a qualcosa di reale, usabile, misurabile. Ogni progetto diventa una sfida tecnica, ma anche un esercizio di attenzione verso le persone che lo useranno.',
+  'Progetto e costruisco sistemi AI-nativo, pipeline di automazione, workflow multi-agente e prodotti full stack che risolvono problemi di business reali.',
+  'Prima di scrivere codice, ho trascorso 26 anni nella macchina operativa e commerciale della grande distribuzione italiana: gestione team, processi, responsabilità operative su larga scala. Quel background non è una nota a piè di pagina. È il motivo per cui capisco i problemi di business prima di iniziare a progettare le soluzioni.',
+  'Cosa costruisco: pipeline AI multi-modello (ricerca web, triage, analisi, delivery), sistemi RAG con vector store custom e session persistence, orchestrazione multi-agente con human approval gates, prodotti web full stack: Vue/Nuxt, Node.js, TypeScript, MongoDB.',
+  'Uso l\'AI come infrastruttura, non come feature. L\'obiettivo è sempre sistemi che funzionano in modo affidabile, non demo che impressionano una volta sola. Aperto a collaborazioni freelance con founder, startup e team tecnici che hanno bisogno di sistemi AI costruiti bene.',
 ]
 
 const timeline = [

@@ -37,12 +37,10 @@ const scrollIn = (delay = 0) => ({
 
         <div v-motion="scrollIn(0.1)" class="flex flex-col gap-4">
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Sono Simone, web developer con una forte passione per la qualità e l'attenzione ai dettagli. Mi piace costruire
-            interfacce che non solo funzionano perfettamente, ma che regalano un'esperienza piacevole a chi le usa.
+            Progetto e costruisco sistemi AI-native: pipeline di automazione, workflow multi-agente e prodotti full stack che risolvono problemi di business reali.
           </p>
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Ho appena terminato il percorso di Full-Stack Web Developer con <span class="text-[#c4b5fd] font-medium">start2impact</span>, esplorando
-            l'intero stack web moderno con focus su Vue, Node e TypeScript.
+            Prima di scrivere codice, ho trascorso 26 anni nella macchina operativa e commerciale della grande distribuzione italiana. Quel background non è una nota a piè di pagina: è il motivo per cui capisco i problemi prima di iniziare a progettare le soluzioni.
           </p>
           <NuxtLink
             to="/about"
@@ -89,7 +87,7 @@ const scrollIn = (delay = 0) => ({
           >
             <img
               src="/images/simone_camerano.png"
-              alt="Simone Camerano — Web Developer"
+              alt="Simone Camerano — AI Workflow Engineer"
               class="w-full block"
               style="aspect-ratio: 3/4; object-fit: cover; object-position: center top;"
               width="400"
@@ -101,7 +99,7 @@ const scrollIn = (delay = 0) => ({
             >
               <div>
                 <p class="font-bold text-[#f0f0f5] text-sm leading-tight">Simone Camerano</p>
-                <p class="text-xs text-gradient font-semibold mt-0.5">Web Developer</p>
+                <p class="text-xs text-gradient font-semibold mt-0.5">AI Workflow Engineer</p>
               </div>
               <div
                 class="flex items-center gap-1.5 px-3 py-1.5 rounded-full"
