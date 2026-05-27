@@ -7,7 +7,22 @@
       "Bash(git commit *)",
       "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt add README.md)",
       "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt commit -m \"docs: add professional English README for portfolio\")",
-      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt log --oneline -8)"
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt log --oneline -8)",
+      "Bash(git checkout *)",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt add docs/superpowers/specs/2026-05-27-rebranding-ai-workflow-engineer-design.md)",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt commit -m ' *)",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt add docs/superpowers/plans/2026-05-27-rebranding-ai-workflow-engineer.md)",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt add app/components/HeroSection.vue)",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt commit -m \"feat: update hero h1 and subtitle for AI positioning\")",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt commit -m \"feat: update hero code mockup for AI Workflow Engineer positioning\")",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt add app/data/projects.ts)",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt commit -m \"feat: add AI projects, remove game/UI showcases, set hundredpath non-featured\")",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt add app/components/ContactSection.vue)",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt commit -m \"feat: update contact section copy for AI positioning\")",
+      "Bash(npm run *)",
+      "Bash(npx nuxi *)",
+      "Bash(git -C /home/simone/Documenti/start2impact/Progetto-2-Sito-PersonaleNuxt log --oneline -12)",
+      "Bash(git merge dev --no-ff -m ' *)"
     ]
   }
 }
