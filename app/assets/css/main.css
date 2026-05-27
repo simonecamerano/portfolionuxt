@@ -115,6 +115,8 @@ body {
 }
 
 /* ─── Scroll reveal ────────────────────────────────────────────── */
+/* motion-preload: keeps elements invisible until motion-v applies the entry
+   animation, preventing a flash of fully-visible content on load. */
 .motion-preload {
   opacity: 0;
 }
