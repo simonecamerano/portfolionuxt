@@ -44,10 +44,10 @@
           :transition="{ duration: 0.65, delay: 0.1, ease: 'easeOut' }"
           class="motion-preload text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-[#f0f0f5]"
         >
-          Creo esperienze digitali
-          <span class="text-gradient"> veloci, moderne</span>
+          Progetto e costruisco sistemi AI-native,
+          <span class="text-gradient"> pipeline di automazione</span>
           <br class="hidden sm:block" />
-          e orientate al valore.
+          e prodotti full stack.
         </h1>
 
         <!-- Subheadline -->
@@ -58,8 +58,8 @@
           :transition="{ duration: 0.6, delay: 0.2, ease: 'easeOut' }"
           class="motion-preload text-lg text-[#6a6a7a] leading-relaxed max-w-xl"
         >
-          Web developer specializzato in Vue, Nuxt e TypeScript.
-          Trasformo idee in prodotti digitali eleganti e performanti.
+          Automazione intelligente, workflow multi-agente e sviluppo full stack.
+          Con un background di 26 anni nelle operations.
         </p>
 
         <!-- CTAs -->
