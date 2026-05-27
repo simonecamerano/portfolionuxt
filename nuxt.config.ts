@@ -2,6 +2,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
 
   future: {
+    // Opts into the Nuxt 4 app/ directory structure and breaking-change behaviors
+    // ahead of the stable Nuxt 4 release.
     compatibilityVersion: 4,
   },
 
