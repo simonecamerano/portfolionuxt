@@ -17,7 +17,7 @@
         </NuxtLink>
 
         <a
-          href="https://github.com/Galdrial"
+          href="https://github.com/simonecamerano"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
