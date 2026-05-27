@@ -15,6 +15,8 @@ const handleScroll = () => {
 
 onMounted(() => {
   handleScroll()
+  // passive: true tells the browser the handler never calls preventDefault(),
+  // letting it start scrolling immediately without waiting for this callback.
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
 onUnmounted(() => window.removeEventListener('scroll', handleScroll))
