@@ -1,5 +1,8 @@
 import { defineEventHandler, getQuery, createError } from 'h3'
 
+// GitHub blob/ URLs serve an HTML page, not the raw file.
+// Rewriting relative paths and blob/ URLs to raw.githubusercontent.com
+// ensures images in the rendered README actually load.
 function rewriteImageUrls(markdown: string, repo: string, branch: string): string {
   const rawBase = `https://raw.githubusercontent.com/${repo}/${branch}`
 
@@ -35,6 +38,8 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, message: 'Formato repo non valido.' })
   }
 
+  // New GitHub repos default to 'main'; legacy repos use 'master'.
+  // We try both before returning a 404.
   for (const branch of ['main', 'master']) {
     try {
       const content = await $fetch<string>(
