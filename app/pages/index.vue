@@ -1,15 +1,15 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Simone Camerano — Web Developer',
+  title: 'Simone Camerano — AI Workflow Engineer',
   description:
-    'Portfolio di Simone Camerano, web developer specializzato in Vue, Nuxt e TypeScript. Creo esperienze digitali veloci, moderne e orientate al valore.',
-  ogTitle: 'Simone Camerano — Web Developer',
+    'AI Workflow Engineer e Full Stack Developer. Progetto pipeline AI, sistemi multi-agente e prodotti web che risolvono problemi reali di business.',
+  ogTitle: 'Simone Camerano — AI Workflow Engineer',
   ogDescription:
-    'Web developer specializzato in Vue, Nuxt e TypeScript. Scopri i miei progetti e contattami per collaborare.',
+    'AI Workflow Engineer e Full Stack Developer. Progetto pipeline AI, sistemi multi-agente e prodotti web che risolvono problemi reali di business.',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Simone Camerano — Web Developer',
-  twitterDescription: 'Portfolio di Simone Camerano — Vue, Nuxt, TypeScript.',
+  twitterTitle: 'Simone Camerano — AI Workflow Engineer',
+  twitterDescription: 'AI Workflow Engineer e Full Stack Developer. Pipeline AI, workflow multi-agente, prodotti full stack.',
 })
 </script>
 
