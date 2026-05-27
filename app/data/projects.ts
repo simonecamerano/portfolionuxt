@@ -2,13 +2,28 @@ import type { Project } from '~/types'
 
 export const projects: Project[] = [
   {
+    id: 10,
+    slug: 'italy-job-hunter',
+    title: 'Italy Job Hunter',
+    category: 'Node.js',
+    description:
+      'Agente AI che automatizza la ricerca di lavoro in Italia. Scansiona annunci ogni mattina, li filtra con LLaMA e li analizza con DeepSeek rispetto al CV, inviando il report su Telegram.',
+    image: '/images/italy-job-hunter.png',
+    tags: ['Node.js', 'AI', 'Automation', 'GitHub Actions'],
+    link: 'https://github.com/simonecamerano/italy-job-hunter',
+    featured: true,
+    github: 'https://github.com/simonecamerano/italy-job-hunter',
+    year: 2026,
+    longDescription: 'Testo lungo per la pagina di dettaglio...',
+  },
+  {
     id: 11,
     slug: 'contextforge',
     title: 'ContextForge',
     category: 'Developer Tooling',
     description:
-      'Motore di memoria locale per developer e agenti AI. Scansiona la codebase e costruisce un layer di contesto strutturato e versionato su Git — queryabile dal terminale o iniettabile come context window per qualsiasi LLM.',
-    image: '/images/italy-job-hunter.png',
+      'Motore di memoria locale per developer e agenti AI. Scansiona la codebase e costruisce un layer di contesto strutturato e versionato su Git, queryabile dal terminale o iniettabile come context window per qualsiasi LLM.',
+    image: '/images/demo.gif',
     tags: ['TypeScript', 'CLI', 'LLM', 'Developer Tools'],
     link: 'https://github.com/simonecamerano/contextforge',
     featured: true,
@@ -23,7 +38,7 @@ export const projects: Project[] = [
     category: 'AI Orchestration',
     description:
       'Protocollo di orchestrazione multi-modello per lo sviluppo software. Ogni modello ha un ruolo definito, un fallback nominato e boundaries chiari. L\'orchestratore propone, l\'umano approva.',
-    image: '/images/italy-job-hunter.png',
+    image: '/images/workflow-multiagents.png',
     tags: ['Multi-Agent', 'Orchestration', 'Claude', 'Gemini', 'DeepSeek'],
     link: 'https://github.com/simonecamerano/workflow-multiagents',
     featured: true,
@@ -43,21 +58,6 @@ export const projects: Project[] = [
     link: 'https://www.joulezeropoint.com',
     featured: true,
     github: 'https://github.com/simonecamerano/JouleZeroPointWeb',
-    year: 2026,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
-  },
-  {
-    id: 10,
-    slug: 'italy-job-hunter',
-    title: 'Italy Job Hunter',
-    category: 'Node.js',
-    description:
-      'Agente AI che automatizza la ricerca di lavoro in Italia. Scansiona annunci ogni mattina, li filtra con LLaMA e li analizza con DeepSeek rispetto al CV, inviando il report su Telegram.',
-    image: '/images/italy-job-hunter.png',
-    tags: ['Node.js', 'AI', 'Automation', 'GitHub Actions'],
-    link: 'https://github.com/simonecamerano/italy-job-hunter',
-    featured: true,
-    github: 'https://github.com/simonecamerano/italy-job-hunter',
     year: 2026,
     longDescription: 'Testo lungo per la pagina di dettaglio...',
   },

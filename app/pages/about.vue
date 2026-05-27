@@ -12,9 +12,9 @@ useSeoMeta({
 })
 
 const storyParagraphs = [
-  'Progetto e costruisco sistemi AI-native — pipeline di automazione, workflow multi-agente e prodotti full stack che risolvono problemi di business reali.',
+  'Progetto e costruisco sistemi AI-nativo, pipeline di automazione, workflow multi-agente e prodotti full stack che risolvono problemi di business reali.',
   'Prima di scrivere codice, ho trascorso 26 anni nella macchina operativa e commerciale della grande distribuzione italiana: gestione team, processi, responsabilità operative su larga scala. Quel background non è una nota a piè di pagina. È il motivo per cui capisco i problemi di business prima di iniziare a progettare le soluzioni.',
-  'Cosa costruisco: pipeline AI multi-modello (ricerca web, triage, analisi, delivery), sistemi RAG con vector store custom e session persistence, orchestrazione multi-agente con human approval gates, prodotti web full stack — Vue/Nuxt, Node.js, TypeScript, MongoDB.',
+  'Cosa costruisco: pipeline AI multi-modello (ricerca web, triage, analisi, delivery), sistemi RAG con vector store custom e session persistence, orchestrazione multi-agente con human approval gates, prodotti web full stack: Vue/Nuxt, Node.js, TypeScript, MongoDB.',
   'Uso l\'AI come infrastruttura, non come feature. L\'obiettivo è sempre sistemi che funzionano in modo affidabile, non demo che impressionano una volta sola. Aperto a collaborazioni freelance con founder, startup e team tecnici che hanno bisogno di sistemi AI costruiti bene.',
 ]
 
