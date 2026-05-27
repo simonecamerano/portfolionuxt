@@ -87,7 +87,7 @@ const scrollIn = (delay = 0) => ({
           >
             <img
               src="/images/simone_camerano.png"
-              alt="Simone Camerano — Web Developer"
+              alt="Simone Camerano — AI Workflow Engineer"
               class="w-full block"
               style="aspect-ratio: 3/4; object-fit: cover; object-position: center top;"
               width="400"
@@ -99,7 +99,7 @@ const scrollIn = (delay = 0) => ({
             >
               <div>
                 <p class="font-bold text-[#f0f0f5] text-sm leading-tight">Simone Camerano</p>
-                <p class="text-xs text-gradient font-semibold mt-0.5">Web Developer</p>
+                <p class="text-xs text-gradient font-semibold mt-0.5">AI Workflow Engineer</p>
               </div>
               <div
                 class="flex items-center gap-1.5 px-3 py-1.5 rounded-full"
