@@ -81,6 +81,9 @@ export default defineEventHandler(async (event) => {
   const subject = body.subject.trim()
   const message = body.message.trim()
   const accessToken = config.emailjsPrivateKey || undefined
+  // EmailJS template variable naming varies between older and newer template formats.
+  // Providing both aliases (name/user_name/from_name, email/user_email/from_email)
+  // ensures the template receives the expected values regardless of how it was created.
   const commonParams = {
     name,
     email,
@@ -103,6 +106,8 @@ export default defineEventHandler(async (event) => {
     template_params: commonParams,
   })
 
+  // Confirmation email is best-effort: failure must not block the primary notification
+  // or return an error to the sender. We catch and log without re-throwing.
   if (confirmationTemplateId) {
     await sendEmailJs({
       service_id: serviceId,
