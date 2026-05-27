@@ -75,8 +75,8 @@ const resetForm = () => {
         </div>
 
         <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
-          Sono disponibile per collaborazioni freelance, progetti interessanti e opportunità di lavoro.
-          Non esitare a scrivermi.
+          Disponibile per collaborazioni freelance con founder, startup e team tecnici.
+          Se il problema riguarda AI, automazione o sistemi complessi, parliamone.
         </p>
 
         <div class="flex flex-col gap-3">
