@@ -17,6 +17,21 @@ export const projects: Project[] = [
     longDescription: 'Testo lungo per la pagina di dettaglio...',
   },
   {
+    id: 13,
+    slug: 'linkedin-assistant',
+    title: 'LinkedIn Assistant',
+    category: 'Node.js',
+    description:
+      'Pipeline AI che monitora LinkedIn per post rilevanti, li valuta rispetto al tuo profilo e consegna su Telegram suggerimenti di engagement ottimizzati per l\'SSI — con bozze di commento pronte da incollare.',
+    image: '/images/linkedin-assistant.png',
+    tags: ['Node.js', 'AI', 'Automation', 'Telegram'],
+    link: 'https://github.com/simonecamerano/linkedin-assistant',
+    featured: true,
+    github: 'https://github.com/simonecamerano/linkedin-assistant',
+    year: 2026,
+    longDescription: 'Testo lungo per la pagina di dettaglio...',
+  },
+  {
     id: 11,
     slug: 'contextforge',
     title: 'ContextForge',
