@@ -94,19 +94,12 @@ const scrollIn = (delay = 0) => ({
               height="533"
             />
             <div
-              class="absolute bottom-0 left-0 right-0 px-5 py-4 flex items-center justify-between"
+              class="absolute bottom-0 left-0 right-0 px-5 py-4"
               style="background: rgba(10,10,15,0.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-top: 1px solid rgba(255,255,255,0.08);"
             >
               <div>
                 <p class="font-bold text-[#f0f0f5] text-sm leading-tight">Simone Camerano</p>
                 <p class="text-xs text-gradient font-semibold mt-0.5">AI Workflow Engineer</p>
-              </div>
-              <div
-                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full"
-                style="background: rgba(74,222,128,0.1); border: 1px solid rgba(74,222,128,0.25);"
-              >
-                <span class="w-1.5 h-1.5 rounded-full bg-green-400 flex-shrink-0" style="box-shadow: 0 0 5px rgba(74,222,128,0.9);" aria-hidden="true" />
-                <span class="text-[11px] font-semibold text-green-400/90 whitespace-nowrap">Open to work</span>
               </div>
             </div>
           </div>
