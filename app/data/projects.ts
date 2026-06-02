@@ -56,7 +56,7 @@ export const projects: Project[] = [
     image: '/images/workflow-multiagents.png',
     tags: ['Multi-Agent', 'Orchestration', 'Claude', 'Gemini', 'DeepSeek'],
     link: 'https://github.com/simonecamerano/workflow-multiagents',
-    featured: true,
+    featured: false,
     github: 'https://github.com/simonecamerano/workflow-multiagents',
     year: 2026,
     longDescription: 'Testo lungo per la pagina di dettaglio...',
