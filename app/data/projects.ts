@@ -62,6 +62,21 @@ export const projects: Project[] = [
     longDescription: 'Testo lungo per la pagina di dettaglio...',
   },
   {
+    id: 14,
+    slug: 'ai-control-tower',
+    title: 'AI Control Tower',
+    category: 'Developer Tooling',
+    description:
+      'Dashboard unificata per monitorare in tempo reale le quote di utilizzo di più provider AI, OpenAI, Claude, Copilot, DeepSeek, Codex da una singola interfaccia locale, con polling ogni 10 secondi e alert automatici.',
+    image: '/images/ai-control-tower.png',
+    tags: ['TypeScript', 'Fastify', 'Dashboard', 'AI Monitoring'],
+    link: 'https://github.com/simonecamerano/ai-control-tower',
+    featured: true,
+    github: 'https://github.com/simonecamerano/ai-control-tower',
+    year: 2026,
+    longDescription: 'Testo lungo per la pagina di dettaglio...',
+  },
+  {
     id: 1,
     slug: 'joule-zero-point',
     title: 'Joule Zero Point',
