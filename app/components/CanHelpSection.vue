@@ -1,32 +1,26 @@
 <script setup lang="ts">
 const cards = [
   {
-    emoji: '📊',
     title: 'Troppi dati, pochi insight',
     body: 'Hai fonti, email, feed, annunci, documenti o dashboard da controllare ogni giorno, ma perdi tempo a separare ciò che conta dal rumore.',
   },
   {
-    emoji: '🔄',
     title: 'Processi manuali ripetitivi',
     body: 'Ripeti le stesse attività: cercare informazioni, filtrare risultati, preparare report, confrontare dati, scrivere sintesi o aggiornare strumenti.',
   },
   {
-    emoji: '🤖',
     title: 'AI usata senza metodo',
     body: 'Usi Claude, ChatGPT, Codex, Gemini o strumenti simili, ma manca un workflow stabile che decida quale modello usare, quando e per quale compito.',
   },
   {
-    emoji: '📬',
     title: 'Serve un assistente operativo',
     body: 'Vuoi un bot collegato ai tuoi strumenti che monitori, analizzi e ti invii aggiornamenti via Telegram, Slack, email o dashboard.',
   },
   {
-    emoji: '📚',
     title: 'Knowledge base da interrogare',
     body: 'Vuoi trasformare documenti, cataloghi, percorsi formativi o FAQ in un assistente AI verticale, controllato e utile agli utenti.',
   },
   {
-    emoji: '🚀',
     title: 'Prototipo AI da validare',
     body: "Hai un'idea, ma ti serve trasformarla in architettura, MVP e primo prototipo funzionante senza perderti nella complessità.",
   },
@@ -72,13 +66,6 @@ const cards = [
           class="glass card-hover rounded-2xl p-6"
           style="border-color: rgba(255,255,255,0.08);"
         >
-          <div
-            class="w-10 h-10 rounded-xl flex items-center justify-center text-lg mb-4"
-            style="background: rgba(139,92,246,0.12);"
-            aria-hidden="true"
-          >
-            {{ card.emoji }}
-          </div>
           <h3 class="text-[#d0d0e0] font-semibold text-base mb-2">{{ card.title }}</h3>
           <p class="text-[#6a6a7a] text-sm leading-relaxed">{{ card.body }}</p>
         </div>
