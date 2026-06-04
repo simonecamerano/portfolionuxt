@@ -2,22 +2,25 @@
 useSeoMeta({
   title: 'Simone Camerano — AI Workflow Engineer',
   description:
-    'AI Workflow Engineer e Full Stack Developer. Progetto pipeline AI, sistemi multi-agente e prodotti web che risolvono problemi reali di business.',
+    'Costruisco workflow AI, agenti operativi e prodotti full-stack per automatizzare processi reali. AI Workflow Engineer disponibile per collaborazioni freelance.',
   ogTitle: 'Simone Camerano — AI Workflow Engineer',
   ogDescription:
-    'AI Workflow Engineer e Full Stack Developer. Progetto pipeline AI, sistemi multi-agente e prodotti web che risolvono problemi reali di business.',
+    'Costruisco workflow AI, agenti operativi e prodotti full-stack per automatizzare processi reali. AI Workflow Engineer disponibile per collaborazioni freelance.',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Simone Camerano — AI Workflow Engineer',
-  twitterDescription: 'AI Workflow Engineer e Full Stack Developer. Pipeline AI, workflow multi-agente, prodotti full stack.',
+  twitterDescription: 'AI Workflow Engineer. Workflow multi-modello, automazioni, dashboard operative e prodotti full-stack AI-native.',
 })
 </script>
 
 <template>
   <main>
     <HeroSection />
-    <AboutSection />
+    <CanHelpSection />
+    <ServicesSection />
     <ProjectsSection />
+    <AboutSection />
+    <MethodSection />
     <TechSection />
     <ContactSection />
   </main>
