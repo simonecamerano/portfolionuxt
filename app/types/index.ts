@@ -1,3 +1,21 @@
+export interface CaseStudySection {
+  headline: string
+  text: string
+  points: string[]
+}
+
+export interface CaseStudy {
+  problem: CaseStudySection
+  solution: CaseStudySection
+  archFlow: string[]         // ordered steps like ["Scanner", "→ Parser", "→ Generator", ...]
+  demonstrates: string[]     // bullet list of what the project demonstrates professionally
+  replicability: {
+    text: string
+    useCases: string[]
+  }
+  ctaText: string            // the final CTA message
+}
+
 export interface Project {
   id: number
   slug: string
@@ -12,6 +30,7 @@ export interface Project {
   github?: string
   year?: number
   longDescription?: string
+  caseStudy?: CaseStudy
 }
 
 export interface TechItem {
