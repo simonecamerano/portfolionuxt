@@ -76,7 +76,7 @@ const services = [
 const steps = [
   { num: '01', label: 'Mappiamo', desc: 'Partiamo da cosa fai oggi, quali passaggi si ripetono, quali fonti usi e dove perdi tempo.' },
   { num: '02', label: 'Disegniamo', desc: 'Definiamo input, automazioni, modelli AI, regole, output e punti di controllo umano.' },
-  { num: '03', label: 'Prototipare', desc: 'Realizziamo un MVP funzionante, collegato a strumenti concreti come Telegram, dashboard, API o web app.' },
+  { num: '03', label: 'Prototipiamo', desc: 'Realizziamo un MVP funzionante, collegato a strumenti concreti come Telegram, dashboard, API o web app.' },
   { num: '04', label: 'Operativizziamo', desc: 'Aggiungiamo logging, configurazione, error handling e documentazione.' },
   { num: '05', label: 'Iteriamo', desc: 'Miglioriamo solo ciò che serve davvero dopo aver visto il sistema lavorare su casi concreti.' },
 ]
@@ -503,7 +503,7 @@ const faqs = [
             </svg>
           </a>
           <p class="text-[#4a4a5a] text-sm mt-5">
-            Disponibile per collaborazioni freelance, prototipi AI e automazioni operative.
+            Disponibile per collaborazioni freelance, prototipi AI, automazioni operative e prodotti full-stack.
           </p>
         </div>
       </div>

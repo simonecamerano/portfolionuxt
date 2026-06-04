@@ -5,6 +5,7 @@ import { defineEventHandler, getQuery, createError } from 'h3'
 // ensures images in the rendered README actually load.
 function rewriteImageUrls(markdown: string, repo: string, branch: string): string {
   const rawBase = `https://raw.githubusercontent.com/${repo}/${branch}`
+  const blobBase = `https://github.com/${repo}/blob/${branch}`
 
   // Markdown images with relative path: ![alt](./path) or ![alt](path)
   markdown = markdown.replace(
@@ -22,6 +23,13 @@ function rewriteImageUrls(markdown: string, repo: string, branch: string): strin
   markdown = markdown.replace(
     /https:\/\/github\.com\/([\w.-]+\/[\w.-]+)\/blob\/([\w.-]+)\//g,
     `https://raw.githubusercontent.com/$1/$2/`,
+  )
+
+  // Relative text links (not images): [text](./path) or [text](path.md) → absolute GitHub blob URL
+  // Only rewrite links that look like file paths (contain a dot or slash, no protocol)
+  markdown = markdown.replace(
+    /(?<!!)\[([^\]]+)\]\((?!https?:\/\/|#|mailto:)(\.\/)?([^)#?]+\.[^)#?]+)\)/g,
+    (_, text, _dot, path) => `[${text}](${blobBase}/${path})`,
   )
 
   return markdown
