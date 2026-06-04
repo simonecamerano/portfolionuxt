@@ -14,7 +14,67 @@ export const projects: Project[] = [
     featured: true,
     github: 'https://github.com/simonecamerano/contextforge',
     year: 2026,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      'ContextForge è un memory engine local-first per developer e agenti AI. Scansiona la codebase, genera contesto strutturato in Markdown e lo rende queryabile o iniettabile nei prompt via CLI, supportando provider Ollama, DeepSeek e modalità offline.',
+    caseStudy: {
+      problem: {
+        headline: 'Il problema: gli agenti AI dimenticano il contesto',
+        text: 'Gli strumenti AI per il coding sono sempre più capaci, ma spesso lavorano con una visione parziale della codebase. Ogni nuova sessione richiede di spiegare di nuovo architettura, convenzioni, file importanti, decisioni progettuali e relazioni tra moduli. Il risultato è un workflow fragile: prompt più lunghi, token sprecati, suggerimenti poco aderenti al progetto e rischio di modifiche incoerenti.',
+        points: [
+          'Contesto disperso tra file, README, issue, chat e memoria personale',
+          'Prompt manuali lunghi e ripetitivi a ogni nuova sessione',
+          'Agenti che non comprendono bene architettura e convenzioni del progetto',
+          'Rischio di suggerimenti e modifiche incoerenti con il codice esistente',
+          'Overhead di token e costi più alti del necessario',
+          'Difficoltà di collaborazione in workflow multi-agente',
+        ],
+      },
+      solution: {
+        headline: 'La soluzione: un memory layer locale per la codebase',
+        text: "ContextForge crea un livello di contesto locale tra progetto, developer e strumenti AI. Scansiona la codebase, estrae informazioni rilevanti, genera documentazione strutturata in Markdown e permette di riutilizzare quel contesto nei prompt o nelle query successive. L'obiettivo è dare agli agenti AI informazioni ordinate e aggiornabili, non solo prompt più lunghi.",
+        points: [
+          'Scansione completa del repository con parsing strutturale in 12 linguaggi',
+          'Generazione automatica di 4 documenti Markdown (panoramica, architettura, contesto attivo, AI brief)',
+          'Aggiornamenti incrementali via SHA-256: solo i file cambiati vengono rielaborati',
+          'Retriever TF-IDF per query contestuali sul knowledge layer locale',
+          'Provider LLM pluggabili: Ollama locale, DeepSeek, modalità offline (NullProvider)',
+          'Output Markdown git-trackable: il contesto evolve insieme al progetto',
+          'Riduzione dichiarata del 60–80% dell\'overhead di token in sessioni AI-assisted',
+        ],
+      },
+      archFlow: [
+        'File sorgente',
+        'Scanner + IgnoreEngine',
+        'Parser (12 linguaggi)',
+        'Generatori Markdown',
+        '.contextforge/ layer',
+        'Retriever TF-IDF',
+        'Provider LLM',
+        'Prompt / Risposta',
+      ],
+      demonstrates: [
+        'Progettazione di developer tooling AI-native in TypeScript',
+        'Comprensione profonda del problema del contesto negli agenti AI',
+        'Architettura modulare: CLI → Scanner → Generatori → Retriever → Provider',
+        'Approccio local-first: privacy, controllo e zero dipendenza cloud obbligatoria',
+        'Aggiornamenti incrementali efficienti tramite SHA-256 file hashing',
+        'Provider abstraction: Ollama (locale), DeepSeek (API), NullProvider (offline)',
+        'Visione multi-agente e model-agnostic applicata a developer tooling',
+      ],
+      replicability: {
+        text: 'Lo stesso approccio può essere adattato a team che usano Claude Code, Cursor, Codex, Windsurf, Gemini CLI o agenti interni. Il problema non è solo scegliere il modello migliore: è costruire un workflow in cui il modello riceve contesto affidabile, aggiornato e strutturato.',
+        useCases: [
+          'Setup di un memory layer per team dev che usano coding assistant AI',
+          'Generazione automatica di documentazione tecnica da codebase esistente',
+          'Contesto condiviso e versionato per workflow multi-agente o multi-modello',
+          'Onboarding più rapido su progetti complessi grazie a contesto strutturato',
+          'Riduzione della dipendenza da prompt manuali e chat lunghe con l\'AI',
+          'Preparazione tecnica per integrazioni MCP, Cursor Rules o agenti autonomi',
+        ],
+      },
+      ctaText:
+        'Hai una codebase che i tuoi strumenti AI non capiscono abbastanza bene? Posso aiutarti a progettare un workflow di contesto e memoria per lavorare meglio con agenti AI, coding assistant e strumenti multi-modello.',
+    },
   },
   {
     id: 10,
