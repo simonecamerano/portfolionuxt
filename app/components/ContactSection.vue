@@ -100,7 +100,7 @@ const resetForm = () => {
           style="background: rgba(74,222,128,0.07); border: 1px solid rgba(74,222,128,0.2);"
         >
           <span class="w-2.5 h-2.5 rounded-full bg-green-400 flex-shrink-0" style="box-shadow: 0 0 8px rgba(74,222,128,0.7);" aria-hidden="true" />
-          <span class="text-sm font-medium text-green-400/90">Disponibile per collaborazioni freelance, prototipi AI e automazioni operative e prodotti full-stack.</span>
+          <span class="text-sm font-medium text-green-400/90">Disponibile per collaborazioni freelance, prototipi AI, automazioni operative e prodotti full-stack.</span>
         </div>
       </div>
 

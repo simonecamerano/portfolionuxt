@@ -44,9 +44,7 @@
           :transition="{ duration: 0.65, delay: 0.1, ease: 'easeOut' }"
           class="motion-preload text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-[#f0f0f5]"
         >
-          Costruisco workflow AI,
-          <span class="text-gradient">agenti operativi</span>
-          <br class="hidden sm:block" />
+          Costruisco workflow AI, <span class="text-gradient">agenti operativi</span><br class="hidden sm:block" />
           e prodotti full-stack per automatizzare processi reali.
         </h1>
 
