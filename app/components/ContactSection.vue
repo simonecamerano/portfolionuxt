@@ -68,15 +68,17 @@ const resetForm = () => {
             Contatti
           </span>
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] leading-[1.1] tracking-tight">
-            Hai un progetto<br />
-            in mente?
-            <span class="text-gradient"> Parliamone.</span>
+            Hai un processo<br />
+            che vorresti<br />
+            <span class="text-gradient">automatizzare?</span>
           </h2>
         </div>
 
         <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
-          Disponibile per collaborazioni freelance con founder, startup e team tecnici.
-          Se il problema riguarda AI, automazione o sistemi complessi, parliamone.
+          Se stai cercando di usare meglio l'AI nel tuo lavoro, costruire un workflow su misura o trasformare un'idea in un prototipo funzionante, possiamo parlarne.
+        </p>
+        <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
+          Raccontami il processo, il problema o l'obiettivo: ti aiuto a capire se può diventare un sistema AI concreto.
         </p>
 
         <div class="flex flex-col gap-3">
@@ -98,7 +100,7 @@ const resetForm = () => {
           style="background: rgba(74,222,128,0.07); border: 1px solid rgba(74,222,128,0.2);"
         >
           <span class="w-2.5 h-2.5 rounded-full bg-green-400 flex-shrink-0" style="box-shadow: 0 0 8px rgba(74,222,128,0.7);" aria-hidden="true" />
-          <span class="text-sm font-medium text-green-400/90">Disponibile per nuovi progetti</span>
+          <span class="text-sm font-medium text-green-400/90">Disponibile per collaborazioni freelance, prototipi AI e automazioni operative e prodotti full-stack.</span>
         </div>
       </div>
 
@@ -148,7 +150,7 @@ const resetForm = () => {
 
             <div class="flex flex-col gap-2">
               <label for="contact-message" class="text-sm font-medium text-[#8a8a9a]">Messaggio <span class="text-purple-400" aria-hidden="true">*</span></label>
-              <textarea id="contact-message" v-model="form.message" required rows="5" placeholder="Raccontami del tuo progetto o della tua idea..."
+              <textarea id="contact-message" v-model="form.message" required rows="5" placeholder="Descrivi il processo, il problema o l'obiettivo..."
                 class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200 resize-none"
                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);" />
             </div>

@@ -17,13 +17,13 @@ const featuredProjects = projects.filter((p) => p.featured)
           class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
           style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;"
         >
-          Portfolio
+          Progetti
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] mb-4 tracking-tight">
-          Progetti in evidenza
+          Progetti che raccontano <span class="text-gradient">come lavoro</span>
         </h2>
         <p class="text-[#6a6a7a] max-w-lg mx-auto leading-relaxed">
-          Una selezione dei lavori più recenti. Ogni progetto racconta una sfida affrontata e una soluzione costruita con cura.
+          Ogni progetto nasce da un problema concreto: troppo rumore informativo, mancanza di memoria nei workflow AI, bisogno di assistenti verticali o necessità di controllare strumenti e provider diversi.
         </p>
       </div>
 

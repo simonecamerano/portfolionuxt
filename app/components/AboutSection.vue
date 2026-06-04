@@ -29,24 +29,26 @@ const scrollIn = (delay = 0) => ({
             Chi sono
           </span>
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] leading-[1.1] tracking-tight">
-            Codice pulito.<br />
-            Design curato.<br />
-            <span class="text-gradient">Risultati concreti.</span>
+            Dalle operations<br />
+            ai sistemi <span class="text-gradient">AI-native.</span>
           </h2>
         </div>
 
         <div v-motion="scrollIn(0.1)" class="flex flex-col gap-4">
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Progetto e costruisco sistemi AI-native: pipeline di automazione, workflow multi-agente e prodotti full stack che risolvono problemi di business reali.
+            Porto 26 anni di esperienza operativa nel software: progetto sistemi AI che semplificano lavoro, decisioni e processi.
           </p>
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Prima di scrivere codice, ho trascorso 26 anni nella macchina operativa e commerciale della grande distribuzione italiana. Quel background non è una nota a piè di pagina: è il motivo per cui capisco i problemi prima di iniziare a progettare le soluzioni.
+            Dopo oltre 20 anni nelle operations della grande distribuzione, oggi progetto e costruisco sistemi AI-native: workflow multi-modello, automazioni operative, dashboard e prodotti full-stack pensati per risolvere problemi concreti.
+          </p>
+          <p class="text-[#6a6a7a] leading-relaxed text-lg">
+            Prima capisco il processo, poi costruisco il sistema. Non mi interessa usare l'AI come semplice chatbot: mi interessa creare pipeline controllabili, agenti specializzati e strumenti che aiutano persone e team a lavorare meglio.
           </p>
           <NuxtLink
             to="/about"
             class="inline-flex items-center gap-2 w-fit mt-2 text-sm font-semibold text-gradient hover:opacity-75 transition-opacity"
           >
-            Leggi la storia completa
+            Scopri il mio approccio
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
