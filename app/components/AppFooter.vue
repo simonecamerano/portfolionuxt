@@ -10,6 +10,13 @@
 
       <div class="flex items-center gap-6">
         <NuxtLink
+          to="/servizi"
+          class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+        >
+          Servizi
+        </NuxtLink>
+
+        <NuxtLink
           to="/privacy"
           class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
         >
