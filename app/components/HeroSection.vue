@@ -32,7 +32,7 @@
             class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium"
             style="background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.32); color: #c4b5fd;"
           >
-            👋 Ciao, sono Simone
+            AI Workflow Engineer · Full-Stack Developer · Automation Builder
           </span>
         </div>
 
@@ -44,10 +44,10 @@
           :transition="{ duration: 0.65, delay: 0.1, ease: 'easeOut' }"
           class="motion-preload text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-[#f0f0f5]"
         >
-          Progetto e costruisco sistemi AI-native,
-          <span class="text-gradient"> pipeline di automazione</span>
+          Costruisco workflow AI,
+          <span class="text-gradient">agenti operativi</span>
           <br class="hidden sm:block" />
-          e prodotti full stack.
+          e prodotti full-stack per automatizzare processi reali.
         </h1>
 
         <!-- Subheadline -->
@@ -58,8 +58,7 @@
           :transition="{ duration: 0.6, delay: 0.2, ease: 'easeOut' }"
           class="motion-preload text-lg text-[#6a6a7a] leading-relaxed max-w-xl"
         >
-          Automazione intelligente, workflow multi-agente e sviluppo full stack.
-          Con un background di 26 anni nelle operations.
+          Dalla comprensione dei processi alla costruzione del sistema: sviluppo workflow multi-modello, strumenti AI e prodotti full-stack con un approccio pragmatico, controllabile e orientato al risultato.
         </p>
 
         <!-- CTAs -->
@@ -71,26 +70,26 @@
           class="motion-preload flex flex-wrap gap-4"
         >
           <a
-            href="#progetti"
+            href="#contatti"
             class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85 hover:scale-[1.02] active:scale-[0.98]"
             style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
           >
-            Vedi i miei progetti
+            Parliamo del tuo workflow
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
           <a
-            href="/cv.pdf"
-            download
+            href="#progetti"
             class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-[#d0d0e0] border transition-all duration-200 hover:bg-white/[0.06] hover:text-white"
             style="border-color: rgba(255,255,255,0.14);"
           >
-            Scarica CV
+            Vedi i progetti
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
             </svg>
           </a>
+          <p class="text-xs text-[#6a6a7a] pt-1">Disponibile per collaborazioni freelance, prototipi AI e automazioni su misura.</p>
         </div>
 
         <!-- Tech pills -->
@@ -102,7 +101,7 @@
           class="motion-preload flex flex-wrap gap-3 pt-2"
         >
           <span
-            v-for="tag in ['Vue 3', 'Nuxt 4', 'Node', 'TypeScript', 'Tailwind CSS']"
+            v-for="tag in ['Vue', 'Nuxt', 'Node.js', 'TypeScript', 'LLMs', 'Telegram']"
             :key="tag"
             class="px-3 py-1 rounded-full text-xs font-medium"
             style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); color: #8a8a9a;"
@@ -147,20 +146,20 @@
             <div class="p-6 font-mono text-[13px] leading-relaxed flex flex-col gap-1">
               <div>
                 <span style="color: #8b5cf6;">const</span>
-                <span style="color: #c4b5fd;"> developer</span>
+                <span style="color: #c4b5fd;"> simone</span>
                 <span style="color: #94a3b8;"> = </span>
                 <span style="color: #34d399;">{</span>
               </div>
               <div class="pl-5 flex flex-col gap-1">
-                <div><span style="color: #38bdf8;">name</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"Simone Camerano"</span><span style="color: #94a3b8;">,</span></div>
                 <div><span style="color: #38bdf8;">role</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"AI Workflow Engineer"</span><span style="color: #94a3b8;">,</span></div>
-                <div><span style="color: #38bdf8;">stack</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"Node"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Vue"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"LLMs"</span><span style="color: #94a3b8;">],</span></div>
-                <div><span style="color: #38bdf8;">focus</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"AI systems"</span><span style="color: #94a3b8;">,</span></div>
-                <div><span style="color: #38bdf8;">available</span><span style="color: #94a3b8;">: </span><span style="color: #34d399;">true</span><span style="color: #94a3b8;">,</span></div>
+                <div><span style="color: #38bdf8;">builds</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"AI workflows"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"automation bots"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"full-stack products"</span><span style="color: #94a3b8;">],</span></div>
+                <div><span style="color: #38bdf8;">stack</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"Node"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Vue"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Nuxt"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"TypeScript"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"LLMs"</span><span style="color: #94a3b8;">],</span></div>
+                <div><span style="color: #38bdf8;">focus</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"turning real processes into intelligent systems"</span><span style="color: #94a3b8;">,</span></div>
+                <div><span style="color: #38bdf8;">availableFor</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"freelance"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"AI prototypes"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"workflow automation"</span><span style="color: #94a3b8;">],</span></div>
               </div>
               <div style="color: #34d399;">}</div>
               <div class="mt-2 flex items-center gap-1.5" style="color: #4a4a6a;">
-                <span>// aperto a collaborazioni freelance</span>
+                <span>// costruisce sistemi concreti, non chatbot</span>
                 <span class="inline-block w-[2px] h-4 rounded-sm" style="background: #8b5cf6; animation: blink 1.1s step-end infinite;" />
               </div>
             </div>
