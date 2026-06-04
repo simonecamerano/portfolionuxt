@@ -7,13 +7,18 @@ export interface CaseStudySection {
 export interface CaseStudy {
   problem: CaseStudySection
   solution: CaseStudySection
-  archFlow: string[]         // ordered steps like ["Scanner", "→ Parser", "→ Generator", ...]
-  demonstrates: string[]     // bullet list of what the project demonstrates professionally
+  archFlow: string[]
+  demonstrates: string[]
   replicability: {
     text: string
     useCases: string[]
   }
-  ctaText: string            // the final CTA message
+  responsibleNote?: {
+    headline: string
+    text: string
+    points: string[]
+  }
+  ctaText: string
 }
 
 export interface Project {

@@ -264,6 +264,28 @@ useSeoMeta({
           </div>
         </div>
 
+        <!-- Responsible note (optional, e.g. human-in-the-loop ethics) -->
+        <div v-if="project.caseStudy.responsibleNote" class="glass rounded-2xl p-8 mb-8" style="border-color: rgba(255,255,255,0.08);">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
+            style="background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.2); color: #fde68a;">
+            Approccio responsabile
+          </span>
+          <h2 class="text-xl font-extrabold text-[#f0f0f5] tracking-tight mb-4">
+            {{ project.caseStudy.responsibleNote.headline }}
+          </h2>
+          <p class="text-[#6a6a7a] text-sm leading-relaxed mb-5">{{ project.caseStudy.responsibleNote.text }}</p>
+          <ul class="flex flex-col gap-2">
+            <li
+              v-for="point in project.caseStudy.responsibleNote.points"
+              :key="point"
+              class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+            >
+              <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(251,191,36,0.5);" aria-hidden="true" />
+              {{ point }}
+            </li>
+          </ul>
+        </div>
+
         <!-- CTA block -->
         <div class="glass rounded-2xl p-8 text-center" style="border-color: rgba(255,255,255,0.08); background: rgba(139,92,246,0.04);">
           <p class="text-[#d0d0e0] font-medium mb-5 max-w-xl mx-auto">{{ project.caseStudy.ctaText }}</p>
