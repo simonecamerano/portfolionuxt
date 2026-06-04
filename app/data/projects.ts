@@ -89,7 +89,67 @@ export const projects: Project[] = [
     featured: true,
     github: 'https://github.com/simonecamerano/italy-job-hunter',
     year: 2026,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Italy Job Hunter è una pipeline multi-modello che automatizza la ricerca lavoro in Italia: cerca annunci via Tavily, esegue un triage veloce con Groq/LLaMA-3.1 e un'analisi approfondita del fit CV con DeepSeek-V3, inviando solo le opportunità rilevanti su Telegram. Gira ogni mattina via GitHub Actions in meno di 30 secondi, a meno di $0.01 a run.",
+    caseStudy: {
+      problem: {
+        headline: 'Il problema: cercare lavoro online significa filtrare troppo rumore',
+        text: 'La ricerca lavoro richiede tempo, attenzione e continuità. Ogni giorno bisogna controllare fonti diverse, leggere annunci simili, scartare offerte non adatte e capire se il profilo è davvero coerente con la posizione. Il rischio è passare più tempo a filtrare informazioni che a candidarsi in modo mirato.',
+        points: [
+          'Fonti multiple da controllare manualmente ogni giorno',
+          'Annunci duplicati che compaiono su più piattaforme',
+          'Offerte fuori target che richiedono tempo per essere scartate',
+          'Nessuna valutazione automatica del fit tra CV e posizione',
+          "Mancanza di un report operativo pronto all'uso",
+          'Attività ripetitive che sottraggono tempo alla candidatura vera',
+        ],
+      },
+      solution: {
+        headline: 'La soluzione: una pipeline AI dalla ricerca al report Telegram',
+        text: "Italy Job Hunter automatizza il processo in fasi distinte: cerca annunci con Tavily, deduplica i risultati, applica un triage veloce con un modello economico, esegue un'analisi più profonda del fit CV con un modello più capace e invia solo le opportunità rilevanti su Telegram. Non sostituisce il candidato: riduce il rumore e porta una lista già filtrata e contestualizzata.",
+        points: [
+          'Ricerca annunci via Tavily API (fino a 20 risultati per run)',
+          'Deduplica URL persistente: nessun annuncio già visto viene riprocessato',
+          'Triage veloce con Groq / LLaMA-3.1-8b-instant: filtraggio boolean economico',
+          'Analisi CV con DeepSeek-V3 (deepseek-chat): match scoring strutturato su 100',
+          'Soglia minima 65/100: solo le offerte più rilevanti raggiungono il report',
+          'Consegna su Telegram in HTML, chunked a 4000 caratteri per messaggio',
+          'Bot interattivo con comandi /hunt, /scout, /status per trigger on-demand',
+          'GitHub Actions cron: run automatico ogni mattina alle 06:00 UTC',
+          'Meno di $0.01 per run, completamento in circa 30 secondi (dati README)',
+        ],
+      },
+      archFlow: [
+        'Tavily API',
+        'Deduplica URL',
+        'Triage Groq / LLaMA-3.1',
+        'Analisi DeepSeek-V3',
+        'Score ≥ 65/100',
+        'Report Telegram',
+      ],
+      demonstrates: [
+        'Progettazione di workflow AI end-to-end: dalla ricerca alla delivery',
+        'Uso pragmatico di modelli diversi per compiti diversi (velocità vs profondità)',
+        'Integrazione di API eterogenee: Tavily, Groq, DeepSeek, Telegram Bot API',
+        "Approccio human-in-the-loop: il sistema filtra, l'utente decide",
+        'Automazione schedulata via GitHub Actions con gestione delle credenziali',
+        'Attenzione a costo e velocità: pipeline ottimizzata per run giornaliero sotto $0.01',
+        'Trasformazione di un bisogno personale in sistema configurabile e riutilizzabile',
+      ],
+      replicability: {
+        text: 'Lo stesso schema search → triage → deep analysis → delivery può essere applicato a qualsiasi processo di monitoraggio e filtraggio informazioni. Il pattern è indipendente dal dominio: cambiando query, CV e criteri di scoring, la pipeline si adatta a contesti completamente diversi.',
+        useCases: [
+          "Lead generation B2B: cerca aziende target, valuta fit e invia dossier su Telegram",
+          "Monitoraggio bandi e gare d'appalto con scoring automatico di rilevanza",
+          'News intelligence: filtraggio quotidiano di articoli per settore o keyword',
+          'Scouting immobiliare o prodotti: ricerca + analisi multicriterio + alert',
+          'Rassegna stampa automatizzata per team con report mattutino su Slack/Telegram',
+          'Monitoring competitor: traccia annunci, contenuti e segnali di mercato',
+        ],
+      },
+      ctaText:
+        'Hai un processo di ricerca e filtro che vorresti automatizzare? Lo stesso schema può monitorare lead, bandi, notizie, prodotti o opportunità di qualsiasi tipo.',
+    },
   },
   {
     id: 13,
