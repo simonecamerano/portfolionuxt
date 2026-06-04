@@ -20,7 +20,7 @@ const featuredProjects = projects.filter((p) => p.featured)
           Progetti
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] mb-4 tracking-tight">
-          Progetti che raccontano come lavoro
+          Progetti che raccontano <span class="text-gradient">come lavoro</span>
         </h2>
         <p class="text-[#6a6a7a] max-w-lg mx-auto leading-relaxed">
           Ogni progetto nasce da un problema concreto: troppo rumore informativo, mancanza di memoria nei workflow AI, bisogno di assistenti verticali o necessità di controllare strumenti e provider diversi.

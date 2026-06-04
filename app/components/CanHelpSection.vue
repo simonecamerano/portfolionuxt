@@ -50,7 +50,7 @@ const cards = [
           Posso aiutarti se
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight max-w-3xl mx-auto leading-[1.1]">
-          Posso aiutarti se vuoi trasformare un processo ripetitivo in un sistema intelligente.
+          Posso aiutarti se vuoi trasformare un processo ripetitivo in <span class="text-gradient">un sistema intelligente.</span>
         </h2>
         <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl mx-auto">
           Molti processi non hanno bisogno di più riunioni, più file Excel o più notifiche. Hanno bisogno di essere osservati, filtrati, automatizzati e resi azionabili.

@@ -50,7 +50,7 @@ const steps = [
           Metodo
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight text-center mt-5 mb-16">
-          Il mio metodo: capire il processo, poi costruire il sistema.
+          Il mio metodo: capire il processo, poi <span class="text-gradient">costruire il sistema.</span>
         </h2>
       </div>
 

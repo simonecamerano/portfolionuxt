@@ -24,7 +24,7 @@ const services = [
           Servizi
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight max-w-3xl mx-auto leading-[1.1]">
-          Cosa posso costruire per te
+          Cosa posso costruire <span class="text-gradient">per te</span>
         </h2>
         <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl mx-auto">
           Lavoro su sistemi piccoli ma ad alto impatto: automazioni, agenti, dashboard e applicazioni AI-native che risolvono problemi specifici e misurabili.

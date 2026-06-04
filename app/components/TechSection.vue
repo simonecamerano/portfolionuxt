@@ -17,7 +17,7 @@ import { technologies } from '~/data/technologies'
           Stack
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight">
-          Tecnologie con cui costruisco
+          Tecnologie con cui <span class="text-gradient">costruisco</span>
         </h2>
         <p class="text-[#6a6a7a] mt-4 max-w-md mx-auto">
           Scelgo gli strumenti in base al problema: modelli veloci per il triage, modelli più profondi per l'analisi, interfacce semplici per il controllo umano e stack full-stack moderno per trasformare il prototipo in prodotto.
