@@ -149,6 +149,139 @@ useSeoMeta({
         </div>
       </div>
 
+      <!-- ── Case Study sections ──────────────────────────── -->
+      <template v-if="project.caseStudy">
+
+        <!-- Divider -->
+        <div class="mt-20 mb-16 h-px" style="background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);" aria-hidden="true" />
+
+        <!-- Problem + Solution (two columns on lg) -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-12">
+
+          <!-- Problem -->
+          <div class="glass rounded-2xl p-8" style="border-color: rgba(255,255,255,0.08);">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
+              style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.25); color: #fca5a5;">
+              Problema
+            </span>
+            <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight leading-tight mb-4">
+              {{ project.caseStudy.problem.headline }}
+            </h2>
+            <p class="text-[#6a6a7a] leading-relaxed mb-5">{{ project.caseStudy.problem.text }}</p>
+            <ul class="flex flex-col gap-2">
+              <li
+                v-for="point in project.caseStudy.problem.points"
+                :key="point"
+                class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+              >
+                <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(239,68,68,0.6);" aria-hidden="true" />
+                {{ point }}
+              </li>
+            </ul>
+          </div>
+
+          <!-- Solution -->
+          <div class="glass rounded-2xl p-8" style="border-color: rgba(255,255,255,0.08);">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
+              style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;">
+              Soluzione
+            </span>
+            <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight leading-tight mb-4">
+              {{ project.caseStudy.solution.headline }}
+            </h2>
+            <p class="text-[#6a6a7a] leading-relaxed mb-5">{{ project.caseStudy.solution.text }}</p>
+            <ul class="flex flex-col gap-2">
+              <li
+                v-for="point in project.caseStudy.solution.points"
+                :key="point"
+                class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+              >
+                <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(59,130,246,0.5);" aria-hidden="true" />
+                {{ point }}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Architecture flow -->
+        <div class="glass rounded-2xl p-8 mb-8" style="border-color: rgba(255,255,255,0.08);">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
+            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;">
+            Architettura
+          </span>
+          <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight mb-6">Flusso ad alto livello</h2>
+          <div class="flex flex-wrap items-center gap-2">
+            <template v-for="(step, i) in project.caseStudy.archFlow" :key="i">
+              <span class="px-4 py-2 rounded-xl text-sm font-medium text-[#d0d0e0]"
+                style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                {{ step }}
+              </span>
+              <span v-if="i < project.caseStudy.archFlow.length - 1" class="text-[#4a4a6a] font-mono text-lg" aria-hidden="true">→</span>
+            </template>
+          </div>
+        </div>
+
+        <!-- Demonstrates + Replicability (two columns on lg) -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-8">
+
+          <!-- Demonstrates -->
+          <div class="glass rounded-2xl p-8" style="border-color: rgba(255,255,255,0.08);">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
+              style="background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); color: #86efac;">
+              Cosa dimostra
+            </span>
+            <h2 class="text-xl font-extrabold text-[#f0f0f5] tracking-tight mb-5">Competenze dimostrate</h2>
+            <ul class="flex flex-col gap-2.5">
+              <li
+                v-for="item in project.caseStudy.demonstrates"
+                :key="item"
+                class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+              >
+                <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(74,222,128,0.6);" aria-hidden="true" />
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+
+          <!-- Replicability -->
+          <div class="glass rounded-2xl p-8" style="border-color: rgba(255,255,255,0.08);">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
+              style="background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.2); color: #fde68a;">
+              Replicabilità
+            </span>
+            <h2 class="text-xl font-extrabold text-[#f0f0f5] tracking-tight mb-4">Come questo approccio può aiutare un team</h2>
+            <p class="text-[#6a6a7a] text-sm leading-relaxed mb-5">{{ project.caseStudy.replicability.text }}</p>
+            <ul class="flex flex-col gap-2">
+              <li
+                v-for="uc in project.caseStudy.replicability.useCases"
+                :key="uc"
+                class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+              >
+                <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(251,191,36,0.5);" aria-hidden="true" />
+                {{ uc }}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CTA block -->
+        <div class="glass rounded-2xl p-8 text-center" style="border-color: rgba(255,255,255,0.08); background: rgba(139,92,246,0.04);">
+          <p class="text-[#d0d0e0] font-medium mb-5 max-w-xl mx-auto">{{ project.caseStudy.ctaText }}</p>
+          <a
+            href="/#contatti"
+            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85 hover:scale-[1.02]"
+            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+          >
+            Parliamo del tuo workflow
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+
+      </template>
+      <!-- ── End Case Study ────────────────────────────────── -->
+
       <!-- ── README or longDescription fallback ───────────────────── -->
       <template v-if="readmeHtml || project.longDescription">
         <div
