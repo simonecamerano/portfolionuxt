@@ -21,7 +21,7 @@ const storyParagraphs = [
 const timeline = [
   {
     title: 'Oltre vent\'anni nella GDO',
-    period: '1999 - oggi',
+    period: '1999 - 2025',
     text: 'Ruoli operativi, responsabilità di reparto, gestione fornitori, formazione e attenzione quotidiana al cliente.',
   },
   {
