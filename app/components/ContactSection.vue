@@ -68,17 +68,17 @@ const resetForm = () => {
             Contatti
           </span>
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] leading-[1.1] tracking-tight">
-            Hai un processo<br />
-            che vorresti<br />
-            <span class="text-gradient">automatizzare?</span>
+            Hai un sito da rifare,<br />
+            una web app da costruire<br />
+            o un processo da <span class="text-gradient">semplificare?</span>
           </h2>
         </div>
 
         <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
-          Se stai cercando di usare meglio l'AI nel tuo lavoro, costruire un workflow su misura o trasformare un'idea in un prototipo funzionante, possiamo parlarne.
+          Raccontami da dove parti: un sito vecchio, un'idea di prodotto, un processo manuale, una knowledge base disordinata o il dubbio che l'AI possa aiutarti in modo concreto.
         </p>
         <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
-          Raccontami il processo, il problema o l'obiettivo: ti aiuto a capire se può diventare un sistema AI concreto.
+          Ti aiuto a capire cosa ha senso costruire, con quale priorità e con quale livello di complessità. Niente promesse esagerate. Prima capiamo il problema, poi decidiamo la soluzione.
         </p>
 
         <div class="flex flex-col gap-3">
@@ -100,7 +100,7 @@ const resetForm = () => {
           style="background: rgba(74,222,128,0.07); border: 1px solid rgba(74,222,128,0.2);"
         >
           <span class="w-2.5 h-2.5 rounded-full bg-green-400 flex-shrink-0" style="box-shadow: 0 0 8px rgba(74,222,128,0.7);" aria-hidden="true" />
-          <span class="text-sm font-medium text-green-400/90">Disponibile per collaborazioni freelance, prototipi AI, automazioni operative e prodotti full-stack.</span>
+          <span class="text-sm font-medium text-green-400/90">Disponibile per freelance: siti, web app, automazioni e integrazioni AI.</span>
         </div>
       </div>
 
