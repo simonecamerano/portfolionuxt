@@ -20,10 +20,10 @@ const featuredProjects = projects.filter((p) => p.featured)
           Progetti
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] mb-4 tracking-tight">
-          Progetti che raccontano <span class="text-gradient">come lavoro</span>
+          Progetti selezionati — <span class="text-gradient">come lavoro</span>
         </h2>
         <p class="text-[#6a6a7a] max-w-lg mx-auto leading-relaxed">
-          Ogni progetto nasce da un problema concreto: troppo rumore informativo, mancanza di memoria nei workflow AI, bisogno di assistenti verticali o necessità di controllare strumenti e provider diversi.
+          Alcuni progetti nascono come strumenti personali, altri come prototipi o prodotti verticali. Non sono esperimenti messi lì per fare scena. Sono esempi di metodo, architettura e sviluppo full stack applicato.
         </p>
       </div>
 
@@ -37,6 +37,14 @@ const featuredProjects = projects.filter((p) => p.featured)
           <ProjectCard :project="project" />
         </div>
       </div>
+
+      <!-- Closing note -->
+      <p
+        v-motion="{ initial: { opacity: 0, y: 16 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.5, delay: 0.25, ease: 'easeOut' as const } }"
+        class="text-center text-[#6a6a7a] text-sm leading-relaxed max-w-2xl mx-auto mt-12"
+      >
+        Ogni progetto nasce da una domanda pratica: come organizzo meglio queste informazioni? Come riduco attività ripetitive? Come costruisco uno strumento semplice da usare? Dove l'AI può aiutare senza prendere il controllo del processo?
+      </p>
 
       <!-- CTA -->
       <div
