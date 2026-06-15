@@ -2,23 +2,23 @@
 const steps = [
   {
     num: '01',
-    label: 'Mappare',
-    desc: 'Parto dal processo reale: cosa fai oggi, dove perdi tempo, quali decisioni si ripetono, quali dati contano davvero.',
+    label: 'Capire prima di costruire',
+    desc: 'Prima di parlare di stack, framework o AI, cerco di capire il problema: cosa non funziona oggi, chi userà lo strumento, quali vincoli ci sono e quale risultato ti serve davvero.',
   },
   {
     num: '02',
-    label: 'Disegnare',
-    desc: 'Progetto una pipeline semplice: fonti, filtri, modelli, regole, output e punti di controllo umano.',
+    label: 'Soluzioni semplici da usare',
+    desc: "Un sito, una web app o un'automazione devono essere comprensibili anche fuori dalla fase di sviluppo. Se uno strumento è potente ma nessuno lo usa volentieri, non ha risolto il problema.",
   },
   {
     num: '03',
-    label: 'Prototipare',
-    desc: 'Costruisco un MVP funzionante, integrato con strumenti concreti come Telegram, dashboard, API o interfacce web.',
+    label: 'Tecnologia proporzionata',
+    desc: "Non tutto richiede AI. Non tutto richiede un'app complessa. Scelgo la soluzione più adatta al contesto: a volte è un redesign, a volte una dashboard, a volte un workflow automatizzato.",
   },
   {
     num: '04',
-    label: 'Rendere operativo',
-    desc: 'Aggiungo logging, configurazione, test essenziali, gestione errori e documentazione per rendere il sistema usabile nel tempo.',
+    label: 'Controllo e manutenzione',
+    desc: "Preferisco costruire sistemi chiari, documentati e mantenibili. Soprattutto quando entra in gioco l'AI, servono confini, controlli e passaggi verificabili.",
   },
 ]
 </script>
@@ -50,7 +50,7 @@ const steps = [
           Metodo
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight text-center mt-5 mb-16">
-          Il mio metodo: capire il processo, poi <span class="text-gradient">costruire il sistema.</span>
+          Come <span class="text-gradient">lavoro</span>
         </h2>
       </div>
 
@@ -91,7 +91,7 @@ const steps = [
         class="text-center mt-14 max-w-2xl mx-auto"
       >
         <p class="text-[#6a6a7a] text-lg leading-relaxed italic">
-          "L'obiettivo non è mettere AI ovunque, ma costruire sistemi piccoli, chiari e controllabili che producano valore misurabile."
+          "Il punto di partenza non è la tecnologia. È capire cosa oggi ti fa perdere tempo, cosa non è chiaro per i tuoi clienti o dove il tuo processo si blocca."
         </p>
       </div>
 
