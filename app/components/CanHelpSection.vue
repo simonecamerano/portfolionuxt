@@ -1,28 +1,32 @@
 <script setup lang="ts">
 const cards = [
   {
-    title: 'Troppi dati, pochi insight',
-    body: 'Hai fonti, email, feed, annunci, documenti o dashboard da controllare ogni giorno, ma perdi tempo a separare ciò che conta dal rumore.',
+    title: 'Hai un sito vecchio o che non funziona',
+    body: 'Il tuo sito è lento, poco chiaro o non rappresenta più quello che fai. O non hai ancora una presenza online professionale e vuoi partire bene.',
   },
   {
-    title: 'Processi manuali ripetitivi',
-    body: 'Ripeti le stesse attività: cercare informazioni, filtrare risultati, preparare report, confrontare dati, scrivere sintesi o aggiornare strumenti.',
+    title: 'Ti serve uno strumento su misura',
+    body: 'Hai bisogno di una web app, un gestionale leggero o uno strumento interno per gestire dati, richieste, utenti o processi che oggi vengono seguiti a mano.',
   },
   {
-    title: 'AI usata senza metodo',
-    body: 'Usi Claude, ChatGPT, Codex, Gemini o strumenti simili, ma manca un workflow stabile che decida quale modello usare, quando e per quale compito.',
+    title: 'Excel non basta più',
+    body: 'Usi troppi file, email e documenti sparsi. Il flusso di lavoro è frammentato e ogni aggiornamento richiede passaggi manuali ripetitivi.',
   },
   {
-    title: 'Serve un assistente operativo',
-    body: 'Vuoi un bot collegato ai tuoi strumenti che monitori, analizzi e ti invii aggiornamenti via Telegram, Slack, email o dashboard.',
+    title: 'Vuoi automatizzare senza perdere il controllo',
+    body: 'Hai attività che si ripetono: cercare informazioni, filtrare risultati, preparare report, aggiornare dati. Vuoi automatizzarle senza che il sistema diventi ingestibile.',
   },
   {
-    title: 'Knowledge base da interrogare',
-    body: 'Vuoi trasformare documenti, cataloghi, percorsi formativi o FAQ in un assistente AI verticale, controllato e utile agli utenti.',
+    title: 'Hai documenti difficili da consultare',
+    body: 'Procedure, cataloghi, FAQ, materiali formativi o informazioni interne sono dispersi e difficili da trovare quando servono.',
   },
   {
-    title: 'Prototipo AI da validare',
-    body: "Hai un'idea, ma ti serve trasformarla in architettura, MVP e primo prototipo funzionante senza perderti nella complessità.",
+    title: "Vuoi capire se l'AI può aiutarti davvero",
+    body: "Senti parlare di AI e automazioni ma non sai se e come potrebbero cambiare il tuo modo di lavorare, senza partire da promesse esagerate.",
+  },
+  {
+    title: "Hai un'idea ma non sai da dove partire",
+    body: "Vuoi costruire un prodotto digitale, ma ti serve qualcuno che traduca l'idea in architettura, priorità e primo prototipo funzionante.",
   },
 ]
 </script>
@@ -50,10 +54,10 @@ const cards = [
           Posso aiutarti se
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight max-w-3xl mx-auto leading-[1.1]">
-          Posso aiutarti se vuoi trasformare un processo ripetitivo in <span class="text-gradient">un sistema intelligente.</span>
+          Posso aiutarti se hai <span class="text-gradient">un problema concreto da risolvere.</span>
         </h2>
         <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl mx-auto">
-          Molti processi non hanno bisogno di più riunioni, più file Excel o più notifiche. Hanno bisogno di essere osservati, filtrati, automatizzati e resi azionabili.
+          Non serve sempre "rivoluzionare" niente. Serve mettere ordine, scegliere le priorità e costruire uno strumento che faccia bene il suo lavoro.
         </p>
       </div>
 
