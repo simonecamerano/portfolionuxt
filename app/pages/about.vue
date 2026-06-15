@@ -3,19 +3,19 @@ import { stats } from '~/data/stats'
 import { technologies } from '~/data/technologies'
 
 useSeoMeta({
-  title: 'Chi sono — Simone Camerano',
+  title: 'Chi sono — Simone Camerano Full Stack Developer',
   description:
-    'Scopri il percorso, il metodo di lavoro e lo stack tecnico di Simone Camerano, web developer specializzato in Vue, Nuxt e TypeScript.',
-  ogTitle: 'Chi sono — Simone Camerano',
+    'Full Stack Developer con 26 anni di esperienza operativa nella GDO. Costruisco siti web, web app, automazioni e workflow AI pragmatici per PMI e professionisti.',
+  ogTitle: 'Chi sono — Simone Camerano Full Stack Developer',
   ogDescription:
-    'Percorso, competenze e approccio al lavoro di Simone Camerano, web developer.',
+    'Full Stack Developer con specializzazione pratica in AI e automazione. Prima i processi, poi il codice.',
 })
 
 const storyParagraphs = [
-  'Progetto e costruisco sistemi AI-nativo, pipeline di automazione, workflow multi-agente e prodotti full stack che risolvono problemi di business reali.',
-  'Prima di scrivere codice, ho trascorso 26 anni nella macchina operativa e commerciale della grande distribuzione italiana: gestione team, processi, responsabilità operative su larga scala. Quel background non è una nota a piè di pagina. È il motivo per cui capisco i problemi di business prima di iniziare a progettare le soluzioni.',
-  'Cosa costruisco: pipeline AI multi-modello (ricerca web, triage, analisi, delivery), sistemi RAG con vector store custom e session persistence, orchestrazione multi-agente con human approval gates, prodotti web full stack: Vue/Nuxt, Node.js, TypeScript, MongoDB.',
-  'Uso l\'AI come infrastruttura, non come feature. L\'obiettivo è sempre sistemi che funzionano in modo affidabile, non demo che impressionano una volta sola. Aperto a collaborazioni freelance con founder, startup e team tecnici che hanno bisogno di sistemi AI costruiti bene.',
+  'Sono un Full Stack Developer con una specializzazione pratica in AI e automazione. Costruisco siti web, web app, strumenti interni, automazioni e workflow AI per PMI, professionisti e piccoli team che vogliono strumenti digitali concreti, non sperimentali.',
+  'Prima di dedicarmi allo sviluppo web, ho lavorato per 26 anni nella GDO: gestione team, processi, responsabilità operative su larga scala, fornitori, clienti e urgenze da risolvere senza troppa teoria. Quel background non è una nota a piè di pagina. È il motivo per cui capisco i problemi di business prima di iniziare a progettare soluzioni.',
+  "Il mio approccio: prima capisco come funziona davvero la tua attività — cosa rallenta il lavoro, cosa crea confusione, cosa può essere semplificato. Poi progetto e costruisco la soluzione: un sito, una web app, uno strumento interno, un'automazione o un workflow AI.",
+  'La tecnologia è importante. Ma deve servire il lavoro, non diventare un altro problema da gestire.',
 ]
 
 const timeline = [
