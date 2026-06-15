@@ -29,26 +29,26 @@ const scrollIn = (delay = 0) => ({
             Chi sono
           </span>
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] leading-[1.1] tracking-tight">
-            Dalle operations<br />
-            ai sistemi <span class="text-gradient">AI-native.</span>
+            Prima i processi,<br />
+            poi il <span class="text-gradient">codice.</span>
           </h2>
         </div>
 
         <div v-motion="scrollIn(0.1)" class="flex flex-col gap-4">
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Porto 26 anni di esperienza operativa nel software: progetto sistemi AI che semplificano lavoro, decisioni e processi.
+            Sono un Full Stack Developer con una specializzazione pratica in AI e automazione. Costruisco siti web, web app, strumenti interni, automazioni e workflow AI per PMI, professionisti e piccoli team.
           </p>
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Dopo oltre 20 anni nelle operations della grande distribuzione, oggi progetto e costruisco sistemi AI-native: workflow multi-modello, automazioni operative, dashboard e prodotti full-stack pensati per risolvere problemi concreti.
+            Prima di dedicarmi allo sviluppo web, ho lavorato per 26 anni nella GDO, dentro processi reali: team, fornitori, clienti, urgenze operative, strumenti non sempre adatti e problemi da risolvere senza troppa teoria. Quel background non è una nota a piè di pagina. È il motivo per cui capisco i problemi di business prima di iniziare a progettare soluzioni.
           </p>
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Prima capisco il processo, poi costruisco il sistema. Non mi interessa usare l'AI come semplice chatbot: mi interessa creare pipeline controllabili, agenti specializzati e strumenti che aiutano persone e team a lavorare meglio.
+            La tecnologia è importante. Ma deve servire il lavoro, non diventare un altro problema da gestire.
           </p>
           <NuxtLink
             to="/about"
             class="inline-flex items-center gap-2 w-fit mt-2 text-sm font-semibold text-gradient hover:opacity-75 transition-opacity"
           >
-            Scopri il mio approccio
+            Scopri di più su di me
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -89,7 +89,7 @@ const scrollIn = (delay = 0) => ({
           >
             <img
               src="/images/simone_camerano.png"
-              alt="Simone Camerano — AI Workflow Engineer"
+              alt="Simone Camerano — Full Stack Developer"
               class="w-full block"
               style="aspect-ratio: 3/4; object-fit: cover; object-position: center top;"
               width="400"
@@ -101,7 +101,7 @@ const scrollIn = (delay = 0) => ({
             >
               <div>
                 <p class="font-bold text-[#f0f0f5] text-sm leading-tight">Simone Camerano</p>
-                <p class="text-xs text-gradient font-semibold mt-0.5">AI Workflow Engineer</p>
+                <p class="text-xs text-gradient font-semibold mt-0.5">Full Stack Developer</p>
               </div>
             </div>
           </div>
