@@ -1,15 +1,15 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Simone Camerano — AI Workflow Engineer',
+  title: 'Simone Camerano — Full Stack Developer per siti, web app e soluzioni AI pratiche',
   description:
-    'Costruisco workflow AI, agenti operativi e prodotti full-stack per automatizzare processi reali. AI Workflow Engineer disponibile per collaborazioni freelance.',
-  ogTitle: 'Simone Camerano — AI Workflow Engineer',
+    'Full Stack Developer a Pesaro. Creo siti web moderni, web app, strumenti digitali su misura, automazioni e soluzioni AI pratiche per PMI, professionisti e piccoli team.',
+  ogTitle: 'Simone Camerano — Full Stack Developer per siti, web app e soluzioni AI pratiche',
   ogDescription:
-    'Costruisco workflow AI, agenti operativi e prodotti full-stack per automatizzare processi reali. AI Workflow Engineer disponibile per collaborazioni freelance.',
+    'Full Stack Developer a Pesaro. Creo siti web moderni, web app, strumenti digitali su misura, automazioni e soluzioni AI pratiche per PMI, professionisti e piccoli team.',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Simone Camerano — AI Workflow Engineer',
-  twitterDescription: 'AI Workflow Engineer. Workflow multi-modello, automazioni, dashboard operative e prodotti full-stack AI-native.',
+  twitterTitle: 'Simone Camerano — Full Stack Developer per siti, web app e soluzioni AI pratiche',
+  twitterDescription: 'Full Stack Developer a Pesaro. Siti web moderni, web app, automazioni e soluzioni AI pratiche per PMI, professionisti e piccoli team.',
 })
 </script>
 
