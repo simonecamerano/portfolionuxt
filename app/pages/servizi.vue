@@ -49,10 +49,10 @@ const steps = [
 
 const linkedProjects = [
   { title: 'Joule Zero Point', service: 'Siti web moderni e redesign', desc: 'Sito web costruito per raccontare in modo chiaro un\'identità tecnica, visiva e contenutistica.', slug: 'joule-zero-point' },
-  { title: 'IncluDO Guide', service: 'Knowledge base e assistenti AI su documenti', desc: 'Assistente conversazionale RAG con knowledge base custom, sessioni persistenti e prompt factory controllata.', slug: 'includo-guide' },
-  { title: 'Italy Job Hunter', service: 'Automazioni e workflow AI', desc: 'Pipeline multi-modello che automatizza la ricerca lavoro con triage Groq e analisi DeepSeek, report su Telegram.', slug: 'italy-job-hunter' },
-  { title: 'ContextForge', service: 'Web app e strumenti digitali su misura', desc: 'Memory engine locale per developer e agenti AI. Scansiona la codebase e genera contesto strutturato e queryabile.', slug: 'contextforge' },
-  { title: 'AI Control Tower', service: 'Audit digitale e opportunità AI', desc: 'Dashboard locale per monitorare quote, stato e salute di provider AI come Claude, Codex, DeepSeek e Tavily.', slug: 'ai-control-tower' },
+  { title: 'IncluDO Guide', service: 'Knowledge base e assistenti AI su documenti', desc: 'Web app che rende più semplice consultare una knowledge base e ricevere risposte contestuali su contenuti strutturati.', slug: 'includo-guide' },
+  { title: 'Italy Job Hunter', service: 'Automazioni e workflow AI', desc: 'Automazione che cerca, filtra e organizza opportunità, trasformando un controllo manuale ripetitivo in un report già pronto da valutare.', slug: 'italy-job-hunter' },
+  { title: 'ContextForge', service: 'Web app e strumenti digitali su misura', desc: 'Strumento per organizzare il contesto di una codebase e rendere più ordinato il lavoro tra documentazione, codice e assistenti AI.', slug: 'contextforge' },
+  { title: 'AI Control Tower', service: 'Audit digitale e opportunità AI', desc: 'Dashboard per tenere sotto controllo strumenti, provider e workflow AI da un\'unica interfaccia.', slug: 'ai-control-tower' },
 ]
 
 const faqs = [

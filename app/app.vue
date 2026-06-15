@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { public: { siteUrl } } = useRuntimeConfig()
+const rawSiteUrl = useRuntimeConfig().public.siteUrl as string
+const siteUrl = rawSiteUrl.startsWith('http') ? rawSiteUrl : `https://${rawSiteUrl}`
 
 useSeoMeta({
   ogSiteName: 'Simone Camerano',
