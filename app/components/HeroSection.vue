@@ -32,7 +32,7 @@
             class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium"
             style="background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.32); color: #c4b5fd;"
           >
-            AI Workflow Engineer · Full-Stack Developer · Automation Builder
+            Full Stack Developer · Web App · Automazioni AI
           </span>
         </div>
 
@@ -44,8 +44,8 @@
           :transition="{ duration: 0.65, delay: 0.1, ease: 'easeOut' }"
           class="motion-preload text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-[#f0f0f5]"
         >
-          Costruisco workflow AI, <span class="text-gradient">agenti operativi</span><br class="hidden sm:block" />
-          e prodotti full-stack per automatizzare processi reali.
+          Full Stack Developer per siti, <span class="text-gradient">web app</span><br class="hidden sm:block" />
+          e soluzioni AI pratiche.
         </h1>
 
         <!-- Subheadline -->
@@ -56,7 +56,8 @@
           :transition="{ duration: 0.6, delay: 0.2, ease: 'easeOut' }"
           class="motion-preload text-lg text-[#6a6a7a] leading-relaxed max-w-xl"
         >
-          Dalla comprensione dei processi alla costruzione del sistema: sviluppo workflow multi-modello, strumenti AI e prodotti full-stack con un approccio pragmatico, controllabile e orientato al risultato.
+          Creo siti moderni, web app e strumenti digitali su misura per PMI, professionisti e piccoli team.<br class="hidden sm:block" />
+          Quando serve, integro AI, automazioni e workflow per semplificare il lavoro quotidiano, non per complicarlo.
         </p>
 
         <!-- CTAs -->
@@ -72,7 +73,7 @@
             class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85 hover:scale-[1.02] active:scale-[0.98]"
             style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
           >
-            Parliamo del tuo workflow
+            Parliamo del tuo progetto
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -87,7 +88,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
             </svg>
           </a>
-          <p class="text-xs text-[#6a6a7a] pt-1">Disponibile per collaborazioni freelance, prototipi AI e automazioni su misura.</p>
+          <p class="text-xs text-[#6a6a7a] pt-1">Dalla presenza online agli strumenti interni: parto dal problema reale, poi costruisco la soluzione giusta.</p>
         </div>
 
         <!-- Tech pills -->
@@ -99,7 +100,7 @@
           class="motion-preload flex flex-wrap gap-3 pt-2"
         >
           <span
-            v-for="tag in ['Vue', 'Nuxt', 'Node.js', 'TypeScript', 'LLMs', 'Telegram']"
+            v-for="tag in ['Vue', 'Nuxt', 'React', 'Node.js', 'TypeScript', 'AI']"
             :key="tag"
             class="px-3 py-1 rounded-full text-xs font-medium"
             style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); color: #8a8a9a;"
@@ -149,15 +150,15 @@
                 <span style="color: #34d399;">{</span>
               </div>
               <div class="pl-5 flex flex-col gap-1">
-                <div><span style="color: #38bdf8;">role</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"AI Workflow Engineer"</span><span style="color: #94a3b8;">,</span></div>
-                <div><span style="color: #38bdf8;">builds</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"AI workflows"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"automation bots"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"full-stack products"</span><span style="color: #94a3b8;">],</span></div>
+                <div><span style="color: #38bdf8;">role</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"Full Stack Developer"</span><span style="color: #94a3b8;">,</span></div>
+                <div><span style="color: #38bdf8;">builds</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"siti web"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"web app"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"automazioni AI"</span><span style="color: #94a3b8;">],</span></div>
                 <div><span style="color: #38bdf8;">stack</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"Node"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Vue"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Nuxt"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"TypeScript"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"LLMs"</span><span style="color: #94a3b8;">],</span></div>
-                <div><span style="color: #38bdf8;">focus</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"turning real processes into intelligent systems"</span><span style="color: #94a3b8;">,</span></div>
-                <div><span style="color: #38bdf8;">availableFor</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"freelance"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"AI prototypes"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"workflow automation"</span><span style="color: #94a3b8;">],</span></div>
+                <div><span style="color: #38bdf8;">focus</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"dal problema reale alla soluzione digitale"</span><span style="color: #94a3b8;">,</span></div>
+                <div><span style="color: #38bdf8;">availableFor</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"freelance"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"siti web"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"web app"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"automazioni"</span><span style="color: #94a3b8;">],</span></div>
               </div>
               <div style="color: #34d399;">}</div>
               <div class="mt-2 flex items-center gap-1.5" style="color: #4a4a6a;">
-                <span>// costruisce sistemi concreti, non chatbot</span>
+                <span>// sviluppo full stack con AI pragmatica</span>
                 <span class="inline-block w-[2px] h-4 rounded-sm" style="background: #8b5cf6; animation: blink 1.1s step-end infinite;" />
               </div>
             </div>
