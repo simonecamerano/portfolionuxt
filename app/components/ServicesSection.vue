@@ -1,11 +1,5 @@
 <script setup lang="ts">
-const services = [
-  { num: '01', title: 'AI Workflow Audit', desc: 'Analizzo un processo manuale o ripetitivo e progetto una soluzione AI automatizzabile.' },
-  { num: '02', title: 'Bot AI operativo', desc: 'Creo bot Telegram o Slack che monitorano fonti, filtrano informazioni, analizzano risultati e inviano report.' },
-  { num: '03', title: 'Assistente RAG verticale', desc: 'Trasformo documenti, cataloghi, FAQ o percorsi formativi in un assistente AI specializzato.' },
-  { num: '04', title: 'AI Developer Workflow Setup', desc: 'Aiuto a organizzare Claude Code, Codex, Ollama, Gemini, agenti e memory layer in un workflow stabile.' },
-  { num: '05', title: 'AI Monitoring Dashboard', desc: 'Creo dashboard per monitorare provider, quote, costi, stato automazioni e alert.' },
-]
+import { services } from '~/data/services'
 </script>
 
 <template>
@@ -27,7 +21,7 @@ const services = [
           Cosa posso costruire <span class="text-gradient">per te</span>
         </h2>
         <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl mx-auto">
-          Lavoro su sistemi piccoli ma ad alto impatto: automazioni, agenti, dashboard e applicazioni AI-native che risolvono problemi specifici e misurabili.
+          Lavoro su progetti piccoli e medi, con un obiettivo chiaro: trasformare un bisogno reale in uno strumento digitale semplice da usare, mantenere e far crescere. Non parto dall'AI per forza. Parto da quello che ti serve.
         </p>
       </div>
 
