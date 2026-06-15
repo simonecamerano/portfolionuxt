@@ -32,7 +32,7 @@
             class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium"
             style="background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.32); color: #c4b5fd;"
           >
-            Full Stack Developer · Web App · Automazioni AI
+            Full Stack Developer · Siti Web · Web App · AI pratica
           </span>
         </div>
 

@@ -42,7 +42,15 @@ import { services } from '~/data/services'
             {{ service.num }}
           </div>
           <h3 class="text-[#d0d0e0] font-semibold text-base mb-2">{{ service.title }}</h3>
-          <p class="text-[#6a6a7a] text-sm leading-relaxed">{{ service.desc }}</p>
+          <p class="text-[#6a6a7a] text-sm leading-relaxed mb-4">{{ service.desc }}</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span
+              v-for="out in service.output.slice(0, 3)"
+              :key="out"
+              class="px-2 py-0.5 rounded-lg text-[11px] font-medium"
+              style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); color: #6a6a7a;"
+            >{{ out }}</span>
+          </div>
         </div>
       </div>
 
