@@ -13,6 +13,13 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  routeRules: {
+    '/images/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+    '/favicon.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+    '/og-image.png': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+    '/cv.pdf': { headers: { 'cache-control': 'public, max-age=86400' } },
+  },
+
   runtimeConfig: {
     emailjsServiceId: process.env.EMAILJS_SERVICE_ID,
     emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID,
