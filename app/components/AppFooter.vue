@@ -4,9 +4,14 @@
     style="border-color: rgba(255,255,255,0.06);"
   >
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-[#8a8a9a]">
-        © {{ new Date().getFullYear() }} Simone Camerano. Tutti i diritti riservati.
-      </p>
+      <div class="text-center sm:text-left">
+        <p class="text-sm text-[#8a8a9a]">
+          © {{ new Date().getFullYear() }} Simone Camerano. Tutti i diritti riservati.
+        </p>
+        <p class="text-xs text-[#8a8a9a] mt-1">
+          P.IVA: 02882670413 · Sede Legale: via Mortola, 17 Gradara PU Italia
+        </p>
+      </div>
 
       <div class="flex items-center gap-6">
         <NuxtLink

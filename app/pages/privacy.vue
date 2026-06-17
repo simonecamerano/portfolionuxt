@@ -40,7 +40,8 @@ useSeoMeta({
       <div class="prose-project max-w-none">
         <h2>Titolare del trattamento</h2>
         <p>
-          Il titolare del trattamento è Simone Camerano. Per richieste relative alla privacy puoi scrivere a
+          Il titolare del trattamento è Simone Camerano, P.IVA 02882670413, con sede legale in via Mortola 17,
+          Gradara (PU), Italia. Per richieste relative alla privacy puoi scrivere a
           <a href="mailto:camerano.simo@gmail.com">camerano.simo@gmail.com</a>.
         </p>
 
