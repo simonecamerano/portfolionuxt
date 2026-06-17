@@ -4,7 +4,7 @@
     style="border-color: rgba(255,255,255,0.06);"
   >
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-[#4a4a5a]">
+      <p class="text-sm text-[#8a8a9a]">
         © {{ new Date().getFullYear() }} Simone Camerano. Tutti i diritti riservati.
       </p>
 

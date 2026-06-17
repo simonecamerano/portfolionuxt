@@ -71,7 +71,7 @@ useSeoMeta({
             >
               {{ project.category }}
             </span>
-            <span v-if="project.year" class="text-xs text-[#4a4a5a]">{{ project.year }}</span>
+            <span v-if="project.year" class="text-xs text-[#8a8a9a]">{{ project.year }}</span>
           </div>
 
           <!-- Title -->
@@ -216,7 +216,7 @@ useSeoMeta({
                 style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
                 {{ step }}
               </span>
-              <span v-if="i < project.caseStudy.archFlow.length - 1" class="text-[#4a4a6a] font-mono text-lg" aria-hidden="true">→</span>
+              <span v-if="i < project.caseStudy.archFlow.length - 1" class="text-[#6a6a7a] font-mono text-lg" aria-hidden="true">→</span>
             </template>
           </div>
         </div>
@@ -358,7 +358,7 @@ useSeoMeta({
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
           </svg>
           <div class="min-w-0">
-            <p class="text-xs text-[#4a4a5a] uppercase tracking-widest mb-1">Precedente</p>
+            <p class="text-xs text-[#8a8a9a] uppercase tracking-widest mb-1">Precedente</p>
             <p class="text-sm font-semibold text-[#f0f0f5] truncate">{{ prevProject.title }}</p>
           </div>
         </NuxtLink>
@@ -371,7 +371,7 @@ useSeoMeta({
           style="border-color: rgba(255,255,255,0.08);"
         >
           <div class="min-w-0">
-            <p class="text-xs text-[#4a4a5a] uppercase tracking-widest mb-1">Successivo</p>
+            <p class="text-xs text-[#8a8a9a] uppercase tracking-widest mb-1">Successivo</p>
             <p class="text-sm font-semibold text-[#f0f0f5] truncate">{{ nextProject.title }}</p>
           </div>
           <svg class="w-5 h-5 text-[#8a8a9a] flex-shrink-0 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

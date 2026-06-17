@@ -126,7 +126,7 @@ const filtered = computed(() =>
       <!-- Empty state (in case all filtered out) -->
       <div
         v-if="filtered.length === 0"
-        class="py-24 text-center text-[#4a4a5a] text-sm"
+        class="py-24 text-center text-[#8a8a9a] text-sm"
       >
         Nessun progetto in questa categoria.
       </div>

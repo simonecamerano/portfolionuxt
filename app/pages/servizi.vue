@@ -125,7 +125,7 @@ const faqs = [
               Vedi i progetti
             </NuxtLink>
           </div>
-          <p class="text-[#4a4a5a] text-sm mt-5">
+          <p class="text-[#8a8a9a] text-sm mt-5">
             Per PMI, professionisti e piccoli team che vogliono strumenti digitali concreti, non promesse esagerate.
           </p>
         </div>
@@ -234,7 +234,7 @@ const faqs = [
             </div>
             <h3 class="text-[#f0f0f5] font-bold text-lg mb-2">{{ service.title }}</h3>
             <p class="text-[#6a6a7a] text-sm leading-relaxed mb-4">{{ service.desc }}</p>
-            <p class="text-xs text-[#4a4a5a] uppercase tracking-widest mb-2">Utile se</p>
+            <p class="text-xs text-[#8a8a9a] uppercase tracking-widest mb-2">Utile se</p>
             <ul class="text-[#6a6a7a] text-sm mb-4 flex flex-col gap-1">
               <li v-for="item in service.utile_se" :key="item" class="flex gap-2">
                 <span class="text-blue-400 flex-shrink-0">—</span>
@@ -473,7 +473,7 @@ const faqs = [
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
-          <p class="text-[#4a4a5a] text-sm mt-5">
+          <p class="text-[#8a8a9a] text-sm mt-5">
             Niente promesse esagerate. Prima capiamo il problema, poi decidiamo la soluzione.
           </p>
         </div>
