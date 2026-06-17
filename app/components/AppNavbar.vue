@@ -44,12 +44,11 @@ const closeMobileMenu = () => {
       </a>
 
       <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8" role="list">
+      <div class="hidden md:flex items-center gap-8">
         <a
           v-for="link in navLinks"
           :key="link.href"
           :href="link.href"
-          role="listitem"
           class="text-sm font-medium text-[#8a8a9a] hover:text-white transition-colors duration-200"
         >
           {{ link.label }}
