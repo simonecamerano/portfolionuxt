@@ -8,7 +8,8 @@ const staticRoutes = [
 ]
 
 export default defineEventHandler((event) => {
-  const { public: { siteUrl } } = useRuntimeConfig()
+  const rawSiteUrl = useRuntimeConfig().public.siteUrl as string
+  const siteUrl = rawSiteUrl.startsWith('http') ? rawSiteUrl : `https://${rawSiteUrl}`
   const today = new Date().toISOString().split('T')[0]
 
   const urls = [
