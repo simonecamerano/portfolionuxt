@@ -19,6 +19,26 @@ interface EmailJsPayload {
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const EMAILJS_ENDPOINT = 'https://api.emailjs.com/api/v1.0/email/send'
 
+// In-memory sliding-window rate limit. Fine for a single node-server process;
+// would need a shared store (Redis, KV) if this ever ran across multiple instances.
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000
+const RATE_LIMIT_MAX_REQUESTS = 5
+const requestLog = new Map<string, number[]>()
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now()
+  const recent = (requestLog.get(ip) ?? []).filter((t) => now - t < RATE_LIMIT_WINDOW_MS)
+
+  if (recent.length >= RATE_LIMIT_MAX_REQUESTS) {
+    requestLog.set(ip, recent)
+    return true
+  }
+
+  recent.push(now)
+  requestLog.set(ip, recent)
+  return false
+}
+
 async function sendEmailJs(payload: EmailJsPayload) {
   const response = await $fetch.raw(EMAILJS_ENDPOINT, {
     method: 'POST',
@@ -48,6 +68,11 @@ async function sendEmailJs(payload: EmailJsPayload) {
 }
 
 export default defineEventHandler(async (event) => {
+  const ip = getRequestIP(event, { xForwardedFor: true }) ?? 'unknown'
+  if (isRateLimited(ip)) {
+    throw createError({ statusCode: 429, message: 'Troppe richieste. Riprova più tardi.' })
+  }
+
   const body = await readBody<ContactPayload>(event)
   const config = useRuntimeConfig(event)
 
@@ -95,7 +120,7 @@ export default defineEventHandler(async (event) => {
     to_email: email,
     subject,
     message,
-    user_ip: getRequestIP(event, { xForwardedFor: true }) ?? '',
+    user_ip: ip === 'unknown' ? '' : ip,
   }
 
   await sendEmailJs({
