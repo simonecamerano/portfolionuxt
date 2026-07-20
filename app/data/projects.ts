@@ -306,7 +306,7 @@ export const projects: Project[] = [
     image: '/images/hundredpath.png',
     tags: ['Vue 3', 'Node.js', 'Auth', 'Leaderboard'],
     link: 'https://hundredpath.vercel.app',
-    featured: true,
+    featured: false,
     github: 'https://github.com/simonecamerano/HundredPath',
     year: 2026,
     longDescription: 'Testo lungo per la pagina di dettaglio...',
@@ -493,7 +493,7 @@ export const projects: Project[] = [
     id: 1,
     slug: 'joule-zero-point',
     title: 'Joule Zero Point',
-    category: 'Frontend',
+    category: 'Full Stack',
     description:
       "Sito web costruito per raccontare in modo chiaro un'identità tecnica, visiva e contenutistica.",
     image: '/images/joulezeropoint.png',
