@@ -59,7 +59,7 @@ export const projects: Project[] = [
         "Workflow con piano di implementazione, review sistematiche e test di integrazione mirati a bug di caricamento reali",
       ],
       replicability: {
-        text: "Lo stesso schema — rilevamento locale validato, offuscamento reversibile, zero rete — si adatta a qualsiasi contesto in cui dati sensibili rischiano di finire in un servizio esterno: non solo LLM, ma anche form di supporto, tool di terze parti o strumenti interni aziendali.",
+        text: "Lo stesso schema: rilevamento locale validato, offuscamento reversibile, zero rete; si adatta a qualsiasi contesto in cui dati sensibili rischiano di finire in un servizio esterno: non solo LLM, ma anche form di supporto, tool di terze parti o strumenti interni aziendali.",
         useCases: [
           "Estensioni analoghe per altri paesi con formati di documenti diversi (VAT europeo, SSN USA, NIF spagnolo)",
           "Redazione automatica di dati sensibili prima di allegare log o testo a un ticket di supporto",
