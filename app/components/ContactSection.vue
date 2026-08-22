@@ -83,7 +83,7 @@ const resetForm = () => {
 
         <div class="flex flex-col gap-3">
           <a
-            href="mailto:camerano.simo@gmail.com"
+            href="mailto:simone@simonecamerano.dev"
             class="inline-flex items-center gap-3 text-[#8a8a9a] hover:text-white transition-colors duration-200 group"
           >
             <span
@@ -91,7 +91,7 @@ const resetForm = () => {
               style="border-color: rgba(255,255,255,0.08);"
               aria-hidden="true"
             >✉️</span>
-            <span class="text-sm group-hover:text-gradient">camerano.simo@gmail.com</span>
+            <span class="text-sm group-hover:text-gradient">simone@simonecamerano.dev</span>
           </a>
         </div>
 
