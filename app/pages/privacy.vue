@@ -2,7 +2,7 @@
 useSeoMeta({
   title: 'Privacy Policy — Simone Camerano',
   description:
-    'Informativa privacy di Simone Camerano: dati raccolti dal modulo di contatto, contatti commerciali con aziende, fornitori coinvolti e diritti dell\'interessato.',
+    'Informativa privacy di Simone Camerano: dati raccolti dal modulo di contatto, contatti commerciali con aziende, statistiche di visita, fornitori coinvolti e diritti dell\'interessato.',
   ogTitle: 'Privacy Policy — Simone Camerano',
   ogDescription:
     'Informativa sul trattamento dei dati personali raccolti tramite il sito e nell\'attività professionale.',
@@ -33,7 +33,7 @@ useSeoMeta({
           Privacy Policy
         </h1>
         <p class="text-[#8a8a9a] mt-4 leading-relaxed">
-          Ultimo aggiornamento: 22 agosto 2026.
+          Ultimo aggiornamento: 24 agosto 2026.
         </p>
       </header>
 
@@ -115,6 +115,10 @@ useSeoMeta({
             I dati restano nell'Unione Europea.
           </li>
           <li>
+            <strong>Hetzner Online GmbH</strong> (Germania) — server che ospita questo sito e lo strumento di
+            statistiche descritto più sotto. I dati restano nell'Unione Europea.
+          </li>
+          <li>
             <strong>Anthropic</strong> (Stati Uniti) — assistente basato su intelligenza artificiale, usato per
             organizzare e rielaborare le note di lavoro e i documenti dell'attività.
           </li>
@@ -145,10 +149,36 @@ useSeoMeta({
           documento: esistono soluzioni alternative che si possono concordare per il singolo incarico.
         </p>
 
-        <h2>Cookie e font</h2>
+        <h2>Cookie, statistiche e font</h2>
         <p>
           Il sito non usa cookie di profilazione o strumenti di tracciamento pubblicitario. I font sono serviti
           localmente dal sito e non richiedono chiamate a Google Fonts.
+        </p>
+        <p>
+          Per capire quali pagine vengono lette uso un contatore di visite installato su un mio server, senza
+          servizi di terzi: nessuna società di analisi riceve questi dati. Non usa cookie e
+          <strong>non conserva il tuo indirizzo IP</strong>, che viene usato al momento della visita per ricavare
+          il paese e la città approssimativa e poi non viene scritto da nessuna parte.
+        </p>
+        <p>
+          Vengono registrati la pagina visitata, il sito da cui arrivi, browser, sistema operativo, tipo di
+          dispositivo, risoluzione dello schermo, lingua, paese, regione, città e data della visita. La base
+          giuridica è il mio legittimo interesse a misurare in forma aggregata l'andamento del sito
+          (art. 6.1.f del RGPD). I dati vengono conservati per 24 mesi e poi cancellati.
+        </p>
+        <p>
+          Questi dati non permettono di risalire a una persona e non ti seguono su altri siti: per questa ragione
+          non è materialmente possibile collegarli a te per dare seguito a una richiesta di accesso o di
+          cancellazione, come previsto dall'art. 11 del RGPD. Se preferisci non essere conteggiato, qualunque
+          blocco lato browser è sufficiente, perché la misurazione avviene tramite uno script della pagina.
+        </p>
+
+        <h2>Decisioni automatizzate</h2>
+        <p>
+          Non svolgo profilazione né processi decisionali automatizzati ai sensi dell'art. 22 del RGPD: nessuna
+          decisione che ti riguarda viene presa da un sistema automatico. Gli strumenti di intelligenza
+          artificiale che uso servono a organizzare e rielaborare i miei documenti di lavoro, sempre sotto il mio
+          controllo.
         </p>
 
         <h2>Diritti dell'interessato</h2>
