@@ -305,7 +305,7 @@ export const projects: Project[] = [
       'Gioco logico 10x10 con autenticazione, classifiche globali e tre modalità: Tutorial, Ranked e Mastermind. Trova il percorso giusto per raggiungere 100.',
     image: '/images/hundredpath.png',
     tags: ['Vue 3', 'Node.js', 'Auth', 'Leaderboard'],
-    link: 'https://hundredpath.vercel.app',
+    link: 'https://hundredpath.simonecamerano.dev',
     featured: false,
     github: 'https://github.com/simonecamerano/HundredPath',
     year: 2026,
