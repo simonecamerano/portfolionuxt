@@ -311,7 +311,8 @@ export const projects: Project[] = [
     featured: false,
     github: 'https://github.com/simonecamerano/HundredPath',
     year: 2026,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Gioco logico a griglia 10x10 dove si cerca il percorso che porta esattamente a 100, in tre modalita': Tutorial, Ranked e Mastermind. Vue 3 sul frontend, Node.js + Express sul backend, MongoDB per account, partite e classifiche, autenticazione con password cifrate. Frontend e API girano nello stesso container su infrastruttura propria e rispondono sullo stesso dominio, quindi nessun servizio esterno consegna le pagine: anche gli avatar sono generati nel browser invece di essere chiesti a un servizio di terzi. Gli account inattivi da 24 mesi vengono cancellati da un lavoro periodico, insieme a partite e voci di classifica.",
   },
   {
     id: 14,
@@ -326,7 +327,8 @@ export const projects: Project[] = [
     featured: true,
     github: 'https://github.com/simonecamerano/ai-control-tower',
     year: 2026,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Dashboard locale che raccoglie in un'unica interfaccia lo stato di più provider AI, così da sapere quanta quota resta e su quale strumento conviene lavorare senza aprire cinque pannelli diversi. TypeScript e Fastify sul backend, con lettura dei consumi per provider. Nasce da un problema pratico di chi lavora ogni giorno con più modelli in parallelo.",
   },
   {
     id: 13,
@@ -429,7 +431,8 @@ export const projects: Project[] = [
     featured: false,
     github: 'https://github.com/simonecamerano/workflow-multiagents',
     year: 2026,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Protocollo di orchestrazione fra più modelli per lo sviluppo software: ogni modello ha un ruolo dichiarato, un limite di competenza e un fallback nominato, e i passaggi critici richiedono un'approvazione umana esplicita invece di procedere da soli. Il valore non e' far parlare fra loro dei modelli, ma decidere in anticipo chi fa cosa e dove serve una firma umana.",
   },
   {
     id: 4,
@@ -444,7 +447,8 @@ export const projects: Project[] = [
     featured: false,
     github: 'https://github.com/simonecamerano/owly',
     year: 2025,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Applicazione web per cercare ed esplorare libri per categoria interrogando l'API pubblica di Open Library. JavaScript ES6+ con Webpack 5, Axios per le chiamate e Lodash per il debounce della ricerca, interfaccia responsive. Esercizio del percorso formativo sul consumo di API esterne e sulla gestione di stati di caricamento, risultati vuoti ed errori di rete.",
   },
   {
     id: 7,
@@ -459,7 +463,8 @@ export const projects: Project[] = [
     featured: false,
     github: 'https://github.com/simonecamerano/vegetarianrecipewebsite',
     year: 2025,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Sito di ricette vegetariane con ricerca, filtri e pagine di dettaglio. React con TypeScript, Redux Toolkit per lo stato, Vite come build tool e Tailwind CSS per l'interfaccia, con routing lato client. Esercizio del percorso formativo sulla gestione dello stato condiviso in un'applicazione a più viste.",
   },
   {
     id: 8,
@@ -474,7 +479,8 @@ export const projects: Project[] = [
     featured: false,
     github: 'https://github.com/simonecamerano/Moove',
     year: 2025,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Modello in TypeScript della struttura di un servizio di micromobilità condivisa: utenti, veicoli e città, con la logica di prenotazione, riconsegna e cambio di stato dei veicoli. Nessuna dipendenza esterna, solo TypeScript: l'esercizio riguarda il disegno dei tipi e delle relazioni fra entita', non l'interfaccia.",
   },
   {
     id: 9,
@@ -489,7 +495,8 @@ export const projects: Project[] = [
     featured: false,
     github: 'https://github.com/simonecamerano/digital-counter',
     year: 2025,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Contatore digitale a sei cifre con display in stile LED, comandi di incremento, decremento, azzeramento e numero casuale. JavaScript, Bootstrap 5 e CSS su misura, responsive e con gestione degli eventi touch per l'uso da telefono. Primo esercizio del percorso formativo sulla manipolazione del DOM e sulla gestione degli eventi.",
   },
   {
     id: 1,
@@ -497,13 +504,14 @@ export const projects: Project[] = [
     title: 'Joule Zero Point',
     category: 'Full Stack',
     description:
-      "Sito web costruito per raccontare in modo chiaro un'identità tecnica, visiva e contenutistica.",
+      "Gioco di carte strategico cyberpunk full-stack, con un assistente in gioco che risponde citando le carte reali del database.",
     image: '/images/joulezeropoint.png',
-    tags: ['Vue 3', 'Frontend', 'UI', 'Design'],
+    tags: ['Vue 3', 'Node.js', 'MongoDB', 'AI Assistant'],
     link: 'https://www.joulezeropoint.com',
     featured: true,
     github: 'https://github.com/simonecamerano/JouleZeroPointWeb',
     year: 2026,
-    longDescription: 'Testo lungo per la pagina di dettaglio...',
+    longDescription:
+      "Progetto finale del Master start2impact, e il più completo dei miei lavori full-stack. Vue 3 come PWA sul frontend con Pinia e vue-router, Node.js + Express 5 sul backend, MongoDB per carte, mazzi e partite, autenticazione JWT con verifica dell'indirizzo email. L'assistente in gioco gira su Claude Haiku 4.5 in streaming e usa tool calling per cercare nel database: risponde citando carte che esistono davvero, non inventate. Pagine e API sono servite da nginx nello stesso stack su infrastruttura propria, con cancellazione dell'account su richiesta e cancellazione automatica degli account inattivi da 24 mesi.",
   },
 ]
