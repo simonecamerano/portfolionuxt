@@ -79,12 +79,12 @@ export const projects: Project[] = [
       'Web app che rende più semplice consultare una knowledge base e ricevere risposte contestuali su percorsi formativi.',
     image: '/images/includo.png',
     tags: ['React', 'AI Chatbot', 'Node.js', 'UX'],
-    link: 'https://includo-guide.vercel.app',
+    link: 'https://includo.simonecamerano.dev',
     featured: true,
     github: 'https://github.com/simonecamerano/includo-guide',
     year: 2026,
     longDescription:
-      "IncluDO Guide è un assistente conversazionale RAG full-stack per l'orientamento formativo. React 19 + Vite sul frontend, Node.js + Express 5 sul backend, GPT-4o-mini per le risposte, text-embedding-3-small per gli embeddings e un vector store custom in JSON con cosine similarity. Le sessioni persistono su disco, la knowledge base viene ingestita via API protetta con autenticazione timing-safe.",
+      "IncluDO Guide è un assistente conversazionale RAG full-stack per l'orientamento formativo. React 19 + Vite sul frontend, Node.js + Express 5 sul backend, Claude Haiku 4.5 per le risposte e un modello di embedding multilingue che gira sul server stesso, con un vector store custom in JSON e cosine similarity. Il recupero non richiede nessun servizio esterno: il testo delle domande non lascia l'infrastruttura del progetto. Le sessioni persistono su disco, la knowledge base viene ingestita via API protetta con autenticazione timing-safe.",
     caseStudy: {
       problem: {
         headline: "Il problema: orientarsi in una knowledge base non dovrebbe richiedere ore",
@@ -102,10 +102,10 @@ export const projects: Project[] = [
         headline: "La soluzione: un assistente RAG specializzato sul dominio",
         text: "IncluDO Guide usa un approccio RAG: recupera informazioni rilevanti da una knowledge base strutturata e le usa per generare risposte contestuali e aderenti al dominio. Il sistema non risponde con ciò che il modello sa in generale, ma con ciò che è contenuto nella knowledge base indicizzata. Il tutto è racchiuso in un prodotto full-stack con sessioni persistenti e un endpoint admin per aggiornare i contenuti.",
         points: [
-          "Vector store custom in JSON con cosine similarity — nessuna dipendenza da database esterni",
-          "Embeddings OpenAI text-embedding-3-small per indicizzare la knowledge base",
+          "Vector store custom in JSON con cosine similarity — nessuna dipendenza da database esterni né da provider esterni per l'indicizzazione",
+          "Embedding calcolati in-process con multilingual-e5-small via ONNX Runtime: nessuna chiamata di rete, nessuna chiave API, il testo cercato resta sul server",
           "Retrieval a due fasi: il modello invoca un tool di vector search, poi sintetizza la risposta",
-          "GPT-4o-mini come modello di risposta, ottimizzato per costo e velocità",
+          "Claude Haiku 4.5 come modello di risposta, l'unico servizio esterno coinvolto",
           "Prompt factory modulare: contesto, storico e regole pedagogiche combinate",
           "Profilo utente raccolto in 5 dimensioni: area, livello, obiettivo, modalità, ore settimanali",
           "Massimo 2 raccomandazioni per risposta, validato a doppio livello",
@@ -115,11 +115,11 @@ export const projects: Project[] = [
       },
       archFlow: [
         "Knowledge base JSON",
-        "Ingest + Embedding",
+        "Ingest + Embedding locale",
         "Vector store (cosine)",
         "Tool call retrieval",
         "Prompt factory",
-        "GPT-4o-mini",
+        "Claude Haiku 4.5",
         "Risposta conversazionale",
       ],
       demonstrates: [
@@ -130,7 +130,9 @@ export const projects: Project[] = [
         "Prompt factory modulare per assistenti verticali con vincoli di dominio",
         "Admin API con autenticazione timing-safe e rate limiting configurabile",
         "Test sia frontend (Vitest + Testing Library) che backend (Vitest + Supertest)",
-        "Deploy frontend su Vercel e backend su Coolify / DigitalOcean",
+        "Deploy in un solo container su Coolify / Hetzner: pagine e API sulla stessa origine",
+        "Inferenza locale in Node.js: modello ONNX quantizzato eseguito in-process, con i pesi inclusi nell'immagine",
+        "Conformità applicata al codice: informativa verificata sul comportamento reale, dichiarazione AI Act e retention effettivamente applicata",
       ],
       replicability: {
         text: "Lo stesso pattern RAG può essere adattato a qualsiasi dominio con una knowledge base strutturata: cataloghi prodotto, documentazione tecnica, FAQ aziendali, manuali interni o percorsi di onboarding. Il valore non è avere un chatbot generico, ma un assistente che conosce un dominio specifico e lavora dentro confini chiari.",
