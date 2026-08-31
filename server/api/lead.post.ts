@@ -46,6 +46,34 @@ async function avvisaN8n(payload: Record<string, unknown>) {
   })
 }
 
+// Notifica push diretta a ntfy, non tramite n8n: il nodo HTTP Request di n8n
+// resta bloccato indefinitamente su questa chiamata specifica (bug interno al
+// Task Runner/client HTTP di n8n, verificato e non risolvibile lato config il
+// 2026-08-31). n8n resta comunque nel flusso per l'email di conferma Brevo e
+// l'update di notifica_inviata_il su Postgres.
+async function avvisaNtfy(payload: { leadId: number; nome: string; telefono: string; azienda: string | null }) {
+  const url = process.env.NTFY_URL || 'https://ntfy.simonecamerano.dev/speed-to-lead-simone'
+  const user = process.env.NTFY_USER
+  const password = process.env.NTFY_PASSWORD
+  const leadActionToken = process.env.LEAD_ACTION_TOKEN
+  if (!user || !password) return
+  const auth = Buffer.from(`${user}:${password}`).toString('base64')
+  const corpo = `Nuovo lead: ${payload.nome}\ntel: ${payload.telefono}\n${payload.azienda ?? ''}`
+  $fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'text/plain',
+      Authorization: `Basic ${auth}`,
+      Title: 'Nuovo lead speed-to-lead',
+      Priority: 'high',
+      Actions: `http, Gestito, https://simonecamerano.dev/api/lead/${payload.leadId}/gestito, method=POST, headers.x-lead-token=${leadActionToken}, clear=true`,
+    },
+    body: corpo,
+  }).catch((error) => {
+    console.error('[lead] notifica ntfy fallita', error)
+  })
+}
+
 export default defineEventHandler(async (event) => {
   const ip = getRequestIP(event, { xForwardedFor: true }) ?? 'unknown'
   if (isRateLimited(ip)) {
@@ -84,8 +112,10 @@ export default defineEventHandler(async (event) => {
   // della stessa azienda mettono lo stesso numero di centralino, e con l'OR sul
   // telefono la seconda richiesta sparirebbe senza notifica. Finestra corta: il
   // caso da coprire e' il doppio invio, non il cliente di ieri.
+  const azienda = testo(body.azienda, 120)
+
   const esistente = await db.query(
-    `SELECT id, token_optout, notifica_inviata_il FROM lead
+    `SELECT id, token_optout, notifica_inviata_il, azienda FROM lead
      WHERE lower(email) = $1 AND creato_il > now() - interval '6 hours'
      LIMIT 1`,
     [email],
@@ -97,6 +127,7 @@ export default defineEventHandler(async (event) => {
     // riprova, altrimenti chi non ha visto l'email non la vede nemmeno adesso.
     if (!riga.notifica_inviata_il) {
       await avvisaN8n({ leadId: riga.id, nome, telefono, email, tokenOptout: riga.token_optout })
+      await avvisaNtfy({ leadId: riga.id, nome, telefono, azienda: riga.azienda })
     }
     return { success: true, id: riga.id }
   }
@@ -107,12 +138,13 @@ export default defineEventHandler(async (event) => {
      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, now())
      RETURNING id, token_optout`,
     [nome, telefono, email,
-     testo(body.azienda, 120), testo(body.messaggio, 2000),
+     azienda, testo(body.messaggio, 2000),
      testo(body.utm_source, 200), testo(body.utm_medium, 200), testo(body.utm_campaign, 200)],
   )
   const { id: leadId, token_optout: tokenOptout } = inserito.rows[0]
 
   await avvisaN8n({ leadId, nome, telefono, email, tokenOptout })
+  await avvisaNtfy({ leadId, nome, telefono, azienda })
 
   return { success: true, id: leadId }
 })
