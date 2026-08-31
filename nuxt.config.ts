@@ -18,6 +18,26 @@ export default defineNuxtConfig({
     '/favicon.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
     '/og-image.png': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
     '/cv.pdf': { headers: { 'cache-control': 'public, max-age=86400' } },
+    '/riservato/**': {
+      headers: {
+        // Vale anche se la pagina viene servita senza eseguire JS. Niente
+        // Disallow in robots.txt: bloccherebbe il crawl e quindi la lettura del
+        // noindex, oltre a pubblicare il percorso.
+        'X-Robots-Tag': 'noindex, nofollow',
+        'Content-Security-Policy': [
+          "default-src 'self'",
+          "script-src 'self' 'unsafe-inline' https://analytics.simonecamerano.dev https://connect.facebook.net",
+          "style-src 'self' 'unsafe-inline'",
+          "img-src 'self' data: https://www.facebook.com",
+          "font-src 'self'",
+          "connect-src 'self' https://analytics.simonecamerano.dev https://www.facebook.com",
+          "frame-ancestors 'none'",
+          "base-uri 'self'",
+          "form-action 'self'",
+          "object-src 'none'",
+        ].join('; '),
+      },
+    },
     '/**': {
       headers: {
         'Content-Security-Policy': [
