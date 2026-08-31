@@ -33,7 +33,7 @@ useSeoMeta({
           Privacy Policy
         </h1>
         <p class="text-[#8a8a9a] mt-4 leading-relaxed">
-          Ultimo aggiornamento: 24 agosto 2026.
+          Ultimo aggiornamento: 31 agosto 2026.
         </p>
       </header>
 
@@ -100,6 +100,32 @@ useSeoMeta({
           indispensabile a non ricontattarti per errore in futuro.
         </p>
 
+        <h2>Richiesta di contatto per valutazione AI</h2>
+        <p>
+          Se compili il modulo nella pagina di richiesta sessione, tratto i dati che inserisci
+          (nome, telefono, email, azienda, messaggio) per ricontattarti in merito alla tua
+          richiesta. La base giuridica è l'esecuzione di misure precontrattuali
+          (art. 6.1.b del RGPD).
+        </p>
+        <p>
+          <strong>Dove sono conservati.</strong> I dati sono su un database ospitato da
+          Hetzner Online GmbH (Germania) e trattati con l'ausilio di Brevo (invio delle email
+          di conferma e di eventuali messaggi successivi, sede in Francia) e di un servizio di
+          notifica su infrastruttura propria, usato solo per avvisarmi internamente della tua
+          richiesta.
+        </p>
+        <p>
+          <strong>Per quanto tempo.</strong> I dati sono conservati per il tempo necessario a
+          gestire la richiesta e i contatti successivi; se la richiesta non porta a una
+          collaborazione, sono cancellati entro dodici mesi.
+        </p>
+        <p>
+          Ogni email che ti invio contiene un link per non ricevere più messaggi, che sospende
+          immediatamente ogni contatto successivo. Puoi anche chiedere accesso, rettifica o
+          cancellazione scrivendo a
+          <a href="mailto:simone@simonecamerano.dev">simone@simonecamerano.dev</a>.
+        </p>
+
         <h2>Fornitori che trattano i dati</h2>
         <p>
           Per svolgere l'attività mi avvalgo dei fornitori elencati qui sotto, che trattano i dati per mio conto
@@ -130,6 +156,14 @@ useSeoMeta({
             <strong>Fiscozen S.p.A.</strong> (Italia) — piattaforma per la fatturazione e servizio di
             commercialista, per gli adempimenti fiscali e contabili.
           </li>
+          <li>
+            <strong>Brevo</strong> (Sendinblue SAS, Francia) — invio dell'email di conferma e delle
+            eventuali email di recupero automatiche a chi compila il modulo di richiesta sessione.
+          </li>
+          <li>
+            <strong>Meta Platforms Ireland Limited</strong> (Irlanda) — Pixel di misurazione sulla
+            pagina di richiesta sessione, solo se acconsenti esplicitamente al tracciamento.
+          </li>
         </ul>
         <p>
           Per singoli progetti possono aggiungersi fornitori di infrastruttura informatica necessari a erogare il
@@ -147,6 +181,13 @@ useSeoMeta({
           Nessuno di questi fornitori offre l'archiviazione dei dati in Unione Europea per i servizi utilizzati.
           Se hai bisogno che i tuoi dati non lascino il territorio europeo, scrivimi prima di inviare qualsiasi
           documento: esistono soluzioni alternative che si possono concordare per il singolo incarico.
+        </p>
+        <p>
+          <strong>Meta Platforms Ireland Limited</strong> (Irlanda, con trattamenti che possono
+          coinvolgere gli Stati Uniti) riceve dati solo se acconsenti esplicitamente al
+          tracciamento sulla pagina di richiesta sessione, e limitatamente a quella pagina. Il
+          consenso è revocabile in ogni momento dal link "Preferenze tracciamento" in fondo a
+          quella pagina.
         </p>
 
         <h2>Cookie, statistiche e font</h2>
@@ -171,6 +212,13 @@ useSeoMeta({
           non è materialmente possibile collegarli a te per dare seguito a una richiesta di accesso o di
           cancellazione, come previsto dall'art. 11 del RGPD. Se preferisci non essere conteggiato, qualunque
           blocco lato browser è sufficiente, perché la misurazione avviene tramite uno script della pagina.
+        </p>
+        <p>
+          Sulla pagina di richiesta sessione, e solo se acconsenti esplicitamente al banner di
+          tracciamento, viene attivato il Pixel di Meta, che scrive il cookie
+          <code>_fbp</code> per misurare l'efficacia delle campagne pubblicitarie. Senza
+          consenso il Pixel non si attiva; il consenso è revocabile in qualsiasi momento dal
+          link "Preferenze tracciamento" in fondo a quella pagina.
         </p>
 
         <h2>Decisioni automatizzate</h2>
