@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const { scelto, riapri } = useConsensoTracciamento()
+</script>
+
 <template>
   <footer
     class="py-10 px-6 border-t"
@@ -27,6 +31,17 @@
         >
           Privacy
         </NuxtLink>
+
+        <ClientOnly>
+          <button
+            v-if="scelto"
+            type="button"
+            class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+            @click="riapri"
+          >
+            Preferenze tracciamento
+          </button>
+        </ClientOnly>
 
         <a
           href="https://github.com/simonecamerano"

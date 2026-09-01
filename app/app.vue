@@ -27,5 +27,6 @@ useHead({
     <AppNavbar />
     <NuxtPage />
     <AppFooter />
+    <BannerConsensoTracciamento />
   </div>
 </template>

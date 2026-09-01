@@ -1,38 +1,17 @@
 <!-- app/components/BannerConsensoTracciamento.vue -->
+<!-- Solo la richiesta di consenso iniziale. Il link per rivedere la scelta
+     dopo vive nel footer globale (AppFooter.vue), non qui: così è
+     raggiungibile da qualunque pagina, non solo da questa. -->
 <script setup lang="ts">
-const emit = defineEmits<{ accettato: [] }>()
-const visibile = ref(false)
-const scelto = ref(false)
-
-onMounted(() => {
-  const salvato = localStorage.getItem('consenso-tracciamento')
-  scelto.value = salvato !== null
-  visibile.value = salvato === null
-  if (salvato === 'true') emit('accettato')
-})
-
-function accetta() {
-  localStorage.setItem('consenso-tracciamento', 'true')
-  visibile.value = false
-  scelto.value = true
-  emit('accettato')
-}
-
-function rifiuta() {
-  localStorage.setItem('consenso-tracciamento', 'false')
-  visibile.value = false
-  scelto.value = true
-}
-
-// Revocare deve essere facile quanto acconsentire: il link resta in pagina.
-function riapri() {
-  visibile.value = true
-}
-defineExpose({ riapri })
+// Montato una sola volta, globalmente, in app.vue. Non decide da solo quando
+// chiedere il consenso (richiediSeNecessario): lo fa solo la pagina che ha
+// davvero bisogno di tracciamento, altrimenti il banner comparirebbe anche
+// su pagine che non caricano nessun Pixel.
+const { visibile, accetta, rifiuta } = useConsensoTracciamento()
 </script>
 
 <template>
-  <div>
+  <ClientOnly>
     <div
       v-if="visibile"
       class="fixed bottom-0 inset-x-0 z-50 bg-neutral-900 text-white p-4 flex flex-col sm:flex-row items-center gap-4 justify-between"
@@ -52,13 +31,5 @@ defineExpose({ riapri })
         </button>
       </div>
     </div>
-
-    <button
-      v-if="scelto && !visibile"
-      class="fixed bottom-2 left-2 z-40 text-xs text-neutral-500 underline"
-      @click="riapri"
-    >
-      Preferenze tracciamento
-    </button>
-  </div>
+  </ClientOnly>
 </template>
