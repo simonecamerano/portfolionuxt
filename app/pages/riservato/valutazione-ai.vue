@@ -96,14 +96,14 @@ async function inviaForm() {
         </span>
 
         <h1 class="text-4xl sm:text-5xl font-extrabold leading-[1.12] tracking-tight text-[#f0f0f5]">
-          Scopri se l'<span class="text-gradient">AI</span> conviene davvero alla tua PMI
+          Scopri come l'<span class="text-gradient">AI</span> può aiutare davvero la tua Azienda
         </h1>
 
         <p class="text-lg text-[#8a8a9a] leading-relaxed max-w-md">
-          26 anni di esperienza operativa in Grande Distribuzione, prima di passare
+          26 anni di esperienza operativa nella Grande Distribuzione, prima di passare
           allo sviluppo software: non solo teoria sull'AI, ma processi aziendali
           reali. Una chiamata gratuita per capire, senza impegno, dove
-          l'automazione ti fa risparmiare tempo, e dove no.
+          l'automazione e l'AI possono farti risparmiare tempo, e dove no.
         </p>
 
         <div class="flex flex-col gap-4 pt-1">
