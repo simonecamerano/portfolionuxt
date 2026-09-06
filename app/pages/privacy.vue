@@ -2,7 +2,7 @@
 useSeoMeta({
   title: 'Privacy Policy — Simone Camerano',
   description:
-    'Informativa privacy di Simone Camerano: dati raccolti dal modulo di contatto, contatti commerciali con aziende, statistiche di visita, fornitori coinvolti e diritti dell\'interessato.',
+    'Informativa privacy di Simone Camerano: dati raccolti dal modulo di contatto, contatti commerciali con aziende, gestione dei clienti con incarico in corso, statistiche di visita, fornitori coinvolti e diritti dell\'interessato.',
   ogTitle: 'Privacy Policy — Simone Camerano',
   ogDescription:
     'Informativa sul trattamento dei dati personali raccolti tramite il sito e nell\'attività professionale.',
@@ -33,7 +33,7 @@ useSeoMeta({
           Privacy Policy
         </h1>
         <p class="text-[#8a8a9a] mt-4 leading-relaxed">
-          Ultimo aggiornamento: 31 agosto 2026.
+          Ultimo aggiornamento: 6 settembre 2026.
         </p>
       </header>
 
@@ -98,6 +98,34 @@ useSeoMeta({
           <a href="mailto:simone@simonecamerano.dev">simone@simonecamerano.dev</a> e chiedere di non essere più
           contattato. Non serve motivare la richiesta e viene applicata subito. Conservo solo il minimo
           indispensabile a non ricontattarti per errore in futuro.
+        </p>
+
+        <h2>Clienti con un incarico in corso</h2>
+        <p>
+          Se dalla trattativa nasce una collaborazione, il trattamento dei tuoi dati cambia
+          ragione: non serve più a proporre un servizio, ma a erogarlo.
+        </p>
+        <p>
+          <strong>Quali dati.</strong> Ragione sociale e dati fiscali della tua azienda, nome e
+          contatti della persona di riferimento, il contenuto delle comunicazioni relative
+          all'incarico, il materiale che mi fornisci per svolgere il lavoro.
+        </p>
+        <p>
+          <strong>Perché e su quale base giuridica.</strong> Per erogare il servizio concordato,
+          comunicare durante il lavoro e consegnare quanto pattuito. La base giuridica è
+          l'esecuzione del contratto (art. 6.1.b del RGPD).
+        </p>
+        <p>
+          <strong>Chi tratta questi dati per mio conto.</strong> Gli stessi fornitori elencati
+          più sotto nella sezione "Fornitori che trattano i dati", in particolare Anthropic,
+          GitHub e IONOS, più eventuali fornitori di infrastruttura specifici del progetto,
+          indicati nel contratto.
+        </p>
+        <p>
+          <strong>Per quanto tempo.</strong> Per la durata dell'incarico e per i dieci anni
+          successivi, limitatamente a quanto richiesto dagli obblighi fiscali e per l'eventuale
+          difesa in giudizio. Il materiale operativo che non serve a questi fini viene rimosso
+          alla chiusura dell'incarico.
         </p>
 
         <h2>Richiesta di contatto per valutazione AI</h2>
