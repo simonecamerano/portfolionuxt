@@ -194,7 +194,7 @@ async function inviaForm() {
               class="mt-1 h-4 w-4 flex-shrink-0 accent-purple-500"
             >
             <span>
-              Acconsento al trattamento dei miei dati per essere ricontattato, secondo l'<NuxtLink to="/privacy" class="text-[#c4b5fd] hover:text-white transition-colors">informativa privacy</NuxtLink>.
+              Ho letto l'<NuxtLink to="/privacy" class="text-[#c4b5fd] hover:text-white transition-colors">informativa privacy</NuxtLink> e sono consapevole di come i miei dati saranno usati per essere ricontattato.
             </span>
           </label>
 

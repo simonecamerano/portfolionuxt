@@ -1,7 +1,12 @@
 import { getDb } from './db'
 
-// Passa solo da 'nuovo': evita che una chiamata duplicata riporti a 'gestito'
-// un lead che nel frattempo si e' disiscritto.
+// Il ramo 'id' (marcatura "gestito") passa solo da 'nuovo': evita che una
+// chiamata duplicata riporti a 'gestito' un lead che nel frattempo si e'
+// disiscritto. Il ramo 'tokenOptout' (opt-out) non ha questa restrizione:
+// la disiscrizione deve valere qualunque sia lo stato corrente del lead
+// (nuovo, gestito...), altrimenti chi si disiscrive dopo essere gia' stato
+// marcato "gestito" non risulta escluso da nessuna parte pur ricevendo
+// risposta di successo.
 export async function cambiaStatoLead(
   filtro: { id: number } | { tokenOptout: string },
   nuovoStato: 'gestito' | 'escluso',
@@ -15,7 +20,7 @@ export async function cambiaStatoLead(
       )
     : await db.query(
         `UPDATE lead SET stato = $2, aggiornato_il = now()
-         WHERE token_optout = $1 AND stato = 'nuovo'`,
+         WHERE token_optout = $1 AND stato != 'escluso'`,
         [filtro.tokenOptout, nuovoStato],
       )
   return (res.rowCount ?? 0) > 0

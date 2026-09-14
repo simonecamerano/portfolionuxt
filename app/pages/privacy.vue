@@ -220,8 +220,10 @@ useSeoMeta({
 
         <h2>Cookie, statistiche e font</h2>
         <p>
-          Il sito non usa cookie di profilazione o strumenti di tracciamento pubblicitario. I font sono serviti
-          localmente dal sito e non richiedono chiamate a Google Fonts.
+          Il sito non usa cookie di profilazione né strumenti di tracciamento pubblicitario attivi di
+          default: l'unica eccezione è il Pixel di Meta descritto più sotto, sulla pagina di richiesta
+          sessione, attivato solo con consenso esplicito. I font sono serviti localmente dal sito e non
+          richiedono chiamate a Google Fonts.
         </p>
         <p>
           Per capire quali pagine vengono lette uso un contatore di visite installato su un mio server, senza

@@ -120,7 +120,6 @@ export default defineEventHandler(async (event) => {
     to_email: email,
     subject,
     message,
-    user_ip: ip === 'unknown' ? '' : ip,
   }
 
   await sendEmailJs({
