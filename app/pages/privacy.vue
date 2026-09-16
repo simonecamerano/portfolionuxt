@@ -33,7 +33,7 @@ useSeoMeta({
           Privacy Policy
         </h1>
         <p class="text-[#8a8a9a] mt-4 leading-relaxed">
-          Ultimo aggiornamento: 6 settembre 2026.
+          Ultimo aggiornamento: 16 settembre 2026.
         </p>
       </header>
 
@@ -118,8 +118,8 @@ useSeoMeta({
         <p>
           <strong>Chi tratta questi dati per mio conto.</strong> Gli stessi fornitori elencati
           più sotto nella sezione "Fornitori che trattano i dati", in particolare Anthropic,
-          GitHub e IONOS, più eventuali fornitori di infrastruttura specifici del progetto,
-          indicati nel contratto.
+          GitHub, IONOS e OpenAI, più eventuali fornitori di infrastruttura specifici del
+          progetto, indicati nel contratto.
         </p>
         <p>
           <strong>Per quanto tempo.</strong> Per la durata dell'incarico e per i dieci anni
@@ -181,6 +181,11 @@ useSeoMeta({
             privati dei documenti e delle note di lavoro.
           </li>
           <li>
+            <strong>OpenAI</strong> (Stati Uniti) — secondo assistente basato su intelligenza artificiale, usato
+            in sola lettura per una revisione indipendente del lavoro e per la produzione di contenuti: non
+            scrive mai nei repository di lavoro.
+          </li>
+          <li>
             <strong>Fiscozen S.p.A.</strong> (Italia) — piattaforma per la fatturazione e servizio di
             commercialista, per gli adempimenti fiscali e contabili.
           </li>
@@ -200,7 +205,7 @@ useSeoMeta({
 
         <h2>Trasferimento dei dati fuori dall'Unione Europea</h2>
         <p>
-          EmailJS, Anthropic e GitHub hanno sede negli Stati Uniti e conservano i dati su server situati fuori
+          EmailJS, Anthropic, GitHub e OpenAI hanno sede negli Stati Uniti e conservano i dati su server situati fuori
           dall'Unione Europea. Il trasferimento avviene sulla base delle clausole contrattuali standard approvate
           dalla Commissione Europea, previste dall'art. 46 del RGPD e incluse nei contratti di trattamento dei
           dati stipulati con ciascuno di questi fornitori.
