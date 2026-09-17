@@ -137,7 +137,12 @@ async function inviaForm() {
             Prenota la chiamata gratuita
           </span>
 
-          <input v-model="form.honeypot" type="text" name="azienda_web" class="hidden" tabindex="-1" autocomplete="off">
+          <!-- Nome scelto apposta senza alcun significato riconoscibile: "azienda_web"
+               assomigliava troppo a un campo "sito web aziendale", e l'autofill di
+               gruppo di Chrome (attivato scegliendo un suggerimento su "Azienda" poco
+               sotto) lo riempiva anche da nascosto, autocomplete="off" o no. Da li' la
+               richiesta veniva scartata in silenzio come se fosse un bot. -->
+          <input v-model="form.honeypot" type="text" name="hp_x7q2" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="flex flex-col gap-2">
             <label for="val-nome" class="text-sm font-medium text-[#8a8a9a]">Nome e cognome <span class="text-purple-400" aria-hidden="true">*</span></label>
