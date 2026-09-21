@@ -2,10 +2,10 @@
 import { projects } from '~/data/projects'
 
 useSeoMeta({
-  title: 'Progetti — Simone Camerano',
+  title: 'Progetti - Simone Camerano',
   description:
     'Tutti i progetti di Simone Camerano: app full stack, frontend, giochi e landing page. Vue, Nuxt, Node.js, TypeScript.',
-  ogTitle: 'Progetti — Simone Camerano',
+  ogTitle: 'Progetti - Simone Camerano',
   ogDescription: 'Esplora tutti i progetti di Simone Camerano, web developer.',
 })
 

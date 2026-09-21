@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Privacy Policy — Simone Camerano',
+  title: 'Privacy Policy - Simone Camerano',
   description:
     'Informativa privacy di Simone Camerano: dati raccolti dal modulo di contatto, contatti commerciali con aziende, gestione dei clienti con incarico in corso, statistiche di visita, fornitori coinvolti e diritti dell\'interessato.',
-  ogTitle: 'Privacy Policy — Simone Camerano',
+  ogTitle: 'Privacy Policy - Simone Camerano',
   ogDescription:
     'Informativa sul trattamento dei dati personali raccolti tramite il sito e nell\'attività professionale.',
 })
@@ -161,40 +161,40 @@ useSeoMeta({
         </p>
         <ul>
           <li>
-            <strong>EmailJS</strong> (Stati Uniti) — invio dei messaggi dal modulo di contatto e delle relative
+            <strong>EmailJS</strong> (Stati Uniti): invio dei messaggi dal modulo di contatto e delle relative
             risposte automatiche.
           </li>
           <li>
-            <strong>IONOS SE</strong> (Germania) — dominio, caselle di posta e posta elettronica certificata.
+            <strong>IONOS SE</strong> (Germania): dominio, caselle di posta e posta elettronica certificata.
             I dati restano nell'Unione Europea.
           </li>
           <li>
-            <strong>Hetzner Online GmbH</strong> (Germania) — server che ospita questo sito e lo strumento di
+            <strong>Hetzner Online GmbH</strong> (Germania): server che ospita questo sito e lo strumento di
             statistiche descritto più sotto. I dati restano nell'Unione Europea.
           </li>
           <li>
-            <strong>Anthropic</strong> (Stati Uniti) — assistente basato su intelligenza artificiale, usato per
+            <strong>Anthropic</strong> (Stati Uniti): assistente basato su intelligenza artificiale, usato per
             organizzare e rielaborare le note di lavoro e i documenti dell'attività.
           </li>
           <li>
-            <strong>GitHub</strong>, società del gruppo Microsoft (Stati Uniti) — archiviazione in repository
+            <strong>GitHub</strong>, società del gruppo Microsoft (Stati Uniti): archiviazione in repository
             privati dei documenti e delle note di lavoro.
           </li>
           <li>
-            <strong>OpenAI</strong> (Stati Uniti) — secondo assistente basato su intelligenza artificiale, usato
+            <strong>OpenAI</strong> (Stati Uniti): secondo assistente basato su intelligenza artificiale, usato
             in sola lettura per una revisione indipendente del lavoro e per la produzione di contenuti: non
             scrive mai nei repository di lavoro.
           </li>
           <li>
-            <strong>Fiscozen S.p.A.</strong> (Italia) — piattaforma per la fatturazione e servizio di
+            <strong>Fiscozen S.p.A.</strong> (Italia): piattaforma per la fatturazione e servizio di
             commercialista, per gli adempimenti fiscali e contabili.
           </li>
           <li>
-            <strong>Brevo</strong> (Sendinblue SAS, Francia) — invio dell'email di conferma e delle
+            <strong>Brevo</strong> (Sendinblue SAS, Francia): invio dell'email di conferma e delle
             eventuali email di recupero automatiche a chi compila il modulo di richiesta sessione.
           </li>
           <li>
-            <strong>Meta Platforms Ireland Limited</strong> (Irlanda) — Pixel di misurazione sulla
+            <strong>Meta Platforms Ireland Limited</strong> (Irlanda): Pixel di misurazione sulla
             pagina di richiesta sessione, solo se acconsenti esplicitamente al tracciamento.
           </li>
         </ul>

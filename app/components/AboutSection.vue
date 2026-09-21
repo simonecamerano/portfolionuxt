@@ -89,7 +89,7 @@ const scrollIn = (delay = 0) => ({
           >
             <img
               src="/images/simone_camerano.png"
-              alt="Simone Camerano — Full Stack Developer"
+              alt="Simone Camerano, Full Stack Developer"
               class="w-full block"
               style="aspect-ratio: 3/4; object-fit: cover; object-position: center top;"
               width="400"

@@ -2,9 +2,9 @@
 import { services } from '~/data/services'
 
 useSeoMeta({
-  title: 'Servizi — Simone Camerano Full Stack Developer',
+  title: 'Servizi - Simone Camerano Full Stack Developer',
   description: 'Siti web moderni, web app su misura, automazioni, knowledge base AI e audit digitale. Collaborazioni freelance per PMI, professionisti e piccoli team.',
-  ogTitle: 'Servizi — Simone Camerano Full Stack Developer',
+  ogTitle: 'Servizi - Simone Camerano Full Stack Developer',
   ogDescription: 'Siti web moderni, web app su misura, automazioni, knowledge base AI e audit digitale.',
   ogType: 'website',
 })
@@ -227,7 +227,7 @@ const faqs = [
             <p class="text-xs text-[#8a8a9a] uppercase tracking-widest mb-2">Utile se</p>
             <ul class="text-[#6a6a7a] text-sm mb-4 flex flex-col gap-1">
               <li v-for="item in service.utile_se" :key="item" class="flex gap-2">
-                <span class="text-blue-400 flex-shrink-0">—</span>
+                <span class="text-blue-400 flex-shrink-0" aria-hidden="true">•</span>
                 <span>{{ item }}</span>
               </li>
             </ul>

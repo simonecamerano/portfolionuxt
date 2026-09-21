@@ -25,9 +25,9 @@ if (project.github) {
 const { public: { siteUrl } } = useRuntimeConfig()
 
 useSeoMeta({
-  title: `${project.title} — Simone Camerano`,
+  title: `${project.title} - Simone Camerano`,
   description: project.description,
-  ogTitle: `${project.title} — Simone Camerano`,
+  ogTitle: `${project.title} - Simone Camerano`,
   ogDescription: project.description,
   ogType: 'article',
   ogImage: `${siteUrl}${project.image}`,

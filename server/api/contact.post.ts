@@ -15,7 +15,7 @@ interface EmailJsPayload {
   template_params: Record<string, string>
 }
 
-// Basic email regex — intentionally simple, backend is not the last line of defense
+// Basic email regex, intentionally simple, backend is not the last line of defense
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const EMAILJS_ENDPOINT = 'https://api.emailjs.com/api/v1.0/email/send'
 

@@ -3,10 +3,10 @@ import { stats } from '~/data/stats'
 import { technologies } from '~/data/technologies'
 
 useSeoMeta({
-  title: 'Chi sono — Simone Camerano Full Stack Developer',
+  title: 'Chi sono - Simone Camerano Full Stack Developer',
   description:
     'Full Stack Developer con 26 anni di esperienza operativa nella GDO. Costruisco siti web, web app, automazioni e workflow AI pragmatici per PMI e professionisti.',
-  ogTitle: 'Chi sono — Simone Camerano Full Stack Developer',
+  ogTitle: 'Chi sono - Simone Camerano Full Stack Developer',
   ogDescription:
     'Full Stack Developer con specializzazione pratica in AI e automazione. Prima i processi, poi il codice.',
 })
@@ -14,7 +14,7 @@ useSeoMeta({
 const storyParagraphs = [
   'Sono un Full Stack Developer con una specializzazione pratica in AI e automazione. Costruisco siti web, web app, strumenti interni, automazioni e workflow AI per PMI, professionisti e piccoli team che vogliono strumenti digitali concreti, non sperimentali.',
   'Prima di dedicarmi allo sviluppo web, ho lavorato per 26 anni nella GDO: gestione team, processi, responsabilità operative su larga scala, fornitori, clienti e urgenze da risolvere senza troppa teoria. Quel background non è una nota a piè di pagina. È il motivo per cui capisco i problemi di business prima di iniziare a progettare soluzioni.',
-  "Il mio approccio: prima capisco come funziona davvero la tua attività — cosa rallenta il lavoro, cosa crea confusione, cosa può essere semplificato. Poi progetto e costruisco la soluzione: un sito, una web app, uno strumento interno, un'automazione o un workflow AI.",
+  "Il mio approccio: prima capisco come funziona davvero la tua attività, cosa rallenta il lavoro, cosa crea confusione, cosa può essere semplificato. Poi progetto e costruisco la soluzione: un sito, una web app, uno strumento interno, un'automazione o un workflow AI.",
   'La tecnologia è importante. Ma deve servire il lavoro, non diventare un altro problema da gestire.',
 ]
 

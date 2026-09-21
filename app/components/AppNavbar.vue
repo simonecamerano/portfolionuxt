@@ -108,7 +108,7 @@ const closeMobileMenu = () => {
       <NuxtLink
         to="/"
         class="text-2xl font-black text-gradient tracking-tight"
-        aria-label="Simone Camerano — torna alla homepage"
+        aria-label="Simone Camerano, torna alla homepage"
       >
         SC
       </NuxtLink>

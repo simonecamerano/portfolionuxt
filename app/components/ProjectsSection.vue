@@ -20,7 +20,7 @@ const featuredProjects = projects.filter((p) => p.featured)
           Progetti
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] mb-4 tracking-tight">
-          Progetti selezionati — <span class="text-gradient">come lavoro</span>
+          Progetti selezionati: <span class="text-gradient">come lavoro</span>
         </h2>
         <p class="text-[#6a6a7a] max-w-lg mx-auto leading-relaxed">
           Alcuni progetti nascono come strumenti personali, altri come prototipi o prodotti verticali. Non sono esperimenti messi lì per fare scena. Sono esempi di metodo, architettura e sviluppo full stack applicato.

@@ -15,7 +15,7 @@ export const projects: Project[] = [
     github: 'https://github.com/simonecamerano/pii-guard-it',
     year: 2026,
     longDescription:
-      "PII Guard IT è un'estensione Chrome (Manifest V3, vanilla JS) che rileva dati personali italiani mentre scrivi o incolli testo in un campo qualsiasi, e li offusca in placeholder reversibili prima che finiscano in un servizio esterno. Tutto il rilevamento avviene client-side: nessun testo lascia mai il browser. Il differenziatore rispetto ai tool generalisti è la validazione reale — Codice Fiscale, Partita IVA e IBAN vengono verificati con i loro algoritmi ufficiali di controllo (check digit, mod-97), non riconosciuti da un pattern che 'assomiglia'.",
+      "PII Guard IT è un'estensione Chrome (Manifest V3, vanilla JS) che rileva dati personali italiani mentre scrivi o incolli testo in un campo qualsiasi, e li offusca in placeholder reversibili prima che finiscano in un servizio esterno. Tutto il rilevamento avviene client-side: nessun testo lascia mai il browser. Il differenziatore rispetto ai tool generalisti è la validazione reale: Codice Fiscale, Partita IVA e IBAN vengono verificati con i loro algoritmi ufficiali di controllo (check digit, mod-97), non riconosciuti da un pattern che 'assomiglia'.",
     caseStudy: {
       problem: {
         headline: 'Il problema: incollare testo in un LLM espone dati senza volerlo',
@@ -102,7 +102,7 @@ export const projects: Project[] = [
         headline: "La soluzione: un assistente RAG specializzato sul dominio",
         text: "IncluDO Guide usa un approccio RAG: recupera informazioni rilevanti da una knowledge base strutturata e le usa per generare risposte contestuali e aderenti al dominio. Il sistema non risponde con ciò che il modello sa in generale, ma con ciò che è contenuto nella knowledge base indicizzata. Il tutto è racchiuso in un prodotto full-stack con sessioni persistenti e un endpoint admin per aggiornare i contenuti.",
         points: [
-          "Vector store custom in JSON con cosine similarity — nessuna dipendenza da database esterni né da provider esterni per l'indicizzazione",
+          "Vector store custom in JSON con cosine similarity, nessuna dipendenza da database esterni né da provider esterni per l'indicizzazione",
           "Embedding calcolati in-process con multilingual-e5-small via ONNX Runtime: nessuna chiamata di rete, nessuna chiave API, il testo cercato resta sul server",
           "Retrieval a due fasi: il modello invoca un tool di vector search, poi sintetizza la risposta",
           "Claude Haiku 4.5 come modello di risposta, l'unico servizio esterno coinvolto",
@@ -405,7 +405,7 @@ export const projects: Project[] = [
       },
       responsibleNote: {
         headline: "Perché human-in-the-loop è fondamentale",
-        text: "Automatizzare l'engagement professionale richiede attenzione. Un sistema che pubblica automaticamente può diventare invasivo, generico o dannoso per la reputazione. LinkedIn Assistant è pensato come supporto decisionale: prepara bozze e porta opportunità all'attenzione dell'utente, ma la decisione finale — sul tono, sul contesto e sulla pubblicazione — resta sempre umana.",
+        text: "Automatizzare l'engagement professionale richiede attenzione. Un sistema che pubblica automaticamente può diventare invasivo, generico o dannoso per la reputazione. LinkedIn Assistant è pensato come supporto decisionale: prepara bozze e porta opportunità all'attenzione dell'utente, ma la decisione finale sul tono, sul contesto e sulla pubblicazione resta sempre umana.",
         points: [
           "Nessuna pubblicazione automatica non supervisionata: il commento viene consegnato come bozza",
           "Il digest Telegram mostra post, analisi e bozza: l'utente decide cosa fare",

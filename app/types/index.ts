@@ -31,7 +31,7 @@ export interface Project {
   tags: string[]
   link: string
   featured: boolean
-  // Optional fields for the detail page — add when ready
+  // Optional fields for the detail page, add when ready
   github?: string
   year?: number
   longDescription?: string
