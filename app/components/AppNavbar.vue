@@ -35,34 +35,34 @@ const closeMobileMenu = () => {
   >
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <!-- Logo -->
-      <a
-        href="/"
+      <NuxtLink
+        to="/"
         class="text-2xl font-black text-gradient tracking-tight"
         aria-label="Simone Camerano — torna alla homepage"
       >
         SC
-      </a>
+      </NuxtLink>
 
       <!-- Desktop links -->
       <div class="hidden md:flex items-center gap-8">
-        <a
+        <NuxtLink
           v-for="link in navLinks"
           :key="link.href"
-          :href="link.href"
+          :to="link.href"
           class="text-sm font-medium text-[#8a8a9a] hover:text-white transition-colors duration-200"
         >
           {{ link.label }}
-        </a>
+        </NuxtLink>
       </div>
 
       <!-- Desktop CTA -->
-      <a
-        href="/#contatti"
+      <NuxtLink
+        to="/#contatti"
         class="hidden md:inline-flex items-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white border transition-all duration-200 hover:bg-purple-500/10 hover:border-purple-400/60"
         style="border-color: rgba(139, 92, 246, 0.4);"
       >
         Parliamo
-      </a>
+      </NuxtLink>
 
       <!-- Mobile hamburger -->
       <button
@@ -94,23 +94,23 @@ const closeMobileMenu = () => {
         class="md:hidden glass-nav border-t px-6 py-5 flex flex-col gap-2"
         style="border-color: rgba(255,255,255,0.05);"
       >
-        <a
+        <NuxtLink
           v-for="link in navLinks"
           :key="link.href"
-          :href="link.href"
+          :to="link.href"
           class="py-2.5 text-sm font-medium text-[#8a8a9a] hover:text-white transition-colors"
           @click="closeMobileMenu"
         >
           {{ link.label }}
-        </a>
-        <a
-          href="/#contatti"
+        </NuxtLink>
+        <NuxtLink
+          to="/#contatti"
           class="mt-3 py-3 rounded-xl text-sm font-semibold text-white border text-center hover:bg-purple-500/10 transition-all duration-200"
           style="border-color: rgba(139, 92, 246, 0.4);"
           @click="closeMobileMenu"
         >
           Parliamo
-        </a>
+        </NuxtLink>
       </div>
     </Transition>
   </nav>
