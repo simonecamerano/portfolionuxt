@@ -261,7 +261,7 @@ export const projects: Project[] = [
           'Retriever TF-IDF per query contestuali sul knowledge layer locale',
           'Provider LLM pluggabili: Ollama locale, DeepSeek, modalità offline (NullProvider)',
           'Output Markdown git-trackable: il contesto evolve insieme al progetto',
-          'Riduzione dichiarata del 60–80% dell\'overhead di token in sessioni AI-assisted',
+          'Riduzione dichiarata del 60-80% dell\'overhead di token in sessioni AI-assisted',
         ],
       },
       archFlow: [
@@ -367,7 +367,7 @@ export const projects: Project[] = [
           "Query di ricerca generate dinamicamente in base al profilo e all'attività recente",
           "Deduplica URL in-run e cross-run via file seen_urls.json persistente",
           "Triage Stage 1 con Groq / Llama-3.3-70b: risposta SI/NO in max 5 token, economico e veloce",
-          "Analisi Stage 2 con DeepSeek-chat: punteggio PERTINENZA (0–100%), angolo strategico e bozza commento",
+          "Analisi Stage 2 con DeepSeek-chat: punteggio PERTINENZA (0-100%), angolo strategico e bozza commento",
           "Soglia minima 70/100: solo i post più rilevanti raggiungono il digest",
           "Digest Telegram in HTML con batching a 4000 caratteri per messaggio",
           "Bot interattivo con comandi /suggest, /profile, /status per trigger on-demand",

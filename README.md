@@ -1,4 +1,4 @@
-# Simone Camerano — Portfolio
+# Simone Camerano - Portfolio
 
 ![Nuxt](https://img.shields.io/badge/Nuxt-3.x-00DC82?style=flat-square&logo=nuxt.js&logoColor=white)
 ![Vue](https://img.shields.io/badge/Vue-3.x-42B883?style=flat-square&logo=vue.js&logoColor=white)
@@ -14,15 +14,15 @@ Personal portfolio and project showcase for **Simone Camerano**, web developer s
 
 ## Features
 
-- **SSR** — Server-side rendering via Nuxt for fast initial load and full SEO indexability
-- **Contact form** — Server-side validation, EmailJS delivery, optional auto-confirmation reply
-- **Project detail pages** — Auto-fetches and renders the GitHub README of each project, with image URL rewriting for correct display
-- **Dynamic sitemap + robots.txt** — Generated at request time from the project data
-- **Privacy-first analytics** — Umami (self-hosted, cookieless)
-- **Glassmorphism design system** — Custom Tailwind utilities: `glass`, `glass-nav`, `text-gradient`, `card-hover`
-- **Scroll animations** — Entry animations via [motion-v](https://motion.dev/vue), with `motion-preload` flash prevention
-- **Accessible** — Semantic HTML, ARIA labels, visible focus states throughout
-- **Mobile-first** — Fully responsive from 320 px
+- **SSR**: Server-side rendering via Nuxt for fast initial load and full SEO indexability
+- **Contact form**: Server-side validation, EmailJS delivery, optional auto-confirmation reply
+- **Project detail pages**: Auto-fetches and renders the GitHub README of each project, with image URL rewriting for correct display
+- **Dynamic sitemap + robots.txt**: Generated at request time from the project data
+- **Privacy-first analytics**: Umami (self-hosted, cookieless)
+- **Glassmorphism design system**: Custom Tailwind utilities: `glass`, `glass-nav`, `text-gradient`, `card-hover`
+- **Scroll animations**: Entry animations via [motion-v](https://motion.dev/vue), with `motion-preload` flash prevention
+- **Accessible**: Semantic HTML, ARIA labels, visible focus states throughout
+- **Mobile-first**: Fully responsive from 320 px
 
 ---
 
@@ -37,7 +37,7 @@ Personal portfolio and project showcase for **Simone Camerano**, web developer s
 | [motion-v](https://motion.dev/vue) | ^2.2 | Declarative scroll and entry animations |
 | [marked](https://marked.js.org) | ^18 | Markdown → HTML for project READMEs |
 | [EmailJS](https://emailjs.com) | REST API | Transactional email without a dedicated mail server |
-| [Docker](https://docker.com) | — | Multi-stage build for self-hosted deployment |
+| [Docker](https://docker.com) | - | Multi-stage build for self-hosted deployment |
 
 ---
 
@@ -71,7 +71,7 @@ cp .env.example .env
 | `EMAILJS_CONFIRMATION_TEMPLATE_ID` | No | Template ID for the auto-reply sent to the visitor |
 | `EMAILJS_PUBLIC_KEY` | Yes | EmailJS public key |
 | `EMAILJS_PRIVATE_KEY` | No | EmailJS private key (enables server-side authentication) |
-| `NUXT_PUBLIC_SITE_URL` | No | Full origin URL — used in sitemaps and OG tags (default: `https://simonecamerano.dev`) |
+| `NUXT_PUBLIC_SITE_URL` | No | Full origin URL, used in sitemaps and OG tags (default: `https://simonecamerano.dev`) |
 
 ### Run locally
 
@@ -107,7 +107,7 @@ A minimal Nginx configuration is provided in `nginx.conf.example`. It proxies `h
 ```
 portfolio-simone/
 ├── app/
-│   ├── app.vue                 # Root layout — global SEO meta, navbar + footer
+│   ├── app.vue                 # Root layout: global SEO meta, navbar + footer
 │   ├── assets/
 │   │   └── css/main.css        # Design system: glass, gradients, animations
 │   ├── components/
@@ -124,17 +124,17 @@ portfolio-simone/
 │   │   ├── stats.ts            # Stats counters shown in About
 │   │   └── technologies.ts     # Tech stack items with brand colours
 │   ├── pages/
-│   │   ├── index.vue           # Home — composes all sections
+│   │   ├── index.vue           # Home: composes all sections
 │   │   ├── about.vue           # Full about page
 │   │   ├── privacy.vue         # Privacy policy
 │   │   └── progetti/
 │   │       ├── index.vue       # Full project listing
-│   │       └── [slug].vue      # Project detail — fetches GitHub README
+│   │       └── [slug].vue      # Project detail: fetches GitHub README
 │   └── types/
 │       └── index.ts            # Shared TypeScript interfaces
 ├── server/
 │   ├── api/
-│   │   ├── contact.post.ts     # Contact form handler — validates + sends via EmailJS
+│   │   ├── contact.post.ts     # Contact form handler: validates + sends via EmailJS
 │   │   └── readme.get.ts       # Fetches GitHub README, rewrites image URLs
 │   └── routes/
 │       ├── robots.txt.ts       # Dynamic robots.txt
