@@ -17,34 +17,40 @@ const { scelto, riapri } = useConsensoTracciamento()
         </p>
       </div>
 
-      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-        <NuxtLink
-          to="/servizi"
-          class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
-        >
-          Servizi
-        </NuxtLink>
-
-        <NuxtLink
-          to="/privacy"
-          class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
-        >
-          Privacy
-        </NuxtLink>
-
-        <ClientOnly>
-          <button
-            v-if="scelto"
-            type="button"
+      <!-- Two fixed rows instead of one wrapping row: with seven items a single
+           row breaks at an arbitrary width, stranding one link on its own
+           between roughly 900px and 1280px. -->
+      <div class="flex flex-col items-center sm:items-end gap-3">
+        <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2">
+          <NuxtLink
+            to="/servizi"
             class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
-            @click="riapri"
           >
-            Preferenze tracciamento
-          </button>
-        </ClientOnly>
+            Servizi
+          </NuxtLink>
 
-        <a
-          href="https://github.com/simonecamerano"
+          <NuxtLink
+            to="/privacy"
+            class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+          >
+            Privacy
+          </NuxtLink>
+
+          <ClientOnly>
+            <button
+              v-if="scelto"
+              type="button"
+              class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+              @click="riapri"
+            >
+              Preferenze tracciamento
+            </button>
+          </ClientOnly>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2">
+          <a
+            href="https://github.com/simonecamerano"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
@@ -98,6 +104,7 @@ const { scelto, riapri } = useConsensoTracciamento()
           </svg>
           Instagram
         </a>
+        </div>
       </div>
     </div>
   </footer>
