@@ -30,8 +30,8 @@ import { services } from '~/data/services'
         <div
           v-for="(service, i) in services"
           :key="service.num"
-          v-motion="{ initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.45, delay: i * 0.09, ease: 'easeOut' as const } }"
-          class="glass card-hover rounded-2xl p-6"
+          v-motion="cardMotion(i * 0.09)"
+          class="glass rounded-2xl p-6"
           style="border-color: rgba(255,255,255,0.08);"
         >
           <div

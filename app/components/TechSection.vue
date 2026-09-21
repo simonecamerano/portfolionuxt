@@ -28,8 +28,8 @@ import { technologies } from '~/data/technologies'
         <div
           v-for="(tech, i) in technologies"
           :key="tech.name"
-          v-motion="{ initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.45, delay: i * 0.07, ease: 'easeOut' as const } }"
-          class="card-hover rounded-2xl p-6 flex flex-col items-center gap-3 text-center cursor-default"
+          v-motion="cardMotion(i * 0.07)"
+          class="rounded-2xl p-6 flex flex-col items-center gap-3 text-center cursor-default"
           :style="{ background: tech.bgColor, border: `1px solid ${tech.borderColor}` }"
         >
           <div class="text-lg font-black tracking-tight font-mono" :style="{ color: tech.color }">

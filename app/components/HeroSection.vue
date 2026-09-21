@@ -1,3 +1,19 @@
+<script setup lang="ts">
+// Reveals each code line left-to-right so the mockup reads as if it were
+// being typed. Starts after the panel's own entry animation has landed.
+const typeLine = (i: number) => ({
+  initial: { clipPath: 'inset(0 100% 0 0)' },
+  animate: { clipPath: 'inset(0 0% 0 0)' },
+  transition: { duration: 0.26, delay: 0.75 + i * 0.14, ease: 'linear' as const },
+})
+
+const springHover = {
+  whileHover: { y: -3, scale: 1.03 },
+  whilePress: { scale: 0.97 },
+  transition: { type: 'spring' as const, stiffness: 420, damping: 24 },
+}
+</script>
+
 <template>
   <section
     id="hero"
@@ -69,8 +85,9 @@
           class="motion-preload flex flex-wrap gap-4"
         >
           <a
+            v-motion="springHover"
             href="#contatti"
-            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85 hover:scale-[1.02] active:scale-[0.98]"
+            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-colors duration-200 hover:opacity-85"
             style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
           >
             Parliamo del tuo progetto
@@ -79,8 +96,9 @@
             </svg>
           </a>
           <a
+            v-motion="springHover"
             href="#progetti"
-            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-[#d0d0e0] border transition-all duration-200 hover:bg-white/[0.06] hover:text-white"
+            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-[#d0d0e0] border transition-colors duration-200 hover:bg-white/[0.06] hover:text-white"
             style="border-color: rgba(255,255,255,0.14);"
           >
             Vedi i progetti
@@ -143,21 +161,21 @@
               </div>
             </div>
             <div class="p-6 font-mono text-[13px] leading-relaxed flex flex-col gap-1">
-              <div>
+              <div v-motion="typeLine(0)">
                 <span style="color: #8b5cf6;">const</span>
                 <span style="color: #c4b5fd;"> simone</span>
                 <span style="color: #94a3b8;"> = </span>
                 <span style="color: #34d399;">{</span>
               </div>
               <div class="pl-5 flex flex-col gap-1">
-                <div><span style="color: #38bdf8;">role</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"Full Stack Developer"</span><span style="color: #94a3b8;">,</span></div>
-                <div><span style="color: #38bdf8;">builds</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"siti web"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"web app"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"automazioni"</span><span style="color: #94a3b8;">],</span></div>
-                <div><span style="color: #38bdf8;">stack</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"Node"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Vue"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Nuxt"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"TypeScript"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"LLMs"</span><span style="color: #94a3b8;">],</span></div>
-                <div><span style="color: #38bdf8;">focus</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"dal problema reale alla soluzione digitale"</span><span style="color: #94a3b8;">,</span></div>
-                <div><span style="color: #38bdf8;">availableFor</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"freelance"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"siti web"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"web app"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"automazioni"</span><span style="color: #94a3b8;">],</span></div>
+                <div v-motion="typeLine(1)"><span style="color: #38bdf8;">role</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"Full Stack Developer"</span><span style="color: #94a3b8;">,</span></div>
+                <div v-motion="typeLine(2)"><span style="color: #38bdf8;">builds</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"siti web"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"web app"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"automazioni"</span><span style="color: #94a3b8;">],</span></div>
+                <div v-motion="typeLine(3)"><span style="color: #38bdf8;">stack</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"Node"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Vue"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"Nuxt"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"TypeScript"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"LLMs"</span><span style="color: #94a3b8;">],</span></div>
+                <div v-motion="typeLine(4)"><span style="color: #38bdf8;">focus</span><span style="color: #94a3b8;">: </span><span style="color: #fbbf24;">"dal problema reale alla soluzione digitale"</span><span style="color: #94a3b8;">,</span></div>
+                <div v-motion="typeLine(5)"><span style="color: #38bdf8;">availableFor</span><span style="color: #94a3b8;">: [</span><span style="color: #fbbf24;">"freelance"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"siti web"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"web app"</span><span style="color: #94a3b8;">, </span><span style="color: #fbbf24;">"automazioni"</span><span style="color: #94a3b8;">],</span></div>
               </div>
-              <div style="color: #34d399;">}</div>
-              <div class="mt-2 flex items-center gap-1.5" style="color: #4a4a6a;">
+              <div v-motion="typeLine(6)" style="color: #34d399;">}</div>
+              <div v-motion="typeLine(7)" class="mt-2 flex items-center gap-1.5" style="color: #4a4a6a;">
                 <span>// sviluppo full stack con AI pragmatica</span>
                 <span class="inline-block w-[2px] h-4 rounded-sm" style="background: #8b5cf6; animation: blink 1.1s step-end infinite;" />
               </div>

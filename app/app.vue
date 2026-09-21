@@ -23,10 +23,12 @@ useHead({
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#0a0a0f]">
-    <AppNavbar />
-    <NuxtPage />
-    <AppFooter />
-    <BannerConsensoTracciamento />
-  </div>
+  <MotionConfig reduced-motion="user">
+    <div class="min-h-screen bg-[#0a0a0f]">
+      <AppNavbar />
+      <NuxtPage />
+      <AppFooter />
+      <BannerConsensoTracciamento />
+    </div>
+  </MotionConfig>
 </template>

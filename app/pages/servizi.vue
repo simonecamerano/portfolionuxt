@@ -166,13 +166,8 @@ const faqs = [
           <div
             v-for="(card, i) in whenCards"
             :key="card.title"
-            v-motion="{
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              inViewOptions: { once: true },
-              transition: { duration: 0.45, delay: i * 0.09, ease: 'easeOut' as const },
-            }"
-            class="glass card-hover rounded-2xl p-6"
+            v-motion="cardMotion(i * 0.09)"
+            class="glass rounded-2xl p-6"
             style="border-color: rgba(255,255,255,0.08);"
           >
             <h3 class="text-[#d0d0e0] font-semibold mb-2">{{ card.title }}</h3>
@@ -216,13 +211,8 @@ const faqs = [
           <div
             v-for="(service, i) in services"
             :key="service.num"
-            v-motion="{
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              inViewOptions: { once: true },
-              transition: { duration: 0.45, delay: i * 0.09, ease: 'easeOut' as const },
-            }"
-            class="glass card-hover rounded-2xl p-7 flex flex-col"
+            v-motion="cardMotion(i * 0.09)"
+            class="glass rounded-2xl p-7 flex flex-col"
             style="border-color: rgba(255,255,255,0.08);"
           >
             <div
@@ -354,13 +344,8 @@ const faqs = [
           <div
             v-for="(project, i) in linkedProjects"
             :key="project.slug"
-            v-motion="{
-              initial: { opacity: 0, y: 20 },
-              whileInView: { opacity: 1, y: 0 },
-              inViewOptions: { once: true },
-              transition: { duration: 0.45, delay: i * 0.09, ease: 'easeOut' as const },
-            }"
-            class="glass card-hover rounded-2xl p-6 flex flex-col"
+            v-motion="cardMotion(i * 0.09)"
+            class="glass rounded-2xl p-6 flex flex-col"
             style="border-color: rgba(255,255,255,0.08);"
           >
             <span
