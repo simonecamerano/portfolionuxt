@@ -10,9 +10,42 @@ const navLinks = [
   { label: 'Contatti', href: '/#contatti' },
 ]
 
+const route = useRoute()
+const activeSection = ref('')
+const sectionIds = navLinks
+  .filter((l) => l.href.startsWith('/#'))
+  .map((l) => l.href.slice(2))
+
+// Picks the section closest to a line at 40% of the viewport, counting only
+// those that have already crossed it. Measuring instead of following DOM order
+// matters: the menu lists Progetti before Chi sono, the page renders them the
+// other way round.
+const updateActiveSection = () => {
+  if (route.path !== '/') {
+    activeSection.value = ''
+    return
+  }
+  const line = window.innerHeight * 0.4
+  let current = ''
+  let closest = -Infinity
+  for (const id of sectionIds) {
+    const top = document.getElementById(id)?.getBoundingClientRect().top
+    if (top === undefined || top > line || top <= closest) continue
+    closest = top
+    current = id
+  }
+  activeSection.value = current
+}
+
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 20
+  updateActiveSection()
 }
+
+const isActive = (href: string) =>
+  href.startsWith('/#')
+    ? route.path === '/' && activeSection.value === href.slice(2)
+    : route.path === href
 
 onMounted(() => {
   handleScroll()
@@ -21,6 +54,8 @@ onMounted(() => {
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
 onUnmounted(() => window.removeEventListener('scroll', handleScroll))
+
+watch(() => route.fullPath, () => nextTick(updateActiveSection))
 
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
@@ -49,9 +84,17 @@ const closeMobileMenu = () => {
           v-for="link in navLinks"
           :key="link.href"
           :to="link.href"
-          class="text-sm font-medium text-[#8a8a9a] hover:text-white transition-colors duration-200"
+          class="relative text-sm font-medium transition-colors duration-200 hover:text-white"
+          :class="isActive(link.href) ? 'text-white' : 'text-[#8a8a9a]'"
+          :aria-current="isActive(link.href) ? (link.href.startsWith('/#') ? 'location' : 'page') : undefined"
         >
           {{ link.label }}
+          <span
+            v-if="isActive(link.href)"
+            class="absolute -bottom-1.5 left-0 right-0 h-px rounded-full"
+            style="background: linear-gradient(90deg, #3b82f6, #8b5cf6);"
+            aria-hidden="true"
+          />
         </NuxtLink>
       </div>
 
@@ -98,7 +141,9 @@ const closeMobileMenu = () => {
           v-for="link in navLinks"
           :key="link.href"
           :to="link.href"
-          class="py-2.5 text-sm font-medium text-[#8a8a9a] hover:text-white transition-colors"
+          class="py-2.5 text-sm font-medium transition-colors hover:text-white"
+          :class="isActive(link.href) ? 'text-white' : 'text-[#8a8a9a]'"
+          :aria-current="isActive(link.href) ? (link.href.startsWith('/#') ? 'location' : 'page') : undefined"
           @click="closeMobileMenu"
         >
           {{ link.label }}
