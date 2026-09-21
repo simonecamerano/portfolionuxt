@@ -8,7 +8,8 @@ defineProps<{
 
 <template>
   <article
-    class="glass card-hover rounded-3xl overflow-hidden flex flex-col h-full group"
+    v-motion="cardHover"
+    class="glass rounded-3xl overflow-hidden flex flex-col h-full group"
     style="border-color: rgba(255,255,255,0.08);"
   >
     <!-- Screenshot -->
