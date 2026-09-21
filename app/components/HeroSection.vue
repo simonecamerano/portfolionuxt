@@ -22,13 +22,17 @@ const springHover = {
   >
     <!-- Radial background glows -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      <!-- opacity matches the glowPulse resting keyframe: without it the glow
+           sits at full strength until the animation starts (2s for the second
+           one) and then snaps down. Also keeps them dim under reduced motion,
+           where the animation is cut short. -->
       <div
         class="absolute top-1/4 -left-20 w-[700px] h-[700px] rounded-full blur-3xl animate-glow-pulse"
-        style="background: radial-gradient(circle, rgba(59,130,246,0.22), transparent 70%);"
+        style="background: radial-gradient(circle, rgba(59,130,246,0.22), transparent 70%); opacity: 0.4;"
       />
       <div
         class="absolute top-1/3 right-0 w-[600px] h-[600px] rounded-full blur-3xl animate-glow-pulse"
-        style="background: radial-gradient(circle, rgba(139,92,246,0.18), transparent 70%); animation-delay: 2s;"
+        style="background: radial-gradient(circle, rgba(139,92,246,0.18), transparent 70%); animation-delay: 2s; opacity: 0.4;"
       />
     </div>
 
