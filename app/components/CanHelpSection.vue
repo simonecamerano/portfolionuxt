@@ -1,32 +1,32 @@
 <script setup lang="ts">
 const cards = [
   {
-    title: 'Hai un sito vecchio o che non funziona',
-    body: 'Il tuo sito è lento, poco chiaro o non rappresenta più quello che fai. O non hai ancora una presenza online professionale e vuoi partire bene.',
+    title: 'Il team perde tempo in attività ripetitive',
+    body: 'Dati da copiare, controlli ricorrenti, report da preparare e informazioni da spostare manualmente tra strumenti diversi.',
   },
   {
-    title: 'Ti serve uno strumento su misura',
-    body: 'Hai bisogno di una web app, un gestionale leggero o uno strumento interno per gestire dati, richieste, utenti o processi che oggi vengono seguiti a mano.',
+    title: 'Gli strumenti non comunicano tra loro',
+    body: 'Email, fogli, documenti e gestionali contengono parti dello stesso processo, ma manca un flusso che li colleghi.',
+  },
+  {
+    title: 'Le informazioni sono difficili da trovare',
+    body: 'Procedure, cataloghi, FAQ e materiali interni sono dispersi e il team perde tempo a cercare la risposta corretta.',
+  },
+  {
+    title: 'Vuoi usare l’AI senza perdere il controllo',
+    body: 'Cerchi un sistema con compiti precisi, fonti verificabili e approvazioni umane, non una scatola nera che decide da sola.',
   },
   {
     title: 'Excel non basta più',
-    body: 'Usi troppi file, email e documenti sparsi. Il flusso di lavoro è frammentato e ogni aggiornamento richiede passaggi manuali ripetitivi.',
+    body: 'Il processo è cresciuto e ora servono un’interfaccia, dati centralizzati o uno strumento interno costruito sul lavoro reale.',
   },
   {
-    title: 'Vuoi automatizzare senza perdere il controllo',
-    body: 'Hai attività che si ripetono: cercare informazioni, filtrare risultati, preparare report, aggiornare dati. Vuoi automatizzarle senza che il sistema diventi ingestibile.',
+    title: 'Vuoi capire dove l’AI serve davvero',
+    body: 'Prima di investire vuoi distinguere le opportunità concrete dalle automazioni fragili o inutilmente complesse.',
   },
   {
-    title: 'Hai documenti difficili da consultare',
-    body: 'Procedure, cataloghi, FAQ, materiali formativi o informazioni interne sono dispersi e difficili da trovare quando servono.',
-  },
-  {
-    title: "Vuoi capire se l'AI può aiutarti davvero",
-    body: "Senti parlare di AI e automazioni ma non sai se e come potrebbero cambiare il tuo modo di lavorare, senza partire da promesse esagerate.",
-  },
-  {
-    title: "Hai un'idea ma non sai da dove partire",
-    body: "Vuoi costruire un prodotto digitale, ma ti serve qualcuno che traduca l'idea in architettura, priorità e primo prototipo funzionante.",
+    title: 'Hai un’idea da trasformare in un sistema',
+    body: 'Ti serve qualcuno che traduca il processo in architettura, priorità e un primo prodotto funzionante.',
   },
 ]
 </script>
@@ -36,7 +36,7 @@ const cards = [
 
     <div
       class="max-w-6xl mx-auto mb-20 h-px"
-      style="background: linear-gradient(90deg, transparent, rgba(59,130,246,0.3), transparent);"
+      style="background: linear-gradient(90deg, transparent, rgba(196, 181, 253, 0.3), transparent);"
       aria-hidden="true"
     />
 
@@ -49,15 +49,15 @@ const cards = [
       >
         <span
           class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-          style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+          style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.25); color: #c4b5fd;"
         >
-          Posso aiutarti se
+          Problemi operativi
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight max-w-3xl mx-auto leading-[1.1]">
-          Posso aiutarti se hai <span class="text-gradient">un problema concreto da risolvere.</span>
+          L’AI crea valore quando risolve <span class="text-gradient-cyan">un problema concreto.</span>
         </h2>
         <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl mx-auto">
-          Non serve sempre "rivoluzionare" niente. Serve mettere ordine, scegliere le priorità e costruire uno strumento che faccia bene il suo lavoro.
+          Prima della tecnologia vengono il tempo perso, i passaggi fragili e le informazioni che non arrivano quando servono.
         </p>
       </div>
 
@@ -70,7 +70,7 @@ const cards = [
           class="glass rounded-2xl p-6"
           style="border-color: rgba(255,255,255,0.08);"
         >
-          <h3 class="text-[#d0d0e0] font-semibold text-base mb-2">{{ card.title }}</h3>
+          <h3 class="text-[#c4b5fd] font-semibold text-base mb-2">{{ card.title }}</h3>
           <p class="text-[#6a6a7a] text-sm leading-relaxed">{{ card.body }}</p>
         </div>
       </div>

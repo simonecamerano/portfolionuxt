@@ -13,7 +13,7 @@ const scrollIn = (delay = 0) => ({
   <section id="about" class="py-28 px-6">
     <div
       class="max-w-6xl mx-auto mb-20 h-px"
-      style="background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);"
+      style="background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), transparent);"
       aria-hidden="true"
     />
 
@@ -24,7 +24,7 @@ const scrollIn = (delay = 0) => ({
         <div v-motion="scrollIn(0)">
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+            style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.25); color: #c4b5fd;"
           >
             Chi sono
           </span>
@@ -36,10 +36,10 @@ const scrollIn = (delay = 0) => ({
 
         <div v-motion="scrollIn(0.1)" class="flex flex-col gap-4">
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Sono un Full Stack Developer con una specializzazione pratica in AI e automazione. Costruisco siti web, web app, strumenti interni, automazioni e workflow AI per PMI, professionisti e piccoli team.
+            Sono un AI Workflow Engineer con competenze full stack. Analizzo processi e costruisco automazioni, assistenti e strumenti AI per PMI, professionisti e piccoli team.
           </p>
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
-            Prima di dedicarmi allo sviluppo web, ho lavorato per 26 anni nella GDO, dentro processi reali: team, fornitori, clienti, urgenze operative, strumenti non sempre adatti e problemi da risolvere senza troppa teoria. Quel background non è una nota a piè di pagina. È il motivo per cui capisco i problemi di business prima di iniziare a progettare soluzioni.
+            Prima di dedicarmi allo sviluppo web, ho lavorato per 26 anni nella GDO, a contatto con processi reali, team, fornitori, clienti e urgenze operative. Ho affrontato ogni giorno strumenti non sempre adatti e problemi da risolvere senza troppa teoria. È il motivo per cui capisco i problemi dell’attività prima di iniziare a progettare una soluzione.
           </p>
           <p class="text-[#6a6a7a] leading-relaxed text-lg">
             La tecnologia è importante. Ma deve servire il lavoro, non diventare un altro problema da gestire.
@@ -80,7 +80,7 @@ const scrollIn = (delay = 0) => ({
         <div class="relative">
           <div
             class="absolute -inset-6 rounded-[2.5rem] blur-3xl opacity-30"
-            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+            style="background: linear-gradient(135deg, #c4b5fd, #93c5fd);"
             aria-hidden="true"
           />
           <div
@@ -89,7 +89,7 @@ const scrollIn = (delay = 0) => ({
           >
             <img
               src="/images/simone_camerano.png"
-              alt="Simone Camerano, Full Stack Developer"
+              alt="Simone Camerano, AI Workflow Engineer"
               class="w-full block"
               style="aspect-ratio: 3/4; object-fit: cover; object-position: center top;"
               width="400"
@@ -101,7 +101,7 @@ const scrollIn = (delay = 0) => ({
             >
               <div>
                 <p class="font-bold text-[#f0f0f5] text-sm leading-tight">Simone Camerano</p>
-                <p class="text-xs text-gradient font-semibold mt-0.5">Full Stack Developer</p>
+                <p class="text-xs text-gradient font-semibold mt-0.5">AI Workflow Engineer</p>
               </div>
             </div>
           </div>

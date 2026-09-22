@@ -5,8 +5,8 @@ export const cardHover = {
   whileHover: {
     y: -6,
     scale: 1.015,
-    borderColor: 'rgba(139,92,246,0.45)',
-    boxShadow: '0 24px 64px rgba(139,92,246,0.18)',
+    borderColor: 'rgba(34,211,238,0.38)',
+    boxShadow: '0 24px 64px rgba(14,165,233,0.13)',
     transition: spring,
   },
   whilePress: { scale: 0.99, transition: spring },

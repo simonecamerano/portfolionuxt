@@ -1,21 +1,22 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Simone Camerano - Full Stack Developer per siti, web app e soluzioni AI pratiche',
+  title: 'Simone Camerano - AI Workflow Engineer per PMI e piccoli team',
   description:
-    'Full Stack Developer a Pesaro. Creo siti web moderni, web app, strumenti digitali su misura, automazioni e soluzioni AI pratiche per PMI, professionisti e piccoli team.',
-  ogTitle: 'Simone Camerano - Full Stack Developer per siti, web app e soluzioni AI pratiche',
+    'Integro AI e automazioni nei processi di PMI e piccoli team. Workflow controllabili, assistenti su documenti e strumenti digitali su misura.',
+  ogTitle: 'Simone Camerano - AI Workflow Engineer',
   ogDescription:
-    'Full Stack Developer a Pesaro. Creo siti web moderni, web app, strumenti digitali su misura, automazioni e soluzioni AI pratiche per PMI, professionisti e piccoli team.',
+    'Workflow AI, automazioni e applicazioni su misura che riducono il lavoro manuale mantenendo le persone al controllo.',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Simone Camerano - Full Stack Developer per siti, web app e soluzioni AI pratiche',
-  twitterDescription: 'Full Stack Developer a Pesaro. Siti web moderni, web app, automazioni e soluzioni AI pratiche per PMI, professionisti e piccoli team.',
+  twitterTitle: 'Simone Camerano - AI Workflow Engineer',
+  twitterDescription: 'AI e automazioni integrate nei processi di PMI e piccoli team.',
 })
 </script>
 
 <template>
   <main>
     <HeroSection />
+    <CinematicStorySection />
     <CanHelpSection />
     <ServicesSection />
     <ProjectsSection />

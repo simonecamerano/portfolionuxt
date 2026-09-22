@@ -24,7 +24,7 @@ useHead({
 
 <template>
   <MotionConfig reduced-motion="user">
-    <div class="min-h-screen bg-[#0a0a0f]">
+    <div class="min-h-screen bg-[#05080d]">
       <AppNavbar />
       <NuxtPage />
       <AppFooter />

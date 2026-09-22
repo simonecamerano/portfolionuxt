@@ -4,10 +4,10 @@ const isMobileMenuOpen = ref(false)
 
 const navLinks = [
   { label: 'Home', href: '/#hero' },
-  { label: 'Chi sono', href: '/#about' },
+  { label: 'Soluzioni', href: '/servizi' },
   { label: 'Progetti', href: '/#progetti' },
-  { label: 'Servizi', href: '/servizi' },
-  { label: 'Contatti', href: '/#contatti' },
+  { label: 'Metodo', href: '/#metodo' },
+  { label: 'Chi sono', href: '/#about' },
 ]
 
 const route = useRoute()
@@ -128,7 +128,7 @@ const closeMobileMenu = () => {
           <span
             v-if="isActive(link.href)"
             class="absolute -bottom-1.5 left-0 right-0 h-px rounded-full"
-            style="background: linear-gradient(90deg, #3b82f6, #8b5cf6);"
+            style="background: linear-gradient(90deg, #c4b5fd, #c4b5fd, #93c5fd);"
             aria-hidden="true"
           />
         </NuxtLink>
@@ -137,11 +137,11 @@ const closeMobileMenu = () => {
       <!-- Desktop CTA -->
       <NuxtLink
         to="/#contatti"
-        class="hidden md:inline-flex items-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white border transition-all duration-200 hover:bg-purple-500/10 hover:border-purple-400/60"
-        style="border-color: rgba(139, 92, 246, 0.4);"
+        class="hidden md:inline-flex items-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white border transition-all duration-200 hover:bg-violet-400/10 hover:border-violet-300/60"
+        style="border-color: rgba(196, 181, 253, 0.36);"
         @click="onNavClick('/#contatti')"
       >
-        Parliamo
+        Analizziamo un processo
       </NuxtLink>
 
       <!-- Mobile hamburger -->
@@ -187,11 +187,11 @@ const closeMobileMenu = () => {
         </NuxtLink>
         <NuxtLink
           to="/#contatti"
-          class="mt-3 py-3 rounded-xl text-sm font-semibold text-white border text-center hover:bg-purple-500/10 transition-all duration-200"
-          style="border-color: rgba(139, 92, 246, 0.4);"
+          class="mt-3 py-3 rounded-xl text-sm font-semibold text-white border text-center hover:bg-cyan-500/10 transition-all duration-200"
+          style="border-color: rgba(196, 181, 253, 0.36);"
           @click="onNavClick('/#contatti')"
         >
-          Parliamo
+          Analizziamo un processo
         </NuxtLink>
       </div>
     </Transition>

@@ -6,7 +6,7 @@ useSeoMeta({
   description:
     'Tutti i progetti di Simone Camerano: app full stack, frontend, giochi e landing page. Vue, Nuxt, Node.js, TypeScript.',
   ogTitle: 'Progetti - Simone Camerano',
-  ogDescription: 'Esplora tutti i progetti di Simone Camerano, web developer.',
+  ogDescription: 'Esplora i progetti di Simone Camerano: automazioni, applicazioni e strumenti AI.',
 })
 
 const selectedCategory = ref('Tutti')
@@ -53,7 +53,7 @@ const filtered = computed(() =>
       
         <span
           class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-          style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;"
+          style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #d8b4fe;"
         >
           Portfolio
         </span>
@@ -86,7 +86,7 @@ const filtered = computed(() =>
           "
           :style="
             selectedCategory === cat
-              ? 'background: linear-gradient(135deg, #3b82f6, #8b5cf6); box-shadow: 0 4px 20px rgba(139,92,246,0.3);'
+              ? 'background: linear-gradient(135deg, #d8b4fe, #b69cff); box-shadow: 0 4px 20px rgba(196,181,253,0.3);'
               : 'background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);'
           "
           :aria-pressed="selectedCategory === cat"

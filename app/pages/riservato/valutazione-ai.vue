@@ -73,11 +73,11 @@ async function inviaForm() {
     <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
       <div
         class="absolute top-1/4 -left-20 w-[700px] h-[700px] rounded-full blur-3xl animate-glow-pulse"
-        style="background: radial-gradient(circle, rgba(59,130,246,0.18), transparent 70%);"
+        style="background: radial-gradient(circle, rgba(196,181,253,0.18), transparent 70%);"
       />
       <div
         class="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full blur-3xl animate-glow-pulse"
-        style="background: radial-gradient(circle, rgba(139,92,246,0.16), transparent 70%); animation-delay: 2s;"
+        style="background: radial-gradient(circle, rgba(196,181,253,0.16), transparent 70%); animation-delay: 2s;"
       />
     </div>
 
@@ -90,13 +90,13 @@ async function inviaForm() {
       <div class="flex flex-col gap-7 pt-8">
         <span
           class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium w-fit"
-          style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.28); color: #c4b5fd;"
+          style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.28); color: #e4c9ff;"
         >
           Diagnosi AI per PMI
         </span>
 
         <h1 class="text-4xl sm:text-5xl font-extrabold leading-[1.12] tracking-tight text-[#f0f0f5]">
-          Scopri come l'<span class="text-gradient">AI</span> può aiutare davvero la tua Azienda
+          Scopri come l'<span class="text-gradient">AI</span> può aiutare davvero la tua azienda
         </h1>
 
         <p class="text-lg text-[#8a8a9a] leading-relaxed max-w-md">
@@ -113,8 +113,8 @@ async function inviaForm() {
             class="flex items-start gap-3"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" class="flex-shrink-0 mt-0.5" aria-hidden="true">
-              <circle cx="10" cy="10" r="9" fill="none" stroke="#8b5cf6" stroke-width="1.5" />
-              <path d="M6 10.2l2.4 2.4L14 7" fill="none" stroke="#8b5cf6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="10" cy="10" r="9" fill="none" stroke="#b69cff" stroke-width="1.5" />
+              <path d="M6 10.2l2.4 2.4L14 7" fill="none" stroke="#b69cff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <span class="text-[15px] text-[#d0d0e0] leading-relaxed">{{ punto }}</span>
           </div>
@@ -132,7 +132,7 @@ async function inviaForm() {
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] w-fit"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #e4c9ff;"
           >
             Prenota la chiamata gratuita
           </span>
@@ -145,7 +145,7 @@ async function inviaForm() {
           <input v-model="form.honeypot" type="text" name="hp_x7q2" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="flex flex-col gap-2">
-            <label for="val-nome" class="text-sm font-medium text-[#8a8a9a]">Nome e cognome <span class="text-purple-400" aria-hidden="true">*</span></label>
+            <label for="val-nome" class="text-sm font-medium text-[#8a8a9a]">Nome e cognome <span class="text-violet-300" aria-hidden="true">*</span></label>
             <input
               id="val-nome" v-model="form.nome" type="text" required autocomplete="name" placeholder="Mario Rossi"
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
@@ -154,7 +154,7 @@ async function inviaForm() {
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="val-telefono" class="text-sm font-medium text-[#8a8a9a]">Telefono <span class="text-purple-400" aria-hidden="true">*</span></label>
+            <label for="val-telefono" class="text-sm font-medium text-[#8a8a9a]">Telefono <span class="text-violet-300" aria-hidden="true">*</span></label>
             <input
               id="val-telefono" v-model="form.telefono" type="tel" required autocomplete="tel" placeholder="333 1234567"
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
@@ -163,7 +163,7 @@ async function inviaForm() {
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="val-email" class="text-sm font-medium text-[#8a8a9a]">Email <span class="text-purple-400" aria-hidden="true">*</span></label>
+            <label for="val-email" class="text-sm font-medium text-[#8a8a9a]">Email <span class="text-violet-300" aria-hidden="true">*</span></label>
             <input
               id="val-email" v-model="form.email" type="email" required autocomplete="email" placeholder="mario@email.com"
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
@@ -196,10 +196,10 @@ async function inviaForm() {
           >
             <input
               id="val-consenso" v-model="form.consenso" type="checkbox" required
-              class="mt-1 h-4 w-4 flex-shrink-0 accent-purple-500"
+              class="mt-1 h-4 w-4 flex-shrink-0 accent-violet-400"
             >
             <span>
-              Ho letto l'<NuxtLink to="/privacy" class="text-[#c4b5fd] hover:text-white transition-colors">informativa privacy</NuxtLink> e sono consapevole di come i miei dati saranno usati per essere ricontattato.
+              Ho letto l'<NuxtLink to="/privacy" class="text-[#e4c9ff] hover:text-white transition-colors">informativa privacy</NuxtLink> e sono consapevole di come i miei dati saranno usati per essere ricontattato.
             </span>
           </label>
 
@@ -210,7 +210,7 @@ async function inviaForm() {
           <button
             type="submit" :disabled="invioInCorso"
             class="w-full py-4 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-88 hover:scale-[1.015] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
-            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+            style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           >
             <span v-if="invioInCorso" class="flex items-center justify-center gap-2.5">
               <svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">

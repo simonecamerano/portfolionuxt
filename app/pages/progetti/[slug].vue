@@ -67,7 +67,7 @@ useSeoMeta({
           <div class="flex items-center gap-2 flex-wrap">
             <span
               class="px-3 py-1 rounded-full text-xs font-semibold"
-              style="background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.3); color: #c4b5fd;"
+              style="background: rgba(196,181,253,0.12); border: 1px solid rgba(196,181,253,0.3); color: #e4c9ff;"
             >
               {{ project.category }}
             </span>
@@ -103,7 +103,7 @@ useSeoMeta({
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85 hover:scale-[1.02]"
-              style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+              style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
             >
               Vedi il progetto
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -130,7 +130,7 @@ useSeoMeta({
         <div class="relative">
           <div
             class="absolute -inset-4 rounded-[2rem] blur-2xl opacity-20 pointer-events-none"
-            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+            style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
             aria-hidden="true"
           />
           <div
@@ -153,7 +153,7 @@ useSeoMeta({
       <template v-if="project.caseStudy">
 
         <!-- Divider -->
-        <div class="mt-20 mb-16 h-px" style="background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);" aria-hidden="true" />
+        <div class="mt-20 mb-16 h-px" style="background: linear-gradient(90deg, transparent, rgba(196,181,253,0.3), transparent);" aria-hidden="true" />
 
         <!-- Problem + Solution (two columns on lg) -->
         <div class="grid lg:grid-cols-2 gap-8 mb-12">
@@ -183,7 +183,7 @@ useSeoMeta({
           <!-- Solution -->
           <div class="glass rounded-2xl p-8" style="border-color: rgba(255,255,255,0.08);">
             <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
-              style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;">
+              style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #d8b4fe;">
               Soluzione
             </span>
             <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight leading-tight mb-4">
@@ -196,7 +196,7 @@ useSeoMeta({
                 :key="point"
                 class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
               >
-                <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(59,130,246,0.5);" aria-hidden="true" />
+                <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(196,181,253,0.5);" aria-hidden="true" />
                 {{ point }}
               </li>
             </ul>
@@ -206,7 +206,7 @@ useSeoMeta({
         <!-- Architecture flow -->
         <div class="glass rounded-2xl p-8 mb-8" style="border-color: rgba(255,255,255,0.08);">
           <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;">
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #e4c9ff;">
             Architettura
           </span>
           <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight mb-6">Flusso ad alto livello</h2>
@@ -227,7 +227,7 @@ useSeoMeta({
           <!-- Demonstrates -->
           <div class="glass rounded-2xl p-8" style="border-color: rgba(255,255,255,0.08);">
             <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.1em] mb-5"
-              style="background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); color: #86efac;">
+              style="background: rgba(139,233,255,0.08); border: 1px solid rgba(139,233,255,0.2); color: #b9f3ff;">
               Cosa dimostra
             </span>
             <h2 class="text-xl font-extrabold text-[#f0f0f5] tracking-tight mb-5">Competenze dimostrate</h2>
@@ -237,7 +237,7 @@ useSeoMeta({
                 :key="item"
                 class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
               >
-                <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(74,222,128,0.6);" aria-hidden="true" />
+                <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(139,233,255,0.6);" aria-hidden="true" />
                 {{ item }}
               </li>
             </ul>
@@ -287,12 +287,12 @@ useSeoMeta({
         </div>
 
         <!-- CTA block -->
-        <div class="glass rounded-2xl p-8 text-center" style="border-color: rgba(255,255,255,0.08); background: rgba(139,92,246,0.04);">
+        <div class="glass rounded-2xl p-8 text-center" style="border-color: rgba(255,255,255,0.08); background: rgba(196,181,253,0.04);">
           <p class="text-[#d0d0e0] font-medium mb-5 max-w-xl mx-auto">{{ project.caseStudy.ctaText }}</p>
           <a
             href="/#contatti"
             class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85 hover:scale-[1.02]"
-            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+            style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           >
             Parliamo del tuo workflow
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -351,7 +351,7 @@ useSeoMeta({
         <NuxtLink
           v-if="prevProject"
           :to="`/progetti/${prevProject.slug}`"
-          class="group glass rounded-2xl p-5 flex items-center gap-4 transition-all duration-200 hover:border-purple-500/40"
+          class="group glass rounded-2xl p-5 flex items-center gap-4 transition-all duration-200 hover:border-violet-300/50"
           style="border-color: rgba(255,255,255,0.08);"
         >
           <svg class="w-5 h-5 text-[#8a8a9a] flex-shrink-0 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -367,7 +367,7 @@ useSeoMeta({
         <NuxtLink
           v-if="nextProject"
           :to="`/progetti/${nextProject.slug}`"
-          class="group glass rounded-2xl p-5 flex items-center justify-end gap-4 text-right transition-all duration-200 hover:border-purple-500/40 sm:col-start-2"
+          class="group glass rounded-2xl p-5 flex items-center justify-end gap-4 text-right transition-all duration-200 hover:border-violet-300/50 sm:col-start-2"
           style="border-color: rgba(255,255,255,0.08);"
         >
           <div class="min-w-0">

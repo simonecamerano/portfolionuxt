@@ -49,7 +49,7 @@ const resetForm = () => {
   <section id="contatti" class="py-28 px-6">
     <div
       class="max-w-6xl mx-auto mb-20 h-px"
-      style="background: linear-gradient(90deg, transparent, rgba(59,130,246,0.3), transparent);"
+      style="background: linear-gradient(90deg, transparent, rgba(196, 181, 253, 0.3), transparent);"
       aria-hidden="true"
     />
 
@@ -63,22 +63,22 @@ const resetForm = () => {
         <div>
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+            style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.25); color: #c4b5fd;"
           >
             Contatti
           </span>
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] leading-[1.1] tracking-tight">
-            Hai un sito da rifare,<br />
-            una web app da costruire<br />
-            o un processo da <span class="text-gradient">semplificare?</span>
+            Quale processo oggi<br />
+            fa perdere tempo<br />
+            al tuo <span class="text-gradient-cyan">team?</span>
           </h2>
         </div>
 
         <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
-          Raccontami da dove parti: un sito vecchio, un'idea di prodotto, un processo manuale, una knowledge base disordinata o il dubbio che l'AI possa aiutarti in modo concreto.
+          Raccontami cosa succede oggi: quali strumenti usate, quali passaggi si ripetono e dove il flusso si blocca.
         </p>
         <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
-          Ti aiuto a capire cosa ha senso costruire, con quale priorità e con quale livello di complessità. Niente promesse esagerate. Prima capiamo il problema, poi decidiamo la soluzione.
+          Capiremo se serve un’automazione, un assistente AI, uno strumento su misura oppure una soluzione più semplice.
         </p>
 
         <div class="flex flex-col gap-3">
@@ -100,7 +100,7 @@ const resetForm = () => {
           style="background: rgba(74,222,128,0.07); border: 1px solid rgba(74,222,128,0.2);"
         >
           <span class="w-2.5 h-2.5 rounded-full bg-green-400 flex-shrink-0" style="box-shadow: 0 0 8px rgba(74,222,128,0.7);" aria-hidden="true" />
-          <span class="text-sm font-medium text-green-400/90">Disponibile per freelance: siti, web app, automazioni e integrazioni AI.</span>
+          <span class="text-sm font-medium text-green-400/90">Disponibile per progetti freelance con PMI e piccoli team.</span>
         </div>
       </div>
 
@@ -143,7 +143,7 @@ const resetForm = () => {
 
             <div class="flex flex-col gap-2">
               <label for="contact-subject" class="text-sm font-medium text-[#8a8a9a]">Oggetto <span class="text-purple-400" aria-hidden="true">*</span></label>
-              <input id="contact-subject" v-model="form.subject" type="text" required placeholder="Progetto freelance, collaborazione..."
+              <input id="contact-subject" v-model="form.subject" type="text" required placeholder="Automazione, workflow AI, strumento interno..."
                 class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);" />
             </div>
@@ -182,7 +182,7 @@ const resetForm = () => {
 
             <button type="submit" :disabled="status === 'loading'"
               class="w-full py-4 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-88 hover:scale-[1.015] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
-              style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
+              style="background: linear-gradient(135deg, #c4b5fd, #93c5fd);">
               <span v-if="status === 'loading'" class="flex items-center justify-center gap-2.5">
                 <svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
@@ -190,7 +190,7 @@ const resetForm = () => {
                 </svg>
                 Invio in corso...
               </span>
-              <span v-else>Invia un messaggio ✉️</span>
+              <span v-else>Raccontami il processo</span>
             </button>
           </template>
         </form>

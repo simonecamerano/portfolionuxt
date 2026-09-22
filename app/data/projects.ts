@@ -312,7 +312,7 @@ export const projects: Project[] = [
     github: 'https://github.com/simonecamerano/HundredPath',
     year: 2026,
     longDescription:
-      "Gioco logico a griglia 10x10 dove si cerca il percorso che porta esattamente a 100, in tre modalita': Tutorial, Ranked e Mastermind. Vue 3 sul frontend, Node.js + Express sul backend, MongoDB per account, partite e classifiche, autenticazione con password cifrate. Frontend e API girano nello stesso container su infrastruttura propria e rispondono sullo stesso dominio, quindi nessun servizio esterno consegna le pagine: anche gli avatar sono generati nel browser invece di essere chiesti a un servizio di terzi. Gli account inattivi da 24 mesi vengono cancellati da un lavoro periodico, insieme a partite e voci di classifica.",
+      "Gioco logico a griglia 10x10 dove si cerca il percorso che porta esattamente a 100, in tre modalità: Tutorial, Ranked e Mastermind. Vue 3 sul frontend, Node.js + Express sul backend, MongoDB per account, partite e classifiche, autenticazione con password cifrate. Frontend e API girano nello stesso container su infrastruttura propria e rispondono sullo stesso dominio, quindi nessun servizio esterno consegna le pagine: anche gli avatar sono generati nel browser invece di essere chiesti a un servizio di terzi. Gli account inattivi da 24 mesi vengono cancellati da un lavoro periodico, insieme a partite e voci di classifica.",
   },
   {
     id: 14,

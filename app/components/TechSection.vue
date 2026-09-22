@@ -12,15 +12,15 @@ import { technologies } from '~/data/technologies'
       >
         <span
           class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-          style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;"
+          style="background: rgba(196, 181, 253, 0.1); border: 1px solid rgba(196, 181, 253, 0.25); color: #c4b5fd;"
         >
-          Stack
+          Capacità tecnica
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight">
-          Tecnologie che <span class="text-gradient">uso</span>
+          Costruisco l’intero <span class="text-gradient-cyan">sistema.</span>
         </h2>
         <p class="text-[#6a6a7a] mt-4 max-w-md mx-auto">
-          Uso strumenti moderni per costruire siti, web app, backend, automazioni e integrazioni AI. La scelta dello stack dipende dal progetto: prima viene il problema, poi la tecnologia.
+          Interfacce, backend, dati, integrazioni e modelli AI. Le tecnologie sono il mezzo per portare un flusso di lavoro dal prototipo all’uso quotidiano.
         </p>
       </div>
 
@@ -35,7 +35,7 @@ import { technologies } from '~/data/technologies'
           <div class="text-lg font-black tracking-tight font-mono" :style="{ color: tech.color }">
             {{ tech.abbr }}
           </div>
-          <span class="text-sm font-semibold text-[#d0d0e0]">{{ tech.name }}</span>
+          <span class="text-sm font-semibold text-[#c4b5fd]">{{ tech.name }}</span>
         </div>
       </div>
 

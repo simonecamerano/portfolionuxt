@@ -27,7 +27,7 @@ const steps = [
   <section id="metodo" aria-label="Metodo di lavoro" class="py-28 px-6">
     <div
       class="max-w-6xl mx-auto mb-20 h-px"
-      style="background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);"
+      style="background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), transparent);"
       aria-hidden="true"
     />
 
@@ -45,7 +45,7 @@ const steps = [
       >
         <span
           class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em]"
-          style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+          style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.25); color: #c4b5fd;"
         >
           Metodo
         </span>
@@ -71,7 +71,7 @@ const steps = [
           <div class="text-gradient text-5xl font-black leading-none mb-4">
             {{ step.num }}
           </div>
-          <div class="text-[#d0d0e0] font-semibold text-base mb-2">
+          <div class="text-[#c4b5fd] font-semibold text-base mb-2">
             {{ step.label }}
           </div>
           <p class="text-[#6a6a7a] text-sm leading-relaxed">

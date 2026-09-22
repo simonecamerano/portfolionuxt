@@ -25,7 +25,7 @@ useSeoMeta({
       <header class="mb-12">
         <span
           class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-          style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+          style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #e4c9ff;"
         >
           Privacy
         </span>
@@ -103,7 +103,7 @@ useSeoMeta({
         <h2>Clienti con un incarico in corso</h2>
         <p>
           Se dalla trattativa nasce una collaborazione, il trattamento dei tuoi dati cambia
-          ragione: non serve più a proporre un servizio, ma a erogarlo.
+          finalità: non serve più a proporre un servizio, ma a erogarlo.
         </p>
         <p>
           <strong>Quali dati.</strong> Ragione sociale e dati fiscali della tua azienda, nome e

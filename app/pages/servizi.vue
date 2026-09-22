@@ -2,41 +2,41 @@
 import { services } from '~/data/services'
 
 useSeoMeta({
-  title: 'Servizi - Simone Camerano Full Stack Developer',
-  description: 'Siti web moderni, web app su misura, automazioni, knowledge base AI e audit digitale. Collaborazioni freelance per PMI, professionisti e piccoli team.',
-  ogTitle: 'Servizi - Simone Camerano Full Stack Developer',
-  ogDescription: 'Siti web moderni, web app su misura, automazioni, knowledge base AI e audit digitale.',
+  title: 'Soluzioni AI e automazioni per PMI - Simone Camerano',
+  description: 'Workflow AI, automazioni, assistenti su documenti e strumenti digitali su misura per PMI, professionisti e piccoli team.',
+  ogTitle: 'Soluzioni AI e automazioni per PMI - Simone Camerano',
+  ogDescription: 'Integro AI e automazioni nei processi reali, con controllo umano e strumenti adatti al lavoro del team.',
   ogType: 'website',
 })
 
 const whenCards = [
   {
-    title: 'Hai un sito vecchio o che non funziona',
-    desc: 'Il tuo sito è lento, poco chiaro o non rappresenta più quello che fai. O non hai ancora una presenza online professionale.',
+    title: 'Il team ripete attività a basso valore',
+    desc: 'Dati da copiare, report da preparare, controlli ricorrenti e informazioni da spostare tra strumenti diversi.',
   },
   {
-    title: 'Ti serve uno strumento su misura',
-    desc: 'Hai bisogno di una web app, un gestionale leggero o uno strumento interno per gestire dati, richieste o processi.',
+    title: 'Gli strumenti non comunicano tra loro',
+    desc: 'Email, fogli, documenti e gestionali contengono parti dello stesso processo, ma manca un flusso che li colleghi.',
+  },
+  {
+    title: 'Le informazioni sono difficili da trovare',
+    desc: 'Procedure, cataloghi, FAQ e materiali interni sono dispersi e il team perde tempo a cercare la risposta corretta.',
+  },
+  {
+    title: 'Vuoi usare l’AI senza perdere il controllo',
+    desc: 'Cerchi un sistema con compiti precisi, fonti verificabili e approvazioni umane, non una scatola nera che decide da sola.',
   },
   {
     title: 'Excel non basta più',
-    desc: 'Usi troppi file, email e documenti sparsi. Il flusso di lavoro è frammentato e ogni aggiornamento richiede passaggi manuali.',
+    desc: 'Il processo è cresciuto e ora servono un’interfaccia, dati centralizzati o uno strumento interno costruito sul lavoro reale.',
   },
   {
-    title: 'Vuoi automatizzare senza perdere il controllo',
-    desc: 'Hai attività che si ripetono e vuoi automatizzarle senza che il sistema diventi ingestibile o opaco.',
+    title: 'Vuoi capire dove l’AI serve davvero',
+    desc: 'Prima di investire vuoi distinguere le opportunità concrete dalle automazioni fragili o inutilmente complesse.',
   },
   {
-    title: 'Hai documenti difficili da consultare',
-    desc: 'Procedure, cataloghi, FAQ o informazioni interne sono dispersi e difficili da trovare quando servono.',
-  },
-  {
-    title: "Vuoi capire se l'AI può aiutarti davvero",
-    desc: "Senti parlare di AI e automazioni ma non sai se e come potrebbero cambiare il tuo modo di lavorare, senza hype.",
-  },
-  {
-    title: "Hai un'idea ma non sai da dove partire",
-    desc: "Vuoi costruire un prodotto digitale, ma ti serve qualcuno che traduca l'idea in architettura, priorità e primo prototipo.",
+    title: 'Hai un’idea da trasformare in un sistema',
+    desc: 'Ti serve qualcuno che traduca il processo in architettura, priorità e un primo prodotto funzionante.',
   },
 ]
 
@@ -48,11 +48,11 @@ const steps = [
 ]
 
 const linkedProjects = [
-  { title: 'Joule Zero Point', service: 'Siti web moderni e redesign', desc: 'Sito web costruito per raccontare in modo chiaro un\'identità tecnica, visiva e contenutistica.', slug: 'joule-zero-point' },
-  { title: 'IncluDO Guide', service: 'Knowledge base e assistenti AI su documenti', desc: 'Web app che rende più semplice consultare una knowledge base e ricevere risposte contestuali su contenuti strutturati.', slug: 'includo-guide' },
+  { title: 'PII Guard IT', service: 'Workflow AI sicuri', desc: 'Estensione che intercetta e protegge dati personali prima che vengano inviati agli strumenti AI.', slug: 'pii-guard-it' },
+  { title: 'IncluDO Guide', service: 'Assistenti AI e knowledge base', desc: 'Web app che rende più semplice consultare una knowledge base e ricevere risposte contestuali su contenuti strutturati.', slug: 'includo-guide' },
   { title: 'Italy Job Hunter', service: 'Automazioni e workflow AI', desc: 'Automazione che cerca, filtra e organizza opportunità, trasformando un controllo manuale ripetitivo in un report già pronto da valutare.', slug: 'italy-job-hunter' },
-  { title: 'ContextForge', service: 'Web app e strumenti digitali su misura', desc: 'Strumento per organizzare il contesto di una codebase e rendere più ordinato il lavoro tra documentazione, codice e assistenti AI.', slug: 'contextforge' },
-  { title: 'AI Control Tower', service: 'Audit digitale e opportunità AI', desc: 'Dashboard per tenere sotto controllo strumenti, provider e workflow AI da un\'unica interfaccia.', slug: 'ai-control-tower' },
+  { title: 'ContextForge', service: 'Strumenti AI su misura', desc: 'Strumento per organizzare il contesto di una codebase e rendere più ordinato il lavoro tra documentazione, codice e assistenti AI.', slug: 'contextforge' },
+  { title: 'AI Control Tower', service: 'Controllo dei workflow', desc: 'Dashboard per tenere sotto controllo strumenti, provider e workflow AI da un\'unica interfaccia.', slug: 'ai-control-tower' },
 ]
 
 const faqs = [
@@ -61,8 +61,8 @@ const faqs = [
     a: "Puoi arrivare con un problema operativo, un sito da aggiornare o l'idea che qualcosa non funziona. La prima conversazione serve proprio a capire cosa ha senso fare e in quale ordine.",
   },
   {
-    q: 'Lavori solo su AI e automazioni?',
-    a: 'No. Costruisco siti web, web app e strumenti digitali completi. Integro AI e automazioni quando servono davvero, non per forza.',
+    q: 'Lavori anche su web app e siti?',
+    a: 'Sì. Le competenze full stack servono spesso a costruire l’interfaccia e il backend del workflow. Siti e redesign restano disponibili come servizio secondario.',
   },
   {
     q: 'Puoi lavorare su un progetto piccolo?',
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     q: 'Quanto tempo richiede un progetto tipico?',
-    a: "Dipende dal tipo di lavoro. Un sito vetrina può essere pronto in pochi giorni. Una web app o un workflow AI richiede più iterazioni. Lo definiamo insieme prima di iniziare.",
+    a: "Dipende dal tipo di lavoro. Un sito vetrina può essere pronto in pochi giorni. Una web app o un workflow AI richiedono più iterazioni. Lo definiamo insieme prima di iniziare.",
   },
   {
     q: 'Posso contattarti solo per una consulenza?',
@@ -95,24 +95,24 @@ const faqs = [
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-6"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #e4c9ff;"
           >
             Servizi
           </span>
           <h1 class="text-5xl md:text-6xl font-extrabold text-[#f0f0f5] leading-[1.05] tracking-tight max-w-4xl">
-            Cosa posso costruire<br>
-            <span class="text-gradient">per te.</span>
+            AI e automazioni nei<br>
+            <span class="text-gradient-cyan">processi reali.</span>
           </h1>
           <p class="text-[#6a6a7a] text-lg leading-relaxed mt-6 max-w-2xl">
-            Lavoro su progetti piccoli e medi con un obiettivo chiaro: trasformare un bisogno reale in uno strumento digitale semplice da usare, mantenere e far crescere. Non parto dall'AI per forza. Parto da quello che ti serve.
+            Analizzo il lavoro quotidiano, individuo dove l’AI può creare valore e costruisco il sistema necessario per usarla in modo semplice, verificabile e controllabile.
           </p>
           <div class="flex flex-wrap gap-4 mt-8">
             <a
               href="/#contatti"
               class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85"
-              style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+              style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
             >
-              Parliamo del tuo progetto
+              Analizziamo il tuo processo
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -126,7 +126,7 @@ const faqs = [
             </NuxtLink>
           </div>
           <p class="text-[#8a8a9a] text-sm mt-5">
-            Per PMI, professionisti e piccoli team che vogliono strumenti digitali concreti, non promesse esagerate.
+            Per PMI, professionisti e piccoli team che vogliono risultati concreti e persone sempre al controllo.
           </p>
         </div>
       </div>
@@ -136,7 +136,7 @@ const faqs = [
     <section class="py-24 px-6">
       <div
         class="max-w-6xl mx-auto mb-20 h-px"
-        style="background: linear-gradient(90deg, transparent, rgba(59,130,246,0.3), transparent);"
+        style="background: linear-gradient(90deg, transparent, rgba(196,181,253,0.3), transparent);"
         aria-hidden="true"
       />
       <div class="max-w-6xl mx-auto">
@@ -151,7 +151,7 @@ const faqs = [
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-            style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;"
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #d8b4fe;"
           >
             Quando
           </span>
@@ -181,7 +181,7 @@ const faqs = [
     <section class="py-24 px-6">
       <div
         class="max-w-6xl mx-auto mb-20 h-px"
-        style="background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);"
+        style="background: linear-gradient(90deg, transparent, rgba(196,181,253,0.3), transparent);"
         aria-hidden="true"
       />
       <div class="max-w-6xl mx-auto">
@@ -196,15 +196,15 @@ const faqs = [
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #e4c9ff;"
           >
             Servizi
           </span>
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight leading-[1.1]">
-            I cinque <span class="text-gradient">servizi</span>
+            Soluzioni principali e <span class="text-gradient-cyan">capacità abilitanti.</span>
           </h2>
           <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl">
-            Ogni servizio può partire come audit, consulenza o MVP. L'obiettivo è sempre costruire qualcosa che funziona davvero, non una demo.
+            Si può partire da un audit, un prototipo o un singolo flusso. L’obiettivo è validare il valore e poi costruire ciò che serve davvero.
           </p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -212,22 +212,21 @@ const faqs = [
             v-for="(service, i) in services"
             :key="service.num"
             v-motion="cardMotion(i * 0.09)"
-            class="glass rounded-2xl p-7 flex flex-col"
-            style="border-color: rgba(255,255,255,0.08);"
+            class="rounded-2xl p-7 flex flex-col"
+            :class="service.level === 'secondary' ? 'border border-dashed border-white/10 bg-white/[0.015] opacity-80' : 'border border-violet-300/20 bg-[#0a1521]/70'"
           >
-            <div
-              class="text-xs font-mono font-bold mb-4"
-              style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
-              aria-hidden="true"
-            >
-              {{ service.num }}
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-violet-300" aria-hidden="true">{{ service.num }}</span>
+              <span class="px-2 py-1 rounded text-[8px] font-mono tracking-widest text-[#64748b] border border-white/[0.07]">
+                {{ service.level === 'primary' ? 'AI CORE' : service.level === 'enabling' ? 'FULL STACK' : 'SECONDARIO' }}
+              </span>
             </div>
             <h3 class="text-[#f0f0f5] font-bold text-lg mb-2">{{ service.title }}</h3>
             <p class="text-[#6a6a7a] text-sm leading-relaxed mb-4">{{ service.desc }}</p>
             <p class="text-xs text-[#8a8a9a] uppercase tracking-widest mb-2">Utile se</p>
             <ul class="text-[#6a6a7a] text-sm mb-4 flex flex-col gap-1">
               <li v-for="item in service.utile_se" :key="item" class="flex gap-2">
-                <span class="text-blue-400 flex-shrink-0" aria-hidden="true">•</span>
+                <span class="text-violet-300 flex-shrink-0" aria-hidden="true">•</span>
                 <span>{{ item }}</span>
               </li>
             </ul>
@@ -245,10 +244,10 @@ const faqs = [
               <a
                 href="/#contatti"
                 class="inline-flex items-center gap-1.5 text-sm font-semibold transition-opacity duration-200 hover:opacity-75"
-                style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+                style="background: linear-gradient(135deg, #d8b4fe, #b69cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
               >
                 Parliamo di questo
-                <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="#8b5cf6" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="#b69cff" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
@@ -262,7 +261,7 @@ const faqs = [
     <section class="py-24 px-6">
       <div
         class="max-w-6xl mx-auto mb-20 h-px"
-        style="background: linear-gradient(90deg, transparent, rgba(74,222,128,0.25), transparent);"
+        style="background: linear-gradient(90deg, transparent, rgba(139,233,255,0.25), transparent);"
         aria-hidden="true"
       />
       <div class="max-w-6xl mx-auto">
@@ -277,7 +276,7 @@ const faqs = [
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-            style="background: rgba(74,222,128,0.07); border: 1px solid rgba(74,222,128,0.2); color: #86efac;"
+            style="background: rgba(139,233,255,0.07); border: 1px solid rgba(139,233,255,0.2); color: #b9f3ff;"
           >
             Metodo
           </span>
@@ -314,7 +313,7 @@ const faqs = [
     <section class="py-24 px-6">
       <div
         class="max-w-6xl mx-auto mb-20 h-px"
-        style="background: linear-gradient(90deg, transparent, rgba(59,130,246,0.3), transparent);"
+        style="background: linear-gradient(90deg, transparent, rgba(196,181,253,0.3), transparent);"
         aria-hidden="true"
       />
       <div class="max-w-6xl mx-auto">
@@ -329,7 +328,7 @@ const faqs = [
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-            style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;"
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #d8b4fe;"
           >
             Portfolio
           </span>
@@ -350,7 +349,7 @@ const faqs = [
           >
             <span
               class="inline-block px-2.5 py-1 rounded-lg text-xs font-semibold mb-4 self-start"
-              style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;"
+              style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #d8b4fe;"
             >
               {{ project.service }}
             </span>
@@ -359,10 +358,10 @@ const faqs = [
             <NuxtLink
               :to="`/progetti/${project.slug}`"
               class="inline-flex items-center gap-1 text-sm font-semibold mt-auto transition-opacity duration-200 hover:opacity-75"
-              style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+              style="background: linear-gradient(135deg, #d8b4fe, #b69cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
             >
               Vedi case study
-              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="#8b5cf6" viewBox="0 0 24 24" aria-hidden="true">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="#b69cff" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </NuxtLink>
@@ -375,7 +374,7 @@ const faqs = [
     <section class="py-24 px-6">
       <div
         class="max-w-6xl mx-auto mb-20 h-px"
-        style="background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);"
+        style="background: linear-gradient(90deg, transparent, rgba(196,181,253,0.3), transparent);"
         aria-hidden="true"
       />
       <div class="max-w-6xl mx-auto">
@@ -390,7 +389,7 @@ const faqs = [
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #e4c9ff;"
           >
             FAQ
           </span>
@@ -422,7 +421,7 @@ const faqs = [
     <section class="py-24 px-6">
       <div
         class="max-w-6xl mx-auto mb-20 h-px"
-        style="background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);"
+        style="background: linear-gradient(90deg, transparent, rgba(196,181,253,0.3), transparent);"
         aria-hidden="true"
       />
       <div class="max-w-6xl mx-auto">
@@ -434,26 +433,26 @@ const faqs = [
             transition: { duration: 0.6, ease: 'easeOut' as const },
           }"
           class="glass rounded-3xl p-10 md:p-14 text-center max-w-3xl mx-auto"
-          style="border-color: rgba(139,92,246,0.2); background: rgba(139,92,246,0.04);"
+          style="border-color: rgba(196,181,253,0.2); background: rgba(196,181,253,0.04);"
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-6"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #e4c9ff;"
           >
             Parliamo
           </span>
           <h2 class="text-3xl md:text-4xl font-extrabold text-[#f0f0f5] tracking-tight leading-[1.1] mb-6">
-            Hai un sito da rifare, una web app da costruire o un processo da <span class="text-gradient">semplificare?</span>
+            Quale processo oggi fa perdere tempo al tuo <span class="text-gradient-cyan">team?</span>
           </h2>
           <p class="text-[#6a6a7a] leading-relaxed mb-8 max-w-xl mx-auto">
-            Raccontami da dove parti. Ti aiuto a capire cosa ha senso costruire, con quale priorità e con quale livello di complessità.
+            Raccontami il punto in cui il lavoro si blocca o si ripete. Ti aiuto a capire se un workflow AI, un’automazione o uno strumento su misura può risolverlo.
           </p>
           <a
             href="/#contatti"
             class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85"
-            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+            style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           >
-            Scrivimi per parlare del progetto
+            Raccontami il processo
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

@@ -15,15 +15,15 @@ const featuredProjects = projects.filter((p) => p.featured)
       >
         <span
           class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-          style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd;"
+          style="background: rgba(196, 181, 253, 0.1); border: 1px solid rgba(196, 181, 253, 0.25); color: #c4b5fd;"
         >
-          Progetti
+          Sistemi reali
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] mb-4 tracking-tight">
-          Progetti selezionati: <span class="text-gradient">come lavoro</span>
+          Dalla necessità al <span class="text-gradient-cyan">sistema funzionante.</span>
         </h2>
         <p class="text-[#6a6a7a] max-w-lg mx-auto leading-relaxed">
-          Alcuni progetti nascono come strumenti personali, altri come prototipi o prodotti verticali. Non sono esperimenti messi lì per fare scena. Sono esempi di metodo, architettura e sviluppo full stack applicato.
+          Automazioni, basi di conoscenza, strumenti di controllo e prodotti completi. Ogni progetto racconta un problema, le scelte fatte e la soluzione realizzata.
         </p>
       </div>
 
@@ -53,7 +53,7 @@ const featuredProjects = projects.filter((p) => p.featured)
       >
         <NuxtLink
           to="/progetti"
-          class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-[#d0d0e0] border transition-all duration-200 hover:bg-white/[0.05] hover:text-white"
+          class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-[#c4b5fd] border transition-all duration-200 hover:bg-white/[0.05] hover:text-white"
           style="border-color: rgba(255,255,255,0.14);"
         >
           Vedi tutti i progetti

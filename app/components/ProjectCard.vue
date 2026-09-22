@@ -33,7 +33,7 @@ defineProps<{
       <div class="absolute top-4 left-4">
         <span
           class="px-3 py-1 rounded-full text-xs font-semibold"
-          style="background: rgba(10,10,15,0.7); backdrop-filter: blur(8px); border: 1px solid rgba(139,92,246,0.35); color: #c4b5fd;"
+          style="background: rgba(10,10,15,0.7); backdrop-filter: blur(8px); border: 1px solid rgba(139, 92, 246, 0.35); color: #c4b5fd;"
         >
           {{ project.category }}
         </span>

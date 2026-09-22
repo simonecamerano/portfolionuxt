@@ -3,18 +3,18 @@ import { stats } from '~/data/stats'
 import { technologies } from '~/data/technologies'
 
 useSeoMeta({
-  title: 'Chi sono - Simone Camerano Full Stack Developer',
+  title: 'Chi sono - Simone Camerano AI Workflow Engineer',
   description:
-    'Full Stack Developer con 26 anni di esperienza operativa nella GDO. Costruisco siti web, web app, automazioni e workflow AI pragmatici per PMI e professionisti.',
-  ogTitle: 'Chi sono - Simone Camerano Full Stack Developer',
+    'AI Workflow Engineer con 26 anni di esperienza operativa nella GDO. Costruisco automazioni e strumenti AI per PMI e piccoli team.',
+  ogTitle: 'Chi sono - Simone Camerano AI Workflow Engineer',
   ogDescription:
-    'Full Stack Developer con specializzazione pratica in AI e automazione. Prima i processi, poi il codice.',
+    'Esperienza nei processi reali, competenze full stack e specializzazione pratica in AI e automazione.',
 })
 
 const storyParagraphs = [
-  'Sono un Full Stack Developer con una specializzazione pratica in AI e automazione. Costruisco siti web, web app, strumenti interni, automazioni e workflow AI per PMI, professionisti e piccoli team che vogliono strumenti digitali concreti, non sperimentali.',
+  'Sono un AI Workflow Engineer con competenze full stack. Costruisco automazioni, assistenti e strumenti AI per PMI, professionisti e piccoli team che vogliono soluzioni concrete, non esperimenti.',
   'Prima di dedicarmi allo sviluppo web, ho lavorato per 26 anni nella GDO: gestione team, processi, responsabilità operative su larga scala, fornitori, clienti e urgenze da risolvere senza troppa teoria. Quel background non è una nota a piè di pagina. È il motivo per cui capisco i problemi di business prima di iniziare a progettare soluzioni.',
-  "Il mio approccio: prima capisco come funziona davvero la tua attività, cosa rallenta il lavoro, cosa crea confusione, cosa può essere semplificato. Poi progetto e costruisco la soluzione: un sito, una web app, uno strumento interno, un'automazione o un workflow AI.",
+  "Il mio approccio: prima capisco come funziona davvero la tua attività, cosa rallenta il lavoro, cosa crea confusione e cosa può essere semplificato. Poi progetto il workflow e costruisco le integrazioni, l’interfaccia e il software necessari.",
   'La tecnologia è importante. Ma deve servire il lavoro, non diventare un altro problema da gestire.',
 ]
 
@@ -121,18 +121,18 @@ const hobbies = [
         >
           <span
             class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.12em] mb-5"
-            style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd;"
+            style="background: rgba(196,181,253,0.1); border: 1px solid rgba(196,181,253,0.25); color: #e4c9ff;"
           >
             Chi sono
           </span>
           <h1 class="text-5xl md:text-6xl font-extrabold text-[#f0f0f5] leading-[1.05] tracking-tight max-w-3xl">
-            Reinventarsi. Non è tardi se sai
+            Reinventarsi. Non è tardi, se sai
             <span class="text-gradient"> dove vuoi arrivare.</span>
           </h1>
           <p class="text-[#8a8a9a] text-lg leading-relaxed mt-6 max-w-2xl">
             Credo nel valore della curiosità, della perseveranza e nella forza di costruire
             nuove competenze. Il mio percorso unisce esperienza sul campo, attenzione alle
-            persone e passione per lo sviluppo web.
+            persone e capacità di trasformare i processi in sistemi digitali.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ const hobbies = [
         >
           <div
             class="absolute -inset-5 rounded-[2rem] blur-3xl opacity-25"
-            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+            style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           />
           <div class="relative rounded-3xl overflow-hidden" style="border: 1px solid rgba(255,255,255,0.12);">
             <img
@@ -185,7 +185,7 @@ const hobbies = [
         <div>
           <span class="text-sm font-semibold text-gradient">La mia storia</span>
           <h2 class="text-3xl md:text-4xl font-extrabold text-[#f0f0f5] leading-tight tracking-tight mt-3">
-            Come sono arrivato allo sviluppo web.
+            Come sono arrivato a progettare workflow AI.
           </h2>
         </div>
         <div class="flex flex-col gap-5 text-[#8a8a9a] leading-relaxed">
@@ -316,7 +316,7 @@ const hobbies = [
           <NuxtLink
             to="/progetti"
             class="inline-flex items-center px-6 py-3 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85"
-            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);"
+            style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           >
             Progetti
           </NuxtLink>
