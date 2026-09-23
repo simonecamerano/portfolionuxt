@@ -2,6 +2,7 @@ import { projects } from '~/data/projects'
 
 const staticRoutes = [
   { path: '/', priority: '1.0', changefreq: 'monthly' },
+  { path: '/servizi', priority: '0.9', changefreq: 'monthly' },
   { path: '/about', priority: '0.8', changefreq: 'monthly' },
   { path: '/progetti', priority: '0.9', changefreq: 'weekly' },
   { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
@@ -10,14 +11,14 @@ const staticRoutes = [
 export default defineEventHandler((event) => {
   const rawSiteUrl = useRuntimeConfig().public.siteUrl as string
   const siteUrl = rawSiteUrl.startsWith('http') ? rawSiteUrl : `https://${rawSiteUrl}`
-  const today = new Date().toISOString().split('T')[0]
+  // No lastmod: a date that is always "today" teaches search engines to
+  // ignore it, and the pages carry no real modification date.
 
   const urls = [
     ...staticRoutes.map(
       (r) => `
   <url>
     <loc>${siteUrl}${r.path}</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority}</priority>
   </url>`,
@@ -26,7 +27,6 @@ export default defineEventHandler((event) => {
       (p) => `
   <url>
     <loc>${siteUrl}/progetti/${p.slug}</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`,
