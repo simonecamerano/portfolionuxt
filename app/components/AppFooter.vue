@@ -13,7 +13,7 @@ const { scelto, riapri } = useConsensoTracciamento()
           © {{ new Date().getFullYear() }} Simone Camerano. Tutti i diritti riservati.
         </p>
         <p class="text-xs text-[#8a8a9a] mt-1">
-          P.IVA: 02882670413 · Sede Legale: via Mortola, 17 Gradara PU Italia
+          P.IVA: 02882670413 · Sede Legale: via Mortola, 17 · 61012 Gradara (PU) Italia
         </p>
       </div>
 
