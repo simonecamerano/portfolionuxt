@@ -1,9 +1,6 @@
-@import "@fontsource/inter/latin-400.css";
-@import "@fontsource/inter/latin-500.css";
-@import "@fontsource/inter/latin-600.css";
-@import "@fontsource/inter/latin-700.css";
-@import "@fontsource/inter/latin-800.css";
-@import "@fontsource/inter/latin-900.css";
+/* One variable file covers every weight from 100 to 900: the six static
+   files it replaces were discovered one CSS round trip late. */
+@import "@fontsource-variable/inter/wght.css";
 
 /* ─── Reset & Base ─────────────────────────────────────────────── */
 *,
@@ -24,6 +21,7 @@ body {
   background-color: #05080d;
   color: #f0f0f5;
   font-family:
+    "Inter Variable",
     "Inter",
     system-ui,
     -apple-system,

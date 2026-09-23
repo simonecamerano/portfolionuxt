@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import interRegularWoff2 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url'
-import interExtraboldWoff2 from '@fontsource/inter/files/inter-latin-800-normal.woff2?url'
+import interVariableWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url'
 
 const rawSiteUrl = useRuntimeConfig().public.siteUrl as string
 const siteUrl = rawSiteUrl.startsWith('http') ? rawSiteUrl : `https://${rawSiteUrl}`
@@ -22,8 +21,7 @@ const canonicalUrl = computed(() => `${siteUrl.replace(/\/$/, '')}${route.path =
 useHead({
   link: [
     { rel: 'canonical', href: canonicalUrl },
-    { rel: 'preload', as: 'font', type: 'font/woff2', href: interRegularWoff2, crossorigin: 'anonymous' },
-    { rel: 'preload', as: 'font', type: 'font/woff2', href: interExtraboldWoff2, crossorigin: 'anonymous' },
+    { rel: 'preload', as: 'font', type: 'font/woff2', href: interVariableWoff2, crossorigin: 'anonymous' },
   ],
 })
 </script>
