@@ -12,6 +12,7 @@ export const identity = {
   vatID: 'IT02882670413',
   address: {
     streetAddress: 'via Mortola, 17',
+    postalCode: '61012',
     addressLocality: 'Gradara',
     addressRegion: 'PU',
     addressCountry: 'IT',
