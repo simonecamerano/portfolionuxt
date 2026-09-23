@@ -14,8 +14,14 @@ useSeoMeta({
   twitterImage: `${siteUrl}/og-image-v2.png`,
 })
 
+// www and the bare domain serve the same pages: the canonical tells search
+// engines which address is the real one.
+const route = useRoute()
+const canonicalUrl = computed(() => `${siteUrl.replace(/\/$/, '')}${route.path === '/' ? '/' : route.path.replace(/\/$/, '')}`)
+
 useHead({
   link: [
+    { rel: 'canonical', href: canonicalUrl },
     { rel: 'preload', as: 'font', type: 'font/woff2', href: interRegularWoff2, crossorigin: 'anonymous' },
     { rel: 'preload', as: 'font', type: 'font/woff2', href: interExtraboldWoff2, crossorigin: 'anonymous' },
   ],
