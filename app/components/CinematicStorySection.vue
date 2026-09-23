@@ -3,9 +3,15 @@ const section = ref<HTMLElement | null>(null)
 const activeAct = ref(0)
 const reducedMotion = ref(false)
 const compactLayout = ref(false)
+const stage = ref<HTMLElement | null>(null)
+const stageVisible = ref(false)
 let ticking = false
 let motionQuery: MediaQueryList | null = null
 let layoutQuery: MediaQueryList | null = null
+let stageObserver: IntersectionObserver | null = null
+let autoTimer: ReturnType<typeof setInterval> | undefined
+
+const AUTO_ADVANCE_MS = 4000
 
 const acts = [
   { number: '01', title: 'Le informazioni si disperdono', label: 'PRIMA', text: 'Email, fogli e strumenti separati costringono il team a cercare, copiare e ricontrollare.', tone: 'violet' },
@@ -27,11 +33,38 @@ const scheduleUpdate = () => {
   requestAnimationFrame(() => { updateAct(); ticking = false })
 }
 
+// Without the sticky scroll (mobile or reduced motion) the acts become buttons,
+// otherwise the stage would stay frozen on a single scene.
+const interactive = computed(() => compactLayout.value || reducedMotion.value)
+
+// On mobile the stage cycles by itself while it is on screen. Reduced motion
+// keeps it still: only a tap changes the scene.
+const stopAutoAdvance = () => {
+  clearInterval(autoTimer)
+  autoTimer = undefined
+}
+const startAutoAdvance = () => {
+  stopAutoAdvance()
+  if (!compactLayout.value || reducedMotion.value || !stageVisible.value) return
+  autoTimer = setInterval(() => {
+    activeAct.value = (activeAct.value + 1) % acts.length
+  }, AUTO_ADVANCE_MS)
+}
+
+const selectAct = (index: number) => {
+  if (!interactive.value) return
+  activeAct.value = index
+  // A tap restarts the countdown, so the chosen scene gets its full time.
+  startAutoAdvance()
+}
+
 const syncPreferences = () => {
   reducedMotion.value = motionQuery?.matches ?? false
   compactLayout.value = layoutQuery?.matches ?? false
-  if (reducedMotion.value || compactLayout.value) activeAct.value = acts.length - 1
+  if (compactLayout.value) activeAct.value = 0
+  else if (reducedMotion.value) activeAct.value = acts.length - 1
   else updateAct()
+  startAutoAdvance()
 }
 
 onMounted(() => {
@@ -39,12 +72,19 @@ onMounted(() => {
   layoutQuery = window.matchMedia('(max-width: 1023px)')
   motionQuery.addEventListener('change', syncPreferences)
   layoutQuery.addEventListener('change', syncPreferences)
+  stageObserver = new IntersectionObserver(([entry]) => {
+    stageVisible.value = !!entry?.isIntersecting
+    startAutoAdvance()
+  }, { threshold: 0.4 })
+  if (stage.value) stageObserver.observe(stage.value)
   syncPreferences()
   window.addEventListener('scroll', scheduleUpdate, { passive: true })
   window.addEventListener('resize', scheduleUpdate, { passive: true })
 })
 
 onUnmounted(() => {
+  stopAutoAdvance()
+  stageObserver?.disconnect()
   motionQuery?.removeEventListener('change', syncPreferences)
   layoutQuery?.removeEventListener('change', syncPreferences)
   window.removeEventListener('scroll', scheduleUpdate)
@@ -62,14 +102,23 @@ onUnmounted(() => {
           <h2 id="cinema-story-title" class="story-title">Meno passaggi a vuoto.<br><span>Più decisioni.</span></h2>
           <p class="story-intro">Un flusso ben progettato porta le informazioni giuste alla persona giusta, nel momento in cui servono.</p>
           <div class="story-acts mt-10">
-            <article v-for="(act, index) in acts" :key="act.number" class="story-act" :class="[{ active: index === activeAct, complete: index < activeAct }, act.tone]">
+            <component
+              :is="interactive ? 'button' : 'article'"
+              v-for="(act, index) in acts"
+              :key="act.number"
+              :type="interactive ? 'button' : undefined"
+              :aria-pressed="interactive ? index === activeAct : undefined"
+              class="story-act"
+              :class="[{ active: index === activeAct, complete: index < activeAct }, act.tone]"
+              @click="selectAct(index)"
+            >
               <span class="act-number">{{ act.number }}</span>
               <div><p>{{ act.label }}</p><h3>{{ act.title }}</h3><span class="act-text">{{ act.text }}</span></div>
-            </article>
+            </component>
           </div>
         </div>
 
-        <div class="story-stage" :class="acts[activeAct].tone" aria-hidden="true">
+        <div ref="stage" class="story-stage" :class="acts[activeAct].tone" aria-hidden="true">
           <div class="stage-top"><span><i class="stage-signal" /> COME CAMBIA IL LAVORO</span><span>{{ String(activeAct + 1).padStart(2, '0') }} / 03</span></div>
           <div class="stage-progress" aria-hidden="true"><span :style="{ transform: `scaleX(${(activeAct + 1) / acts.length})` }" /></div>
           <div class="stage-watermark">{{ acts[activeAct].number }}</div>
@@ -110,11 +159,17 @@ onUnmounted(() => {
 .source-card{position:absolute;display:flex;align-items:center;gap:12px;width:175px;padding:14px;border:1px solid rgba(196,181,253,.28);border-radius:14px;background:linear-gradient(145deg,rgba(77,61,116,.78),rgba(22,19,38,.94));box-shadow:0 20px 50px rgba(0,0,0,.35),inset 0 1px rgba(255,255,255,.15)}.source-card>span:last-child{flex:1}.source-card small{display:block;color:#b1a5c9;font:700 8px ui-monospace,SFMono-Regular,monospace;letter-spacing:.12em}.source-card strong{display:block;margin-top:3px;color:#fff;font-size:1rem}.source-card i{display:block;width:70%;height:3px;margin-top:9px;border-radius:3px;background:linear-gradient(90deg,#c4b5fd,transparent)}.source-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:rgba(196,181,253,.16);color:#ddcfff;font-size:1.3rem}.scattered-scene .source-card{z-index:3}.source-email{left:8%;top:10%;transform:rotate(-7deg)}.source-sheet{right:8%;top:1%;transform:rotate(7deg)}.source-crm{left:50%;bottom:3%;transform:translateX(-50%) rotate(3deg)}.fragment-links{position:absolute;z-index:1;inset:0;width:100%;height:100%;overflow:visible}.fragment-links path{fill:none;stroke:rgba(196,181,253,.52);stroke-width:1.5px;stroke-dasharray:5 8;vector-effect:non-scaling-stroke;filter:drop-shadow(0 0 5px rgba(196,181,253,.5))}.fragment-center{position:absolute;z-index:2;top:48%;left:50%;display:flex;align-items:center;gap:14px;width:245px;min-height:130px;padding:20px;transform:translate(-50%,-50%);border:1px solid rgba(196,181,253,.5);border-radius:18px;background:radial-gradient(circle at 30% 20%,rgba(122,100,179,.3),transparent 70%),linear-gradient(145deg,rgba(39,32,68,.97),rgba(17,16,30,.97));box-shadow:0 0 60px rgba(139,92,246,.2),0 26px 55px rgba(0,0,0,.44),inset 0 1px rgba(255,255,255,.14)}.fragment-center:before{content:'';position:absolute;inset:-13px;border:1px dashed rgba(196,181,253,.27);border-radius:27px}.fragment-mark{display:grid;place-items:center;flex:none;width:48px;height:48px;border:1px solid rgba(196,181,253,.5);border-radius:14px;background:rgba(196,181,253,.14);color:#e4dcff;font-size:1.85rem;font-weight:800}.fragment-center small{display:block;color:#b4a7cc;font:700 8px ui-monospace,SFMono-Regular,monospace;letter-spacing:.12em}.fragment-center strong{display:block;margin-top:5px;color:white;font-size:1.02rem;line-height:1.12}.fragment-center p{margin-top:6px;color:#aaa1ba;font-size:.7rem;line-height:1.4}.source-card{animation:float 5s ease-in-out infinite alternate}.source-sheet{animation-delay:1s}.source-crm{animation-delay:2s}
 .story-stage.cyan{background:radial-gradient(circle at 50% 50%,rgba(67,117,205,.18),transparent 62%),linear-gradient(145deg,#101c31,#080c16 78%)}.cyan .stage-heading span{color:#a7cfff}.flow-scene{display:flex;align-items:center;justify-content:center;padding-bottom:95px}.flow-inputs{display:flex;flex-direction:column;gap:13px}.flow-inputs span{min-width:105px;padding:12px 14px;border:1px solid rgba(147,197,253,.25);border-radius:8px;background:rgba(30,46,78,.83);color:#c2d7f1;font:700 9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.1em;text-align:center}.flow-connector{flex:1;min-width:20px;max-width:55px;height:1px;background:linear-gradient(90deg,rgba(147,197,253,.25),#93c5fd,rgba(147,197,253,.25));box-shadow:0 0 12px #93c5fd}.flow-core{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none;width:230px;height:230px;border:1px solid rgba(147,197,253,.55);border-radius:50%;background:radial-gradient(circle at 35% 28%,rgba(147,197,253,.42),rgba(48,64,119,.36) 43%,rgba(11,16,34,.95) 75%);box-shadow:0 0 75px rgba(83,132,228,.25),inset 0 1px rgba(255,255,255,.3);text-align:center}.flow-core:before{content:'';position:absolute;inset:-12px;border:1px dashed rgba(147,197,253,.33);border-radius:50%;animation:orbit 24s linear infinite}.flow-core span{color:#e1edff;font-size:2.5rem;text-shadow:0 0 22px #93c5fd}.flow-core strong{margin-top:8px;color:white;font-size:1.18rem}.flow-core small{max-width:140px;margin-top:7px;color:#bfd0e9;font-size:.68rem;line-height:1.3}.flow-output{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none;width:140px;min-height:145px;padding:14px;border:1px solid rgba(147,197,253,.34);border-radius:13px;background:rgba(30,46,73,.8);text-align:center}.flow-output b{display:grid;place-items:center;width:37px;height:37px;margin-bottom:12px;border-radius:50%;background:rgba(147,197,253,.2);color:#badaff}.flow-output strong{color:white;font-size:.94rem}.flow-output small{margin-top:5px;color:#9fb2cf;font-size:.68rem}.flow-status{position:absolute;right:0;bottom:6px;left:0;display:flex;align-items:center;gap:13px;padding:15px 0;border-top:1px solid rgba(147,197,253,.18);color:#a9c9ed;font:700 9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.1em}.flow-status span{white-space:nowrap}.flow-status i{flex:1;height:1px;background:linear-gradient(90deg,rgba(147,197,253,.2),rgba(147,197,253,.7))}
 .story-stage.mint{background:radial-gradient(circle at 50% 50%,rgba(79,163,143,.15),transparent 62%),linear-gradient(145deg,#11251f,#08130f 78%)}.mint .stage-heading span{color:#a7e7d1}.decision-scene{top:225px;bottom:auto;overflow:hidden;border:1px solid rgba(173,239,218,.39);border-radius:18px;background:linear-gradient(145deg,rgba(40,77,72,.9),rgba(17,31,37,.94));box-shadow:0 28px 70px rgba(0,0,0,.32),0 0 50px rgba(108,214,177,.1),inset 0 1px rgba(255,255,255,.16)}.decision-top{display:flex;align-items:center;justify-content:space-between;padding:15px 21px;border-bottom:1px solid rgba(173,239,218,.16);color:#bce9d8;font:700 9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.12em}.decision-top>span:first-child{display:flex;align-items:center;gap:9px}.decision-top i{width:6px;height:6px;border-radius:50%;background:#9ee7c9;box-shadow:0 0 13px #9ee7c9}.decision-main{display:flex;align-items:center;gap:20px;padding:30px 25px}.decision-icon{display:grid;place-items:center;flex:none;width:65px;height:65px;border:1px solid rgba(173,239,218,.5);border-radius:18px;background:rgba(173,239,218,.2);color:#d4ffe8;font-size:2rem}.decision-main small{color:#a6cbbb;font:700 9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.14em}.decision-main strong{display:block;margin:5px 0;color:white;font-size:1.34rem;letter-spacing:-.04em}.decision-main p{max-width:280px;color:#b9cfc8;font-size:.76rem;line-height:1.5}.decision-footer{display:flex;align-items:center;justify-content:space-between;gap:9px;padding:13px 20px;border-top:1px solid rgba(173,239,218,.16);color:#bbd6d1;font-size:.7rem}.decision-footer i{flex:1;height:1px;background:linear-gradient(90deg,rgba(173,239,218,.1),rgba(173,239,218,.7))}
+button.story-act{width:100%;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}button.story-act:focus-visible{outline:2px solid #c4b5fd;outline-offset:4px;border-radius:6px}
 @keyframes float{to{translate:0 -9px}}@keyframes orbit{to{transform:rotate(360deg)}}
 @media(min-width:1024px){.story-stage.mint .decision-scene{top:calc(50% - 55px)}}
 @media(max-height:800px) and (min-width:1151px){.flow-scene{padding-bottom:75px}.flow-core{width:190px;height:190px}.flow-output{min-height:120px}.flow-inputs span{padding:9px 12px}}
 @media(max-width:1150px){.story-title{font-size:clamp(2.6rem,4.3vw,4.5rem)}.flow-core{width:170px;height:170px}.flow-output{width:110px;min-height:125px}.flow-inputs span{min-width:75px;padding:9px}}
-@media(max-width:1023px){.cinema-story{height:auto}.cinema-story-sticky{position:relative;min-height:auto}.cinema-story-sticky>div:last-child{padding-top:90px;padding-bottom:90px}.story-title{font-size:clamp(3rem,7vw,5rem)}.story-act{opacity:1;transform:none!important}.story-act.active:before{display:none}.act-text{max-height:100px;margin-top:6px;opacity:1}.story-stage{height:540px;min-height:0}}
+@media(max-width:1023px){.cinema-story{height:auto}.cinema-story-sticky{position:relative;min-height:auto}.cinema-story-sticky>div:last-child{padding-top:90px;padding-bottom:90px}.story-title{font-size:clamp(3rem,7vw,5rem)}.story-act,.story-act.complete{opacity:.5;transform:none!important}.story-act.active{opacity:1}.act-text{max-height:100px;margin-top:6px;opacity:1}.story-stage{height:540px;min-height:0}}
 @media(max-width:640px){.cinema-story-sticky>div:last-child{padding-top:70px;padding-bottom:70px}.story-title{font-size:clamp(2.65rem,10.5vw,4rem)}.story-intro{font-size:.92rem}.story-stage{height:460px;border-radius:20px}.stage-top,.stage-bottom{padding:0 15px;font-size:7px}.stage-heading{top:78px;left:18px;right:18px}.stage-heading strong{font-size:1.42rem}.stage-scene{left:18px;right:18px}.decision-scene{top:198px}.decision-top{padding:12px;font-size:7px}.decision-main{gap:12px;padding:23px 14px}.decision-icon{width:47px;height:47px;font-size:1.4rem}.decision-main strong{font-size:1.06rem}.decision-main p{font-size:.69rem}.decision-footer{padding:11px;font-size:.56rem}}
-@media(prefers-reduced-motion:reduce){.cinema-story{height:auto}.cinema-story-sticky{position:relative;min-height:auto}.cinema-story-sticky>div:last-child{padding-top:90px;padding-bottom:90px}.story-act{opacity:1;transform:none!important}.story-act.active:before{display:none}.act-text{max-height:100px;margin-top:6px;opacity:1}.source-card,.flow-core:before{animation:none!important}.story-act,.act-text,.story-stage,.stage-progress span{transition:none}}
+@media(prefers-reduced-motion:reduce){.cinema-story{height:auto}.cinema-story-sticky{position:relative;min-height:auto}.cinema-story-sticky>div:last-child{padding-top:90px;padding-bottom:90px}.story-act,.story-act.complete{opacity:.5;transform:none!important}.story-act.active{opacity:1}.act-text{max-height:100px;margin-top:6px;opacity:1}.source-card,.flow-core:before{animation:none!important}.story-act,.act-text,.story-stage,.stage-progress span{transition:none}}
+/* Below 1024px the scattered cards of scene 1 would overlap the centre card,
+   so the sources line up as a row of chips above it. */
+@media(max-width:1023px){.scattered-scene{max-width:480px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-content:start;gap:8px}.fragment-links{display:none}.scattered-scene .source-card{position:relative;inset:auto;transform:none;width:auto;padding:8px;gap:7px;border-radius:10px}.scattered-scene .source-card small,.scattered-scene .source-card i{display:none}.scattered-scene .source-card strong{margin:0;font-size:.78rem}.scattered-scene .source-icon{width:24px;height:24px;border-radius:7px;font-size:.9rem}.fragment-center{position:relative;grid-column:1/-1;top:auto;left:auto;width:auto;min-height:0;margin-top:14px;transform:none}.fragment-center:before{inset:-7px;border-radius:24px}.story-stage{display:flex;flex-direction:column;padding:90px 0 42px}.stage-heading{position:relative;top:auto;left:auto;right:auto;margin:0 clamp(25px,4vw,52px)}.scattered-scene,.flow-scene{position:relative;inset:auto;flex:1;margin:0 clamp(25px,4vw,52px)}.scattered-scene{align-content:center;width:min(480px,calc(100% - 50px));margin-inline:auto}.flow-scene{flex-wrap:wrap;align-content:center;padding-bottom:0}.flow-status{position:static;flex-basis:100%;margin-top:22px}.decision-scene{position:relative;inset:auto;flex:none;margin:auto clamp(25px,4vw,52px)}}
+/* Phones: scenes 2 and 3 shrink to fit a 320px screen. */
+@media(max-width:640px){.flow-inputs{gap:8px}.flow-inputs span{min-width:0;padding:7px 8px;font-size:8px}.flow-connector{min-width:8px}.flow-core{width:118px;height:118px}.flow-core span{font-size:1.6rem}.flow-core strong{margin-top:4px;font-size:.86rem}.flow-core small{display:none}.flow-output{width:78px;min-height:0;padding:10px 6px}.flow-output b{width:28px;height:28px;margin-bottom:6px}.flow-output strong{font-size:.72rem}.flow-output small{display:none}.flow-status{gap:6px;padding:10px 0;font-size:7px}.decision-main{padding:16px 14px}.story-stage{height:500px;padding-top:78px}.stage-heading{margin:0 18px}.flow-scene{margin:0 18px}.scattered-scene{width:calc(100% - 36px)}.decision-scene{margin:auto 18px}}
 </style>
