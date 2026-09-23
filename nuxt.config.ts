@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/images/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
     '/favicon.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-    '/og-image.png': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+    '/og-image-v2.png': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
     '/cv.pdf': { headers: { 'cache-control': 'public, max-age=86400' } },
     '/riservato/**': {
       headers: {

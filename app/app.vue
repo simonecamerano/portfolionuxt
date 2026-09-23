@@ -10,8 +10,8 @@ useSeoMeta({
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterSite: '@simonecamerano',
-  ogImage: `${siteUrl}/og-image.png`,
-  twitterImage: `${siteUrl}/og-image.png`,
+  ogImage: `${siteUrl}/og-image-v2.png`,
+  twitterImage: `${siteUrl}/og-image-v2.png`,
 })
 
 useHead({
