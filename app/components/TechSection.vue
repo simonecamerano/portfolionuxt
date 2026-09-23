@@ -19,7 +19,7 @@ import { technologies } from '~/data/technologies'
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight">
           Costruisco l’intero <span class="text-gradient-cyan">sistema.</span>
         </h2>
-        <p class="text-[#6a6a7a] mt-4 max-w-md mx-auto">
+        <p class="text-[#828293] mt-4 max-w-md mx-auto">
           Interfacce, backend, dati, integrazioni e modelli AI. Le tecnologie sono il mezzo per portare un flusso di lavoro dal prototipo all’uso quotidiano.
         </p>
       </div>

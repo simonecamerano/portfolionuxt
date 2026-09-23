@@ -74,10 +74,10 @@ const resetForm = () => {
           </h2>
         </div>
 
-        <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
+        <p class="text-[#828293] text-lg leading-relaxed max-w-sm">
           Raccontami cosa succede oggi: quali strumenti usate, quali passaggi si ripetono e dove il flusso si blocca.
         </p>
-        <p class="text-[#6a6a7a] text-lg leading-relaxed max-w-sm">
+        <p class="text-[#828293] text-lg leading-relaxed max-w-sm">
           Capiremo se serve un’automazione, un assistente AI, uno strumento su misura oppure una soluzione più semplice.
         </p>
 
@@ -118,7 +118,7 @@ const resetForm = () => {
             <div class="text-5xl">🎉</div>
             <div>
               <p class="text-xl font-bold text-[#f0f0f5]">Messaggio inviato!</p>
-              <p class="text-sm text-[#6a6a7a] mt-2">Ti rispondo al più presto. A presto!</p>
+              <p class="text-sm text-[#828293] mt-2">Ti rispondo al più presto. A presto!</p>
             </div>
             <button type="button" class="mt-2 text-sm font-medium text-gradient hover:opacity-70 transition-opacity" @click="resetForm">
               Invia un altro messaggio →
@@ -181,7 +181,7 @@ const resetForm = () => {
             </p>
 
             <button type="submit" :disabled="status === 'loading'"
-              class="w-full py-4 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-88 hover:scale-[1.015] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
+              class="w-full py-4 rounded-2xl text-sm font-semibold text-[#05080d] transition-all duration-200 hover:opacity-88 hover:scale-[1.015] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
               style="background: linear-gradient(135deg, #c4b5fd, #93c5fd);">
               <span v-if="status === 'loading'" class="flex items-center justify-center gap-2.5">
                 <svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">

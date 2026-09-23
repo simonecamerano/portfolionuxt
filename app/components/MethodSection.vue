@@ -74,7 +74,7 @@ const steps = [
           <div class="text-[#c4b5fd] font-semibold text-base mb-2">
             {{ step.label }}
           </div>
-          <p class="text-[#6a6a7a] text-sm leading-relaxed">
+          <p class="text-[#828293] text-sm leading-relaxed">
             {{ step.desc }}
           </p>
         </div>
@@ -90,7 +90,7 @@ const steps = [
         }"
         class="text-center mt-14 max-w-2xl mx-auto"
       >
-        <p class="text-[#6a6a7a] text-lg leading-relaxed italic">
+        <p class="text-[#828293] text-lg leading-relaxed italic">
           "Il punto di partenza non è la tecnologia. È capire cosa oggi ti fa perdere tempo, cosa non è chiaro per i tuoi clienti o dove il tuo processo si blocca."
         </p>
       </div>

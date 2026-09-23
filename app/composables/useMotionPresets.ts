@@ -1,5 +1,24 @@
 const spring = { type: 'spring' as const, stiffness: 380, damping: 26 }
 
+/** Editorial entrances keep the page moving in a single, quiet rhythm. */
+export const editorialReveal = (delay = 0, direction: 'up' | 'left' | 'right' = 'up') => {
+  const offset = direction === 'up' ? { x: 0, y: 28 } : { x: direction === 'left' ? -28 : 28, y: 0 }
+
+  return {
+    initial: { opacity: 0, ...offset },
+    whileInView: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: { duration: 0.62, delay, ease: 'easeOut' as const },
+    },
+    inViewOptions: { once: true, amount: 0.2 },
+  }
+}
+
+export const editorialStagger = (index: number, direction: 'up' | 'left' | 'right' = 'up') =>
+  editorialReveal(Math.min(index * 0.075, 0.45), direction)
+
 /** Hover lift shared by every card, for cards that animate in elsewhere. */
 export const cardHover = {
   whileHover: {

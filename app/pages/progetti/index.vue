@@ -60,7 +60,7 @@ const filtered = computed(() =>
         <h1 class="text-5xl md:text-6xl font-extrabold text-[#f0f0f5] tracking-tight mt-2">
           Tutti i progetti
         </h1>
-        <p class="text-[#6a6a7a] mt-4 text-lg max-w-xl">
+        <p class="text-[#828293] mt-4 text-lg max-w-xl">
           {{ projects.length }} lavori tra app full stack, frontend, giochi e landing page.
         </p>
       </div>
@@ -81,7 +81,7 @@ const filtered = computed(() =>
           class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200"
           :class="
             selectedCategory === cat
-              ? 'text-white'
+              ? 'text-[#05080d]'
               : 'text-[#8a8a9a] hover:text-white hover:bg-white/[0.06]'
           "
           :style="
@@ -97,7 +97,7 @@ const filtered = computed(() =>
             class="text-xs px-1.5 py-0.5 rounded-md font-semibold"
             :style="
               selectedCategory === cat
-                ? 'background: rgba(255,255,255,0.2); color: white;'
+                ? 'background: rgba(5,8,13,0.14); color: #05080d;'
                 : 'background: rgba(255,255,255,0.07); color: #8a8a9a;'
             "
           >

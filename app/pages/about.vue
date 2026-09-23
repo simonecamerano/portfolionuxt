@@ -168,7 +168,7 @@ const hobbies = [
           class="glass rounded-2xl p-6"
           style="border-color: rgba(255,255,255,0.08);"
         >
-          <div class="text-4xl font-extrabold text-gradient leading-none mb-3">
+          <div class="font-extrabold text-gradient mb-3" :class="/^\d/.test(stat.value) ? 'text-4xl leading-none' : 'text-2xl leading-tight'">
             {{ stat.value }}{{ stat.suffix }}
           </div>
           <p class="text-sm text-[#8a8a9a]">{{ stat.label }}</p>
@@ -208,7 +208,7 @@ const hobbies = [
               class="glass rounded-2xl p-5"
               style="border-color: rgba(255,255,255,0.08);"
             >
-              <p class="text-xs font-semibold uppercase tracking-[0.12em] text-[#6a6a7a] mb-2">{{ item.period }}</p>
+              <p class="text-xs font-semibold uppercase tracking-[0.12em] text-[#828293] mb-2">{{ item.period }}</p>
               <h3 class="font-bold text-[#f0f0f5] mb-2">{{ item.title }}</h3>
               <p class="text-sm text-[#8a8a9a] leading-relaxed">{{ item.text }}</p>
             </div>
@@ -315,7 +315,7 @@ const hobbies = [
         <div class="flex flex-wrap gap-3">
           <NuxtLink
             to="/progetti"
-            class="inline-flex items-center px-6 py-3 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85"
+            class="inline-flex items-center px-6 py-3 rounded-2xl text-sm font-semibold text-[#05080d] transition-all duration-200 hover:opacity-85"
             style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           >
             Progetti

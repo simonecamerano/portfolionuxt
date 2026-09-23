@@ -21,10 +21,6 @@ const cards = [
     body: 'Il processo è cresciuto e ora servono un’interfaccia, dati centralizzati o uno strumento interno costruito sul lavoro reale.',
   },
   {
-    title: 'Vuoi capire dove l’AI serve davvero',
-    body: 'Prima di investire vuoi distinguere le opportunità concrete dalle automazioni fragili o inutilmente complesse.',
-  },
-  {
     title: 'Hai un’idea da trasformare in un sistema',
     body: 'Ti serve qualcuno che traduca il processo in architettura, priorità e un primo prodotto funzionante.',
   },
@@ -44,7 +40,7 @@ const cards = [
 
       <!-- Header -->
       <div
-        v-motion="{ initial: { opacity: 0, y: 28 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.6, ease: 'easeOut' as const } }"
+        v-motion="editorialReveal()"
         class="text-center mb-16"
       >
         <span
@@ -56,7 +52,7 @@ const cards = [
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight max-w-3xl mx-auto leading-[1.1]">
           L’AI crea valore quando risolve <span class="text-gradient-cyan">un problema concreto.</span>
         </h2>
-        <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl mx-auto">
+        <p class="text-[#828293] leading-relaxed mt-6 max-w-2xl mx-auto">
           Prima della tecnologia vengono il tempo perso, i passaggi fragili e le informazioni che non arrivano quando servono.
         </p>
       </div>
@@ -66,15 +62,20 @@ const cards = [
         <div
           v-for="(card, i) in cards"
           :key="card.title"
-          v-motion="cardMotion(i * 0.08)"
-          class="glass rounded-2xl p-6"
+          v-motion="editorialStagger(i, i % 3 === 0 ? 'left' : 'up')"
+          class="glass editorial-card rounded-2xl p-6"
           style="border-color: rgba(255,255,255,0.08);"
         >
           <h3 class="text-[#c4b5fd] font-semibold text-base mb-2">{{ card.title }}</h3>
-          <p class="text-[#6a6a7a] text-sm leading-relaxed">{{ card.body }}</p>
+          <p class="text-[#828293] text-sm leading-relaxed">{{ card.body }}</p>
         </div>
       </div>
 
     </div>
   </section>
 </template>
+
+<style scoped>
+.editorial-card { position: relative; }
+.editorial-card::before { content: ''; position: absolute; top: 0; left: 1.5rem; right: 1.5rem; height: 1px; background: linear-gradient(90deg, transparent, rgba(196, 181, 253, .55), transparent); }
+</style>

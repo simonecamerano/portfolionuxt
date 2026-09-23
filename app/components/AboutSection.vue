@@ -35,13 +35,13 @@ const scrollIn = (delay = 0) => ({
         </div>
 
         <div v-motion="scrollIn(0.1)" class="flex flex-col gap-4">
-          <p class="text-[#6a6a7a] leading-relaxed text-lg">
+          <p class="text-[#828293] leading-relaxed text-lg">
             Sono un AI Workflow Engineer con competenze full stack. Analizzo processi e costruisco automazioni, assistenti e strumenti AI per PMI, professionisti e piccoli team.
           </p>
-          <p class="text-[#6a6a7a] leading-relaxed text-lg">
+          <p class="text-[#828293] leading-relaxed text-lg">
             Prima di dedicarmi allo sviluppo web, ho lavorato per 26 anni nella GDO, a contatto con processi reali, team, fornitori, clienti e urgenze operative. Ho affrontato ogni giorno strumenti non sempre adatti e problemi da risolvere senza troppa teoria. È il motivo per cui capisco i problemi dell’attività prima di iniziare a progettare una soluzione.
           </p>
-          <p class="text-[#6a6a7a] leading-relaxed text-lg">
+          <p class="text-[#828293] leading-relaxed text-lg">
             La tecnologia è importante. Ma deve servire il lavoro, non diventare un altro problema da gestire.
           </p>
           <NuxtLink
@@ -56,18 +56,18 @@ const scrollIn = (delay = 0) => ({
         </div>
 
         <!-- Stats with stagger -->
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4">
           <div
             v-for="(stat, i) in stats"
             :key="stat.label"
             v-motion="{ initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.5, delay: 0.15 + i * 0.08, ease: 'easeOut' as const } }"
-            class="glass rounded-2xl p-5 text-center"
+            class="glass min-w-0 rounded-2xl p-5 text-center"
             style="border-color: rgba(255,255,255,0.08);"
           >
-            <div class="text-3xl font-extrabold text-gradient leading-none mb-2">
+            <div class="font-extrabold text-gradient mb-2" :class="/^\d/.test(stat.value) ? 'text-3xl leading-none' : 'text-xl leading-tight'">
               {{ stat.value }}{{ stat.suffix }}
             </div>
-            <div class="text-xs text-[#6a6a7a] leading-tight">{{ stat.label }}</div>
+            <div class="text-xs text-[#828293] leading-tight">{{ stat.label }}</div>
           </div>
         </div>
       </div>

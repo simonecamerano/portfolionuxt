@@ -31,10 +31,6 @@ const whenCards = [
     desc: 'Il processo è cresciuto e ora servono un’interfaccia, dati centralizzati o uno strumento interno costruito sul lavoro reale.',
   },
   {
-    title: 'Vuoi capire dove l’AI serve davvero',
-    desc: 'Prima di investire vuoi distinguere le opportunità concrete dalle automazioni fragili o inutilmente complesse.',
-  },
-  {
     title: 'Hai un’idea da trasformare in un sistema',
     desc: 'Ti serve qualcuno che traduca il processo in architettura, priorità e un primo prodotto funzionante.',
   },
@@ -103,13 +99,13 @@ const faqs = [
             AI e automazioni nei<br>
             <span class="text-gradient-cyan">processi reali.</span>
           </h1>
-          <p class="text-[#6a6a7a] text-lg leading-relaxed mt-6 max-w-2xl">
+          <p class="text-[#828293] text-lg leading-relaxed mt-6 max-w-2xl">
             Analizzo il lavoro quotidiano, individuo dove l’AI può creare valore e costruisco il sistema necessario per usarla in modo semplice, verificabile e controllabile.
           </p>
           <div class="flex flex-wrap gap-4 mt-8">
             <a
               href="/#contatti"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-sm font-semibold text-[#05080d] transition-all duration-200 hover:opacity-85"
               style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
             >
               Analizziamo il tuo processo
@@ -158,7 +154,7 @@ const faqs = [
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight leading-[1.1] max-w-3xl">
             Posso aiutarti <span class="text-gradient">se…</span>
           </h2>
-          <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl">
+          <p class="text-[#828293] leading-relaxed mt-6 max-w-2xl">
             In molti casi non serve "rivoluzionare" niente. Serve mettere ordine, scegliere le priorità e costruire uno strumento che faccia bene il suo lavoro.
           </p>
         </div>
@@ -171,7 +167,7 @@ const faqs = [
             style="border-color: rgba(255,255,255,0.08);"
           >
             <h3 class="text-[#d0d0e0] font-semibold mb-2">{{ card.title }}</h3>
-            <p class="text-[#6a6a7a] text-sm leading-relaxed">{{ card.desc }}</p>
+            <p class="text-[#828293] text-sm leading-relaxed">{{ card.desc }}</p>
           </div>
         </div>
       </div>
@@ -203,7 +199,7 @@ const faqs = [
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight leading-[1.1]">
             Soluzioni principali e <span class="text-gradient-cyan">capacità abilitanti.</span>
           </h2>
-          <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl">
+          <p class="text-[#828293] leading-relaxed mt-6 max-w-2xl">
             Si può partire da un audit, un prototipo o un singolo flusso. L’obiettivo è validare il valore e poi costruire ciò che serve davvero.
           </p>
         </div>
@@ -217,14 +213,14 @@ const faqs = [
           >
             <div class="flex items-center justify-between mb-4">
               <span class="text-xs font-mono font-bold text-violet-300" aria-hidden="true">{{ service.num }}</span>
-              <span class="px-2 py-1 rounded text-[8px] font-mono tracking-widest text-[#64748b] border border-white/[0.07]">
+              <span class="px-2 py-1 rounded text-[8px] font-mono tracking-widest text-[#8a8a9a] border border-white/[0.07]">
                 {{ service.level === 'primary' ? 'AI CORE' : service.level === 'enabling' ? 'FULL STACK' : 'SECONDARIO' }}
               </span>
             </div>
             <h3 class="text-[#f0f0f5] font-bold text-lg mb-2">{{ service.title }}</h3>
-            <p class="text-[#6a6a7a] text-sm leading-relaxed mb-4">{{ service.desc }}</p>
+            <p class="text-[#828293] text-sm leading-relaxed mb-4">{{ service.desc }}</p>
             <p class="text-xs text-[#8a8a9a] uppercase tracking-widest mb-2">Utile se</p>
-            <ul class="text-[#6a6a7a] text-sm mb-4 flex flex-col gap-1">
+            <ul class="text-[#828293] text-sm mb-4 flex flex-col gap-1">
               <li v-for="item in service.utile_se" :key="item" class="flex gap-2">
                 <span class="text-violet-300 flex-shrink-0" aria-hidden="true">•</span>
                 <span>{{ item }}</span>
@@ -303,7 +299,7 @@ const faqs = [
             <div class="text-[#d0d0e0] font-bold text-base mb-2">
               {{ step.label }}
             </div>
-            <p class="text-[#6a6a7a] text-sm leading-relaxed">{{ step.desc }}</p>
+            <p class="text-[#828293] text-sm leading-relaxed">{{ step.desc }}</p>
           </div>
         </div>
       </div>
@@ -335,7 +331,7 @@ const faqs = [
           <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight leading-[1.1] max-w-3xl">
             Progetti che <span class="text-gradient">dimostrano questi servizi</span>
           </h2>
-          <p class="text-[#6a6a7a] leading-relaxed mt-6 max-w-2xl">
+          <p class="text-[#828293] leading-relaxed mt-6 max-w-2xl">
             Ogni servizio ha almeno un progetto portfolio che lo dimostra concretamente.
           </p>
         </div>
@@ -354,7 +350,7 @@ const faqs = [
               {{ project.service }}
             </span>
             <h3 class="text-[#f0f0f5] font-bold text-lg mb-2">{{ project.title }}</h3>
-            <p class="text-[#6a6a7a] text-sm leading-relaxed mb-4 flex-grow">{{ project.desc }}</p>
+            <p class="text-[#828293] text-sm leading-relaxed mb-4 flex-grow">{{ project.desc }}</p>
             <NuxtLink
               :to="`/progetti/${project.slug}`"
               class="inline-flex items-center gap-1 text-sm font-semibold mt-auto transition-opacity duration-200 hover:opacity-75"
@@ -411,7 +407,7 @@ const faqs = [
             style="border-color: rgba(255,255,255,0.08);"
           >
             <h3 class="text-[#d0d0e0] font-bold mb-3">{{ faq.q }}</h3>
-            <p class="text-[#6a6a7a] text-sm leading-relaxed">{{ faq.a }}</p>
+            <p class="text-[#828293] text-sm leading-relaxed">{{ faq.a }}</p>
           </div>
         </div>
       </div>
@@ -444,12 +440,12 @@ const faqs = [
           <h2 class="text-3xl md:text-4xl font-extrabold text-[#f0f0f5] tracking-tight leading-[1.1] mb-6">
             Quale processo oggi fa perdere tempo al tuo <span class="text-gradient-cyan">team?</span>
           </h2>
-          <p class="text-[#6a6a7a] leading-relaxed mb-8 max-w-xl mx-auto">
+          <p class="text-[#828293] leading-relaxed mb-8 max-w-xl mx-auto">
             Raccontami il punto in cui il lavoro si blocca o si ripete. Ti aiuto a capire se un workflow AI, un’automazione o uno strumento su misura può risolverlo.
           </p>
           <a
             href="/#contatti"
-            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85"
+            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-[#05080d] transition-all duration-200 hover:opacity-85"
             style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           >
             Raccontami il processo

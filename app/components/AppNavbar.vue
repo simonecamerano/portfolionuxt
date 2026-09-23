@@ -1,25 +1,27 @@
 <script setup lang="ts">
-const isScrolled = ref(false)
+const navOpacity = ref(0)
+const navBlur = ref(0)
 const isMobileMenuOpen = ref(false)
 
 const navLinks = [
   { label: 'Home', href: '/#hero' },
-  { label: 'Soluzioni', href: '/servizi' },
   { label: 'Progetti', href: '/#progetti' },
-  { label: 'Metodo', href: '/#metodo' },
   { label: 'Chi sono', href: '/#about' },
+  { label: 'Metodo', href: '/#metodo' },
+  { label: 'Soluzioni', href: '/servizi' },
 ]
 
 const route = useRoute()
+// Ads landings keep only the logo, without a link: every exit from the page
+// is a visitor lost before reaching the form.
+const isLanding = computed(() => route.path.startsWith('/riservato'))
 const activeSection = ref('')
 const sectionIds = navLinks
   .filter((l) => l.href.startsWith('/#'))
   .map((l) => l.href.slice(2))
 
 // While a menu click is scrolling to its target, the highlight stays on that
-// target instead of tracking the sections it flies past: the page renders
-// Progetti before Chi sono while the menu lists them the other way round, so
-// tracking would run the highlight backwards on the way down.
+// target instead of tracking the sections it flies past during smooth scroll.
 const isNavigating = ref(false)
 const pendingTarget = ref('')
 let releaseTimer: ReturnType<typeof setTimeout> | undefined
@@ -53,7 +55,9 @@ const updateActiveSection = () => {
 }
 
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 20
+  const progress = Math.min(Math.max(window.scrollY / 320, 0), 1)
+  navOpacity.value = Number((progress * 0.92).toFixed(3))
+  navBlur.value = Math.round(progress * 24)
   if (isNavigating.value) {
     const top = document.getElementById(pendingTarget.value)?.getBoundingClientRect().top
     if (top !== undefined && top <= window.innerHeight * 0.4) releaseNavigation()
@@ -65,6 +69,15 @@ const handleScroll = () => {
 const onNavClick = (href: string) => {
   closeMobileMenu()
   if (!href.startsWith('/#')) return
+  // Same hash as the current URL: the router sees no navigation and does not
+  // scroll, so the second click on Home (or the logo) would do nothing.
+  if (route.path === '/' && route.hash === href.slice(1)) {
+    const target = document.getElementById(href.slice(2))
+    // No explicit behavior: it inherits the CSS scroll-behavior, which is
+    // already disabled under prefers-reduced-motion.
+    if (href === '/#hero') window.scrollTo({ top: 0 })
+    else target?.scrollIntoView()
+  }
   activeSection.value = href.slice(2)
   pendingTarget.value = href.slice(2)
   isNavigating.value = true
@@ -99,22 +112,30 @@ const closeMobileMenu = () => {
 
 <template>
   <nav
-    class="fixed inset-x-0 top-0 z-[100] w-full border-b border-transparent transition-[background-color,backdrop-filter,border-color] duration-300"
-    :class="isScrolled ? 'glass-nav' : 'bg-transparent'"
+    class="site-navbar fixed inset-x-0 top-0 z-[100] w-full border-b"
+    :style="{ '--nav-opacity': navOpacity, '--nav-blur': `${navBlur}px`, '--nav-border-opacity': navOpacity * 0.065 }"
     aria-label="Navigazione principale"
   >
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <!-- Logo -->
-      <NuxtLink
-        to="/"
+      <span
+        v-if="isLanding"
         class="text-2xl font-black text-gradient tracking-tight"
-        aria-label="Simone Camerano, torna alla homepage"
+      >
+        SC
+      </span>
+      <NuxtLink
+        v-else
+        to="/#hero"
+        class="text-2xl font-black text-gradient tracking-tight"
+        aria-label="Simone Camerano, torna in cima alla homepage"
+        @click="onNavClick('/#hero')"
       >
         SC
       </NuxtLink>
 
       <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8">
+      <div v-if="!isLanding" class="hidden md:flex items-center gap-8">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.href"
@@ -136,6 +157,7 @@ const closeMobileMenu = () => {
 
       <!-- Desktop CTA -->
       <NuxtLink
+        v-if="!isLanding"
         to="/#contatti"
         class="hidden md:inline-flex items-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white border transition-all duration-200 hover:bg-violet-400/10 hover:border-violet-300/60"
         style="border-color: rgba(196, 181, 253, 0.36);"
@@ -146,6 +168,7 @@ const closeMobileMenu = () => {
 
       <!-- Mobile hamburger -->
       <button
+        v-if="!isLanding"
         class="md:hidden p-2 text-[#8a8a9a] hover:text-white transition-colors rounded-lg"
         :aria-expanded="isMobileMenuOpen"
         aria-label="Apri menu di navigazione"

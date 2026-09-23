@@ -172,7 +172,7 @@ async function inviaForm() {
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="val-azienda" class="text-sm font-medium text-[#8a8a9a]">Azienda <span class="text-[#5a5a6a]">(facoltativo)</span></label>
+            <label for="val-azienda" class="text-sm font-medium text-[#8a8a9a]">Azienda <span class="text-[#828293]">(facoltativo)</span></label>
             <input
               id="val-azienda" v-model="form.azienda" type="text" autocomplete="organization" placeholder="Nome dell'azienda"
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
@@ -181,7 +181,7 @@ async function inviaForm() {
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="val-messaggio" class="text-sm font-medium text-[#8a8a9a]">Cosa vorresti capire? <span class="text-[#5a5a6a]">(facoltativo)</span></label>
+            <label for="val-messaggio" class="text-sm font-medium text-[#8a8a9a]">Cosa vorresti capire? <span class="text-[#828293]">(facoltativo)</span></label>
             <textarea
               id="val-messaggio" v-model="form.messaggio" rows="3" placeholder="Descrivi brevemente dove pensi possa aiutarti l'AI..."
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200 resize-none"
@@ -209,7 +209,7 @@ async function inviaForm() {
 
           <button
             type="submit" :disabled="invioInCorso"
-            class="w-full py-4 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-88 hover:scale-[1.015] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
+            class="w-full py-4 rounded-2xl text-sm font-semibold text-[#05080d] transition-all duration-200 hover:opacity-88 hover:scale-[1.015] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
             style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           >
             <span v-if="invioInCorso" class="flex items-center justify-center gap-2.5">
@@ -222,7 +222,7 @@ async function inviaForm() {
             <span v-else>Prenota la chiamata gratuita</span>
           </button>
 
-          <p class="text-xs text-[#6a6a7a] text-center leading-relaxed">
+          <p class="text-xs text-[#828293] text-center leading-relaxed">
             Nessuna pressione a comprare: se per te non ha senso, te lo dico chiaramente.
           </p>
         </form>

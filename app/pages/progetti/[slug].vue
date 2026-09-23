@@ -80,7 +80,7 @@ useSeoMeta({
           </h1>
 
           <!-- Description -->
-          <p class="text-[#6a6a7a] leading-relaxed">
+          <p class="text-[#828293] leading-relaxed">
             {{ project.description }}
           </p>
 
@@ -102,7 +102,7 @@ useSeoMeta({
               :href="project.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85 hover:scale-[1.02]"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-sm font-semibold text-[#05080d] transition-all duration-200 hover:opacity-85 hover:scale-[1.02]"
               style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
             >
               Vedi il progetto
@@ -167,12 +167,12 @@ useSeoMeta({
             <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight leading-tight mb-4">
               {{ project.caseStudy.problem.headline }}
             </h2>
-            <p class="text-[#6a6a7a] leading-relaxed mb-5">{{ project.caseStudy.problem.text }}</p>
+            <p class="text-[#828293] leading-relaxed mb-5">{{ project.caseStudy.problem.text }}</p>
             <ul class="flex flex-col gap-2">
               <li
                 v-for="point in project.caseStudy.problem.points"
                 :key="point"
-                class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+                class="flex items-start gap-2.5 text-sm text-[#828293]"
               >
                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(239,68,68,0.6);" aria-hidden="true" />
                 {{ point }}
@@ -189,12 +189,12 @@ useSeoMeta({
             <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight leading-tight mb-4">
               {{ project.caseStudy.solution.headline }}
             </h2>
-            <p class="text-[#6a6a7a] leading-relaxed mb-5">{{ project.caseStudy.solution.text }}</p>
+            <p class="text-[#828293] leading-relaxed mb-5">{{ project.caseStudy.solution.text }}</p>
             <ul class="flex flex-col gap-2">
               <li
                 v-for="point in project.caseStudy.solution.points"
                 :key="point"
-                class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+                class="flex items-start gap-2.5 text-sm text-[#828293]"
               >
                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(196,181,253,0.5);" aria-hidden="true" />
                 {{ point }}
@@ -216,7 +216,7 @@ useSeoMeta({
                 style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
                 {{ step }}
               </span>
-              <span v-if="i < project.caseStudy.archFlow.length - 1" class="text-[#6a6a7a] font-mono text-lg" aria-hidden="true">→</span>
+              <span v-if="i < project.caseStudy.archFlow.length - 1" class="text-[#828293] font-mono text-lg" aria-hidden="true">→</span>
             </template>
           </div>
         </div>
@@ -235,7 +235,7 @@ useSeoMeta({
               <li
                 v-for="item in project.caseStudy.demonstrates"
                 :key="item"
-                class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+                class="flex items-start gap-2.5 text-sm text-[#828293]"
               >
                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(139,233,255,0.6);" aria-hidden="true" />
                 {{ item }}
@@ -250,12 +250,12 @@ useSeoMeta({
               Replicabilità
             </span>
             <h2 class="text-xl font-extrabold text-[#f0f0f5] tracking-tight mb-4">Come questo approccio può aiutare un team</h2>
-            <p class="text-[#6a6a7a] text-sm leading-relaxed mb-5">{{ project.caseStudy.replicability.text }}</p>
+            <p class="text-[#828293] text-sm leading-relaxed mb-5">{{ project.caseStudy.replicability.text }}</p>
             <ul class="flex flex-col gap-2">
               <li
                 v-for="uc in project.caseStudy.replicability.useCases"
                 :key="uc"
-                class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+                class="flex items-start gap-2.5 text-sm text-[#828293]"
               >
                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(251,191,36,0.5);" aria-hidden="true" />
                 {{ uc }}
@@ -273,12 +273,12 @@ useSeoMeta({
           <h2 class="text-xl font-extrabold text-[#f0f0f5] tracking-tight mb-4">
             {{ project.caseStudy.responsibleNote.headline }}
           </h2>
-          <p class="text-[#6a6a7a] text-sm leading-relaxed mb-5">{{ project.caseStudy.responsibleNote.text }}</p>
+          <p class="text-[#828293] text-sm leading-relaxed mb-5">{{ project.caseStudy.responsibleNote.text }}</p>
           <ul class="flex flex-col gap-2">
             <li
               v-for="point in project.caseStudy.responsibleNote.points"
               :key="point"
-              class="flex items-start gap-2.5 text-sm text-[#6a6a7a]"
+              class="flex items-start gap-2.5 text-sm text-[#828293]"
             >
               <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(251,191,36,0.5);" aria-hidden="true" />
               {{ point }}
@@ -291,7 +291,7 @@ useSeoMeta({
           <p class="text-[#d0d0e0] font-medium mb-5 max-w-xl mx-auto">{{ project.caseStudy.ctaText }}</p>
           <a
             href="/#contatti"
-            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-85 hover:scale-[1.02]"
+            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl text-sm font-semibold text-[#05080d] transition-all duration-200 hover:opacity-85 hover:scale-[1.02]"
             style="background: linear-gradient(135deg, #d8b4fe, #b69cff);"
           >
             Parliamo del tuo workflow
@@ -316,7 +316,7 @@ useSeoMeta({
           <div class="glass rounded-2xl p-6 max-w-xl flex items-center justify-between gap-4" style="border-color: rgba(255,255,255,0.08);">
             <div>
               <p class="text-sm font-semibold text-[#d0d0e0] mb-1">Documentazione tecnica completa</p>
-              <p class="text-xs text-[#6a6a7a]">README, configurazione e istruzioni di setup su GitHub.</p>
+              <p class="text-xs text-[#828293]">README, configurazione e istruzioni di setup su GitHub.</p>
             </div>
             <a
               :href="project.github"

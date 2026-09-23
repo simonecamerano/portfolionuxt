@@ -60,14 +60,14 @@ export const technologies: TechItem[] = [
   {
     name: 'OpenAI',
     abbr: 'OAI',
-    color: '#412991',
+    color: '#a898f0',
     bgColor: 'rgba(65,41,145,0.08)',
     borderColor: 'rgba(65,41,145,0.22)',
   },
   {
     name: 'DeepSeek',
     abbr: 'DS',
-    color: '#4D6BFE',
+    color: '#7f93ff',
     bgColor: 'rgba(77,107,254,0.08)',
     borderColor: 'rgba(77,107,254,0.22)',
   },
@@ -109,14 +109,14 @@ export const technologies: TechItem[] = [
   {
     name: 'PostgreSQL',
     abbr: 'PG',
-    color: '#336791',
+    color: '#6fa3d0',
     bgColor: 'rgba(51,103,145,0.08)',
     borderColor: 'rgba(51,103,145,0.22)',
   },
   {
     name: 'Prisma',
     abbr: 'ORM',
-    color: '#5a67d8',
+    color: '#8a94e8',
     bgColor: 'rgba(90,103,216,0.08)',
     borderColor: 'rgba(90,103,216,0.22)',
   },

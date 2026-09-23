@@ -10,7 +10,7 @@ const featuredProjects = projects.filter((p) => p.featured)
 
       <!-- Header -->
       <div
-        v-motion="{ initial: { opacity: 0, y: 28 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.6, ease: 'easeOut' as const } }"
+        v-motion="editorialReveal()"
         class="text-center mb-16"
       >
         <span
@@ -22,7 +22,7 @@ const featuredProjects = projects.filter((p) => p.featured)
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] mb-4 tracking-tight">
           Dalla necessità al <span class="text-gradient-cyan">sistema funzionante.</span>
         </h2>
-        <p class="text-[#6a6a7a] max-w-lg mx-auto leading-relaxed">
+        <p class="text-[#828293] max-w-lg mx-auto leading-relaxed">
           Automazioni, basi di conoscenza, strumenti di controllo e prodotti completi. Ogni progetto racconta un problema, le scelte fatte e la soluzione realizzata.
         </p>
       </div>
@@ -32,7 +32,7 @@ const featuredProjects = projects.filter((p) => p.featured)
         <div
           v-for="(project, i) in featuredProjects"
           :key="project.id"
-          v-motion="{ initial: { opacity: 0, y: 32 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.55, delay: i * 0.1, ease: 'easeOut' as const } }"
+          v-motion="editorialStagger(i, i % 3 === 0 ? 'left' : 'up')"
         >
           <ProjectCard :project="project" />
         </div>
@@ -40,15 +40,15 @@ const featuredProjects = projects.filter((p) => p.featured)
 
       <!-- Closing note -->
       <p
-        v-motion="{ initial: { opacity: 0, y: 16 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.5, delay: 0.25, ease: 'easeOut' as const } }"
-        class="text-center text-[#6a6a7a] text-sm leading-relaxed max-w-2xl mx-auto mt-12"
+        v-motion="editorialReveal(0.18)"
+        class="text-center text-[#828293] text-sm leading-relaxed max-w-2xl mx-auto mt-12"
       >
         Ogni progetto nasce da una domanda pratica: come organizzo meglio queste informazioni? Come riduco attività ripetitive? Come costruisco uno strumento semplice da usare? Dove l'AI può aiutare senza prendere il controllo del processo?
       </p>
 
       <!-- CTA -->
       <div
-        v-motion="{ initial: { opacity: 0, y: 16 }, whileInView: { opacity: 1, y: 0 }, inViewOptions: { once: true }, transition: { duration: 0.5, delay: 0.3, ease: 'easeOut' as const } }"
+        v-motion="editorialReveal(0.26)"
         class="text-center mt-14"
       >
         <NuxtLink
