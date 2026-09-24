@@ -17,7 +17,9 @@ const acts = [
   { number: '01', title: 'Le informazioni si disperdono', label: 'PRIMA', text: 'Email, fogli e strumenti separati costringono il team a cercare, copiare e ricontrollare.', tone: 'violet' },
   { number: '02', title: 'I passaggi si collegano', label: 'IL FLUSSO', text: 'Regole e AI raccolgono il contesto, preparano il lavoro e segnalano ciò che richiede attenzione.', tone: 'cyan' },
   { number: '03', title: 'Il team prende la decisione', label: 'DOPO', text: 'Il risultato arriva con le informazioni utili. Le persone verificano, approvano e vanno avanti.', tone: 'mint' },
-]
+] as const
+
+const currentAct = computed(() => acts[activeAct.value] ?? acts[0])
 
 const updateAct = () => {
   if (!section.value || reducedMotion.value || compactLayout.value) return
@@ -118,11 +120,11 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <div ref="stage" class="story-stage" :class="acts[activeAct].tone" aria-hidden="true">
+        <div ref="stage" class="story-stage" :class="currentAct.tone" aria-hidden="true">
           <div class="stage-top"><span><i class="stage-signal" /> COME CAMBIA IL LAVORO</span><span>{{ String(activeAct + 1).padStart(2, '0') }} / 03</span></div>
           <div class="stage-progress" aria-hidden="true"><span :style="{ transform: `scaleX(${(activeAct + 1) / acts.length})` }" /></div>
-          <div class="stage-watermark">{{ acts[activeAct].number }}</div>
-          <div class="stage-heading"><span>{{ acts[activeAct].label }}</span><strong>{{ activeAct === 0 ? 'Ogni strumento ha un pezzo della storia.' : activeAct === 1 ? 'Il contesto si compone da sé.' : 'Ora si può decidere, senza rincorrere i dati.' }}</strong></div>
+          <div class="stage-watermark">{{ currentAct.number }}</div>
+          <div class="stage-heading"><span>{{ currentAct.label }}</span><strong>{{ activeAct === 0 ? 'Ogni strumento ha un pezzo della storia.' : activeAct === 1 ? 'Il contesto si compone da sé.' : 'Ora si può decidere, senza rincorrere i dati.' }}</strong></div>
 
           <div v-if="activeAct === 0" class="stage-scene scattered-scene">
             <svg class="fragment-links" viewBox="0 0 100 100" preserveAspectRatio="none" focusable="false"><path d="M25 15 L43 39 M75 15 L57 39 M50 66 L50 82" /></svg>
