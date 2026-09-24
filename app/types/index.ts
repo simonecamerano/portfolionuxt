@@ -29,8 +29,12 @@ export interface Project {
   description: string
   image: string
   tags: string[]
-  link: string
+  // Optional: omit when there is nothing public to link (e.g. private repo)
+  link?: string
   featured: boolean
+  // Optional vertical demo video (9:16), shown instead of the screenshot on the detail page
+  video?: string
+  videoPoster?: string
   // Optional fields for the detail page, add when ready
   github?: string
   year?: number

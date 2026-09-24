@@ -99,6 +99,7 @@ useSeoMeta({
           <!-- CTAs -->
           <div class="flex flex-wrap gap-3 pt-2">
             <a
+              v-if="project.link"
               :href="project.link"
               target="_blank"
               rel="noopener noreferrer"
@@ -134,6 +135,25 @@ useSeoMeta({
             aria-hidden="true"
           />
           <div
+            v-if="project.video"
+            class="relative mx-auto w-full max-w-[320px] rounded-3xl overflow-hidden bg-black"
+            style="border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 9/16;"
+          >
+            <video
+              :src="project.video"
+              :poster="project.videoPoster"
+              class="w-full h-full block object-cover"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+              preload="metadata"
+              :aria-label="`Video dimostrativo di ${project.title}`"
+            />
+          </div>
+          <div
+            v-else
             class="relative rounded-3xl overflow-hidden"
             style="border: 1px solid rgba(255,255,255,0.1);"
           >

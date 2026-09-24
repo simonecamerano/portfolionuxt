@@ -2,6 +2,82 @@ import type { Project } from '~/types'
 
 export const projects: Project[] = [
   {
+    id: 16,
+    slug: 'horeca-inbox',
+    title: 'Horeca Inbox',
+    category: 'AI Automation',
+    description:
+      'Risposta automatica multicanale per ristoranti e hotel: WhatsApp, email e modulo del sito entrano in un unico motore AI che risponde sul canale giusto e avvisa il titolare.',
+    image: '/images/horeca-inbox.png',
+    video: '/videos/horeca-inbox.mp4',
+    videoPoster: '/videos/horeca-inbox-poster.jpg',
+    tags: ['Nuxt 3', 'Claude API', 'WhatsApp Cloud API', 'PostgreSQL', 'IMAP'],
+    featured: true,
+    year: 2026,
+    longDescription:
+      "Horeca Inbox raccoglie le richieste dirette che arrivano a un ristorante o a un hotel da WhatsApp, email e modulo del sito, le porta in un formato unico e le passa a un motore basato su Claude che capisce cosa chiede il cliente, quali dati mancano e prepara una risposta pertinente sullo stesso canale. Il titolare riceve una notifica push con la richiesta, senza dover controllare tre caselle diverse. Il video mostra la demo con dati inventati e un numero WhatsApp di prova.",
+    caseStudy: {
+      problem: {
+        headline: 'Il problema: le richieste dirette restano ferme mentre le OTA rispondono subito',
+        text: "Un ristorante o un hotel riceve richieste da canali diversi: un messaggio WhatsApp la sera, un'email per un catering, un modulo compilato sul sito. Chi le gestisce è spesso lo stesso titolare, in servizio. Ogni ora di attesa è una prenotazione che rischia di passare da un portale, con la sua commissione, o di non arrivare affatto.",
+        points: [
+          'Tre canali da controllare, nessuna vista unica sulle richieste',
+          'Risposte che arrivano ore dopo, quando il cliente ha già scelto altrove',
+          'Richieste vaghe che richiedono comunque un giro di domande prima del preventivo',
+          'Le prenotazioni dirette valgono margine pieno, quelle da portale no',
+        ],
+      },
+      solution: {
+        headline: 'La soluzione: tre ingressi, un motore solo, risposta sul canale di origine',
+        text: "Ogni canale ha un solo compito: prendere quello che arriva e scriverlo in una tabella unica. Il motore legge la richiesta, la classifica e individua i dati mancanti in base alla configurazione dell'attività, poi risponde sul canale da cui è arrivata. Non promette disponibilità né prezzi: prende in carico e chiede quello che serve, così non dice mai il falso.",
+        points: [
+          'Ingressi separati per WhatsApp (webhook Meta con verifica della firma), email (lettura IMAP) e modulo web',
+          'Motore basato su Claude con output strutturato validato da Zod: categoria, campi presenti e campi mancanti',
+          'Risposta generata sul caso specifico, non un template statico',
+          'Notifica push al titolare via ntfy a ogni nuova richiesta',
+          "Categorie e campi configurabili per attività: un nuovo settore è configurazione, non codice nuovo",
+          'Ciclo di elaborazione con tentativi e isolamento degli errori: un messaggio che fallisce non blocca gli altri',
+          'Suite di test automatici con Vitest su motore, canali, scheduler e uscita',
+        ],
+      },
+      archFlow: [
+        'WhatsApp, email o modulo',
+        'Ingresso e normalizzazione',
+        'Tabella richieste (Postgres)',
+        'Motore AI (classifica ed estrae)',
+        'Risposta sul canale di origine',
+        'Notifica al titolare',
+      ],
+      demonstrates: [
+        'Integrazione di canali eterogenei (webhook, IMAP, form) dietro un unico formato dati',
+        'Uso di un LLM con output strutturato e validato, non testo libero',
+        'Progettazione prudente del comportamento: nessuna promessa che il sistema non può mantenere',
+        'Architettura Nuxt/Nitro come hub unico, senza orchestratori esterni nel percorso critico',
+        'Gestione di errori e tentativi su code di messaggi reali',
+        'Lettura del problema dal lato di chi gestisce un locale, non solo dal lato tecnico',
+      ],
+      replicability: {
+        text: "Il motore non sa da quale canale arriva la richiesta né di che settore è l'attività: categorie e campi da raccogliere stanno in configurazione. Lo stesso sistema si adatta a qualunque attività che riceve richieste dirette da più canali.",
+        useCases: [
+          'Agenzie immobiliari che ricevono richieste di visita da portali, email e WhatsApp',
+          'Studi professionali con richieste di appuntamento da più canali',
+          'Strutture ricettive che vogliono ridurre la dipendenza dalle OTA',
+          'Agenzie che gestiscono la comunicazione di più locali e vogliono un sistema replicabile',
+        ],
+      },
+      responsibleNote: {
+        headline: 'Cosa mostra la demo e cosa no',
+        text: "La demo gira con dati inventati e con WhatsApp in modalità di test di Meta. È un esempio di come si può costruire il sistema, non un prodotto preconfezionato: in un progetto reale canali, regole di risposta e dati da raccogliere si definiscono insieme all'attività.",
+        points: [
+          'Nomi, numeri e indirizzi nel video sono di fantasia',
+          'Il sistema non conferma prenotazioni né comunica prezzi in autonomia',
+          'I dati dei clienti finali si trattano con nomina a responsabile del trattamento',
+        ],
+      },
+      ctaText: "Ricevi richieste da più canali e non riesci a rispondere in tempo? Posso aiutarti a capire quale conviene automatizzare per primo.",
+    },
+  },
+  {
     id: 15,
     slug: 'pii-guard-it',
     title: 'PII Guard IT',
@@ -508,7 +584,7 @@ export const projects: Project[] = [
     image: '/images/joulezeropoint.png',
     tags: ['Vue 3', 'Node.js', 'MongoDB', 'AI Assistant'],
     link: 'https://www.joulezeropoint.com',
-    featured: true,
+    featured: false,
     github: 'https://github.com/simonecamerano/JouleZeroPointWeb',
     year: 2026,
     longDescription:
