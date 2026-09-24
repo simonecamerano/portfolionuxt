@@ -22,7 +22,8 @@ if (project.github) {
   }
 }
 
-const { public: { siteUrl } } = useRuntimeConfig()
+const rawSiteUrl = useRuntimeConfig().public.siteUrl as string
+const siteUrl = rawSiteUrl.startsWith('http') ? rawSiteUrl : `https://${rawSiteUrl}`
 
 useSeoMeta({
   title: `${project.title} - Simone Camerano`,
