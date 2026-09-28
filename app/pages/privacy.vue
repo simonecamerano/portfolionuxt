@@ -91,7 +91,9 @@ useSeoMeta({
         <p>
           <strong>Per quanto tempo.</strong> Finché la relazione commerciale è in corso. Se la trattativa si
           chiude senza esito, i dati vengono rimossi entro ventiquattro mesi, salvo che ci sia una ragione
-          concreta per ricontattare più avanti.
+          concreta per ricontattare più avanti. Se al primo messaggio non rispondi, ti scrivo al massimo
+          un'altra volta e dopo dodici mesi dall'ultimo invio cancello i tuoi dati, tenendo solo il nome
+          del dominio e la data del contatto per non scriverti di nuovo per errore.
         </p>
         <p>
           <strong>Come oppormi.</strong> Basta scrivere a
