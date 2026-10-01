@@ -30,6 +30,13 @@ const { scelto, riapri } = useConsensoTracciamento()
           </NuxtLink>
 
           <NuxtLink
+            to="/servizi#faq"
+            class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+          >
+            Domande frequenti
+          </NuxtLink>
+
+          <NuxtLink
             to="/privacy"
             class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
           >

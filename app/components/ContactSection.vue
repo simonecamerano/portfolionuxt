@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { homeFaqs } from '~/data/faqs'
+
 interface FormState {
   name: string
   email: string
@@ -195,6 +197,35 @@ const resetForm = () => {
           </template>
         </form>
       </div>
+    </div>
+
+    <!-- Le quattro obiezioni che pesano di piu' nel momento in cui si decide
+         se scrivere, in due colonne sotto testo e modulo. Native <details>: niente
+         JS, accessibile da tastiera. -->
+    <div class="max-w-6xl mx-auto mt-16">
+      <p class="text-xs font-semibold uppercase tracking-[0.12em] text-[#8a8a9a] mb-4">
+        Prima di scrivere
+      </p>
+      <div class="grid md:grid-cols-2 gap-4 items-start">
+        <details
+          v-for="faq in homeFaqs"
+          :key="faq.q"
+          class="glass rounded-2xl px-5 py-4 group"
+          style="border-color: rgba(255,255,255,0.08);"
+        >
+          <summary class="cursor-pointer list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 text-[#d0d0e0] font-semibold text-sm">
+            {{ faq.q }}
+            <span class="text-[#c4b5fd] transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
+          </summary>
+          <p class="text-[#828293] text-sm leading-relaxed mt-3">{{ faq.a }}</p>
+        </details>
+      </div>
+      <NuxtLink
+        to="/servizi#faq"
+        class="inline-block mt-4 text-sm font-medium text-gradient hover:opacity-70 transition-opacity"
+      >
+        Tutte le domande →
+      </NuxtLink>
     </div>
   </section>
 </template>
