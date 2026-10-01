@@ -26,6 +26,9 @@ export interface Project {
   slug: string
   title: string
   category: string
+  // Optional: badge in plain language for business owners, shown on the home
+  // cards instead of the technical category
+  ownerLabel?: string
   description: string
   image: string
   tags: string[]

@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import type { Project } from '~/types'
 
-defineProps<{
+// ownerView: in home la card parla a un titolare, non a uno sviluppatore.
+// Badge in linguaggio semplice (ownerLabel) e niente etichette tecniche, che
+// restano visibili in /progetti e nelle pagine di dettaglio.
+withDefaults(defineProps<{
   project: Project
-}>()
+  ownerView?: boolean
+}>(), { ownerView: false })
 </script>
 
 <template>
@@ -35,7 +39,7 @@ defineProps<{
           class="px-3 py-1 rounded-full text-xs font-semibold"
           style="background: rgba(10,10,15,0.7); backdrop-filter: blur(8px); border: 1px solid rgba(139, 92, 246, 0.35); color: #c4b5fd;"
         >
-          {{ project.category }}
+          {{ ownerView && project.ownerLabel ? project.ownerLabel : project.category }}
         </span>
       </div>
     </div>
@@ -49,7 +53,7 @@ defineProps<{
       </p>
 
       <!-- Tags -->
-      <div class="flex flex-wrap gap-2">
+      <div v-if="!ownerView" class="flex flex-wrap gap-2">
         <span
           v-for="tag in project.tags"
           :key="tag"

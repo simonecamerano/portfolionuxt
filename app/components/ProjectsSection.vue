@@ -34,7 +34,7 @@ const featuredProjects = projects.filter((p) => p.featured)
           :key="project.id"
           v-motion="editorialStagger(i, i % 3 === 0 ? 'left' : 'up')"
         >
-          <ProjectCard :project="project" />
+          <ProjectCard :project="project" owner-view />
         </div>
       </div>
 

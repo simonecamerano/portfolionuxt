@@ -6,6 +6,7 @@ export const projects: Project[] = [
     slug: 'horeca-inbox',
     title: 'Horeca Inbox',
     category: 'AI Automation',
+    ownerLabel: 'Ristoranti e hotel',
     description:
       'Risposta automatica multicanale per ristoranti e hotel: WhatsApp, email e modulo del sito entrano in un unico motore AI che risponde sul canale giusto e avvisa il titolare.',
     image: '/images/horeca-inbox.png',
@@ -82,6 +83,7 @@ export const projects: Project[] = [
     slug: 'pii-guard-it',
     title: 'PII Guard IT',
     category: 'Browser Extension',
+    ownerLabel: 'Privacy dei dati',
     description:
       "Estensione Chrome che rileva Codice Fiscale, Partita IVA, IBAN e altri dati personali italiani con validazione reale, offuscandoli prima dell'invio a ChatGPT, Claude o Gemini.",
     image: '/images/pii-guard-it.png',
@@ -151,6 +153,7 @@ export const projects: Project[] = [
     slug: 'includo-guide',
     title: 'IncluDO Guide',
     category: 'RAG / Full Stack AI',
+    ownerLabel: 'Assistente su documenti',
     description:
       'Web app che rende più semplice consultare una knowledge base e ricevere risposte contestuali su percorsi formativi.',
     image: '/images/includo.png',
@@ -234,7 +237,7 @@ export const projects: Project[] = [
     image: '/images/italy-job-hunter.png',
     tags: ['Node.js', 'AI', 'Automation', 'GitHub Actions'],
     link: 'https://github.com/simonecamerano/italy-job-hunter',
-    featured: true,
+    featured: false,
     github: 'https://github.com/simonecamerano/italy-job-hunter',
     year: 2026,
     longDescription:
@@ -309,7 +312,7 @@ export const projects: Project[] = [
     image: '/images/demo.gif',
     tags: ['TypeScript', 'CLI', 'LLM', 'Developer Tools'],
     link: 'https://github.com/simonecamerano/contextforge',
-    featured: true,
+    featured: false,
     github: 'https://github.com/simonecamerano/contextforge',
     year: 2026,
     longDescription:
@@ -400,7 +403,7 @@ export const projects: Project[] = [
     image: '/images/ai-control-tower.png',
     tags: ['TypeScript', 'Fastify', 'Dashboard', 'AI Monitoring'],
     link: 'https://github.com/simonecamerano/ai-control-tower',
-    featured: true,
+    featured: false,
     github: 'https://github.com/simonecamerano/ai-control-tower',
     year: 2026,
     longDescription:
