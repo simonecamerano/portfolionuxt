@@ -22,7 +22,7 @@ const featuredProjects = projects.filter((p) => p.featured)
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] mb-4 tracking-tight">
           Dalla necessità al <span class="text-gradient-cyan">sistema funzionante.</span>
         </h2>
-        <p class="text-[#828293] max-w-lg mx-auto leading-relaxed">
+        <p class="text-[#a3a6b9] max-w-lg mx-auto leading-relaxed">
           Automazioni, basi di conoscenza, strumenti di controllo e prodotti completi. Ogni progetto racconta un problema, le scelte fatte e la soluzione realizzata.
         </p>
       </div>
@@ -41,7 +41,7 @@ const featuredProjects = projects.filter((p) => p.featured)
       <!-- Closing note -->
       <p
         v-motion="editorialReveal(0.18)"
-        class="text-center text-[#828293] text-sm leading-relaxed max-w-2xl mx-auto mt-12"
+        class="text-center text-[#a3a6b9] text-sm leading-relaxed max-w-2xl mx-auto mt-12"
       >
         Ogni progetto nasce da una domanda pratica: come organizzo meglio queste informazioni? Come riduco attività ripetitive? Come costruisco uno strumento semplice da usare? Dove l'AI può aiutare senza prendere il controllo del processo?
       </p>

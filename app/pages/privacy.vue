@@ -14,7 +14,7 @@ useSeoMeta({
     <div class="max-w-3xl mx-auto">
       <NuxtLink
         to="/"
-        class="inline-flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors group mb-12"
+        class="inline-flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors group mb-12"
       >
         <svg class="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
@@ -32,7 +32,7 @@ useSeoMeta({
         <h1 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight">
           Privacy Policy
         </h1>
-        <p class="text-[#8a8a9a] mt-4 leading-relaxed">
+        <p class="text-[#a3a6b9] mt-4 leading-relaxed">
           Ultimo aggiornamento: 16 settembre 2026.
         </p>
       </header>

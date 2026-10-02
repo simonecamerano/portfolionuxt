@@ -154,7 +154,7 @@ onUnmounted(() => {
 .workflow-copy { display:grid; grid-template-columns:34px 1fr; gap:14px; padding:12px 0; opacity:.28; transition:opacity .35s ease,transform .35s ease; }
 .workflow-copy.active { opacity:1; transform:translateX(8px); }.workflow-copy.complete{opacity:.48}
 .workflow-index { padding-top:3px; color:#22d3ee; font:700 10px monospace; letter-spacing:.1em; }
-.workflow-copy span { color:#22d3ee; font:700 8px monospace; letter-spacing:.16em; }
+.workflow-copy span { color:#22d3ee; font:700 10px monospace; letter-spacing:.16em; }
 .workflow-copy h3 { margin-top:3px; color:#dce7f4; font-size:.95rem; font-weight:700; }
 .workflow-copy p { max-height:0; overflow:hidden; margin-top:0; color:#77859a; font-size:.78rem; line-height:1.55; opacity:0; transition:max-height .35s ease,opacity .35s ease,margin .35s ease; }
 .workflow-copy.active p { max-height:80px; margin-top:5px; opacity:1; }

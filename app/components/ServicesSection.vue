@@ -14,7 +14,7 @@ import { services } from '~/data/services'
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight max-w-3xl mx-auto leading-[1.1]">
           Dall’opportunità a un <span class="text-gradient-cyan">sistema che funziona.</span>
         </h2>
-        <p class="text-[#828293] leading-relaxed mt-6 max-w-2xl mx-auto">
+        <p class="text-[#a3a6b9] leading-relaxed mt-6 max-w-2xl mx-auto">
           Parto dal processo, scelgo dove l’AI può creare valore e costruisco solo ciò che serve per integrarla nel lavoro quotidiano.
         </p>
       </div>
@@ -61,5 +61,5 @@ import { services } from '~/data/services'
 .service-module:before { content:'';position:absolute;left:0;top:0;width:42%;height:1px;background:linear-gradient(90deg,#e6b4ff,transparent);opacity:.45; }
 .service-module:hover { transform:translateY(-5px);border-color:rgba(216,180,254,.42);box-shadow:0 24px 55px rgba(0,0,0,.25); }
 .service-secondary { opacity:.74;border-style:dashed; }.service-enabling{border-color:rgba(176,161,255,.24)}
-.service-level { padding:4px 6px;border:1px solid rgba(255,255,255,.07);border-radius:5px;color:#8a8a9a;font:600 7px monospace;letter-spacing:.14em; }
+.service-level { padding:4px 6px;border:1px solid rgba(255,255,255,.07);border-radius:5px;color:#8a8a9a;font:600 10px monospace;letter-spacing:.14em; }
 </style>

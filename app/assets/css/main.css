@@ -152,7 +152,7 @@ body {
   background: rgba(8, 17, 27, 0.72);
   color: #c4b5fd;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -277,7 +277,7 @@ body {
 
 /* ─── Rendered README (prose-project) ─────────────────────────── */
 .prose-project {
-  color: #9a9aaa;
+  color: #a3a6b9;
   line-height: 1.8;
   font-size: 0.9375rem;
 }
@@ -356,7 +356,7 @@ body {
   border-left: 3px solid rgba(139, 92, 246, 0.5);
   padding-left: 1rem;
   margin-left: 0;
-  color: #828293;
+  color: #a3a6b9;
   font-style: italic;
 }
 .prose-project img {

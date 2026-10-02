@@ -46,7 +46,7 @@ useSeoMeta({
       <div class="flex flex-wrap items-center gap-5 mb-12">
         <NuxtLink
           to="/"
-          class="inline-flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors group"
+          class="inline-flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors group"
         >
           <svg class="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
@@ -55,7 +55,7 @@ useSeoMeta({
         </NuxtLink>
         <NuxtLink
           to="/progetti"
-          class="inline-flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors group"
+          class="inline-flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors group"
         >
           Tutti i progetti
         </NuxtLink>
@@ -83,7 +83,7 @@ useSeoMeta({
           </h1>
 
           <!-- Description -->
-          <p class="text-[#828293] leading-relaxed">
+          <p class="text-[#a3a6b9] leading-relaxed">
             {{ project.description }}
           </p>
 
@@ -212,12 +212,12 @@ useSeoMeta({
             <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight leading-tight mb-4">
               {{ project.caseStudy.problem.headline }}
             </h2>
-            <p class="text-[#828293] leading-relaxed mb-5">{{ project.caseStudy.problem.text }}</p>
+            <p class="text-[#a3a6b9] leading-relaxed mb-5">{{ project.caseStudy.problem.text }}</p>
             <ul class="flex flex-col gap-2">
               <li
                 v-for="point in project.caseStudy.problem.points"
                 :key="point"
-                class="flex items-start gap-2.5 text-sm text-[#828293]"
+                class="flex items-start gap-2.5 text-base text-[#a3a6b9]"
               >
                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(239,68,68,0.6);" aria-hidden="true" />
                 {{ point }}
@@ -234,12 +234,12 @@ useSeoMeta({
             <h2 class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight leading-tight mb-4">
               {{ project.caseStudy.solution.headline }}
             </h2>
-            <p class="text-[#828293] leading-relaxed mb-5">{{ project.caseStudy.solution.text }}</p>
+            <p class="text-[#a3a6b9] leading-relaxed mb-5">{{ project.caseStudy.solution.text }}</p>
             <ul class="flex flex-col gap-2">
               <li
                 v-for="point in project.caseStudy.solution.points"
                 :key="point"
-                class="flex items-start gap-2.5 text-sm text-[#828293]"
+                class="flex items-start gap-2.5 text-base text-[#a3a6b9]"
               >
                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(196,181,253,0.5);" aria-hidden="true" />
                 {{ point }}
@@ -261,7 +261,7 @@ useSeoMeta({
                 style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
                 {{ step }}
               </span>
-              <span v-if="i < project.caseStudy.archFlow.length - 1" class="text-[#828293] font-mono text-lg" aria-hidden="true">→</span>
+              <span v-if="i < project.caseStudy.archFlow.length - 1" class="text-[#8a8a9a] font-mono text-lg" aria-hidden="true">→</span>
             </template>
           </div>
         </div>
@@ -280,7 +280,7 @@ useSeoMeta({
               <li
                 v-for="item in project.caseStudy.demonstrates"
                 :key="item"
-                class="flex items-start gap-2.5 text-sm text-[#828293]"
+                class="flex items-start gap-2.5 text-base text-[#a3a6b9]"
               >
                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(139,233,255,0.6);" aria-hidden="true" />
                 {{ item }}
@@ -295,12 +295,12 @@ useSeoMeta({
               Replicabilità
             </span>
             <h2 class="text-xl font-extrabold text-[#f0f0f5] tracking-tight mb-4">Come questo approccio può aiutare un team</h2>
-            <p class="text-[#828293] text-sm leading-relaxed mb-5">{{ project.caseStudy.replicability.text }}</p>
+            <p class="text-[#a3a6b9] text-base leading-relaxed mb-5">{{ project.caseStudy.replicability.text }}</p>
             <ul class="flex flex-col gap-2">
               <li
                 v-for="uc in project.caseStudy.replicability.useCases"
                 :key="uc"
-                class="flex items-start gap-2.5 text-sm text-[#828293]"
+                class="flex items-start gap-2.5 text-base text-[#a3a6b9]"
               >
                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(251,191,36,0.5);" aria-hidden="true" />
                 {{ uc }}
@@ -318,12 +318,12 @@ useSeoMeta({
           <h2 class="text-xl font-extrabold text-[#f0f0f5] tracking-tight mb-4">
             {{ project.caseStudy.responsibleNote.headline }}
           </h2>
-          <p class="text-[#828293] text-sm leading-relaxed mb-5">{{ project.caseStudy.responsibleNote.text }}</p>
+          <p class="text-[#a3a6b9] text-base leading-relaxed mb-5">{{ project.caseStudy.responsibleNote.text }}</p>
           <ul class="flex flex-col gap-2">
             <li
               v-for="point in project.caseStudy.responsibleNote.points"
               :key="point"
-              class="flex items-start gap-2.5 text-sm text-[#828293]"
+              class="flex items-start gap-2.5 text-base text-[#a3a6b9]"
             >
               <span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: rgba(251,191,36,0.5);" aria-hidden="true" />
               {{ point }}
@@ -361,7 +361,7 @@ useSeoMeta({
           <div class="glass rounded-2xl p-6 max-w-xl flex items-center justify-between gap-4" style="border-color: rgba(255,255,255,0.08);">
             <div>
               <p class="text-sm font-semibold text-[#d0d0e0] mb-1">Documentazione tecnica completa</p>
-              <p class="text-xs text-[#828293]">README, configurazione e istruzioni di setup su GitHub.</p>
+              <p class="text-xs text-[#8a8a9a]">README, configurazione e istruzioni di setup su GitHub.</p>
             </div>
             <a
               :href="project.github"
@@ -399,7 +399,7 @@ useSeoMeta({
           class="group glass rounded-2xl p-5 flex items-center gap-4 transition-all duration-200 hover:border-violet-300/50"
           style="border-color: rgba(255,255,255,0.08);"
         >
-          <svg class="w-5 h-5 text-[#8a8a9a] flex-shrink-0 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <svg class="w-5 h-5 text-[#a3a6b9] flex-shrink-0 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
           </svg>
           <div class="min-w-0">
@@ -419,7 +419,7 @@ useSeoMeta({
             <p class="text-xs text-[#8a8a9a] uppercase tracking-widest mb-1">Successivo</p>
             <p class="text-sm font-semibold text-[#f0f0f5] truncate">{{ nextProject.title }}</p>
           </div>
-          <svg class="w-5 h-5 text-[#8a8a9a] flex-shrink-0 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <svg class="w-5 h-5 text-[#a3a6b9] flex-shrink-0 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
         </NuxtLink>

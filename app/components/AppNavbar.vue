@@ -141,7 +141,7 @@ const closeMobileMenu = () => {
           :key="link.href"
           :to="link.href"
           class="relative text-sm font-medium transition-colors duration-200 hover:text-white"
-          :class="isActive(link.href) ? 'text-white' : 'text-[#8a8a9a]'"
+          :class="isActive(link.href) ? 'text-white' : 'text-[#a3a6b9]'"
           :aria-current="isActive(link.href) ? (link.href.startsWith('/#') ? 'location' : 'page') : undefined"
           @click="onNavClick(link.href)"
         >
@@ -169,7 +169,7 @@ const closeMobileMenu = () => {
       <!-- Mobile hamburger -->
       <button
         v-if="!isLanding"
-        class="md:hidden p-2 text-[#8a8a9a] hover:text-white transition-colors rounded-lg"
+        class="md:hidden p-2 text-[#a3a6b9] hover:text-white transition-colors rounded-lg"
         :aria-expanded="isMobileMenuOpen"
         aria-label="Apri menu di navigazione"
         @click="isMobileMenuOpen = !isMobileMenuOpen"
@@ -202,7 +202,7 @@ const closeMobileMenu = () => {
           :key="link.href"
           :to="link.href"
           class="py-2.5 text-sm font-medium transition-colors hover:text-white"
-          :class="isActive(link.href) ? 'text-white' : 'text-[#8a8a9a]'"
+          :class="isActive(link.href) ? 'text-white' : 'text-[#a3a6b9]'"
           :aria-current="isActive(link.href) ? (link.href.startsWith('/#') ? 'location' : 'page') : undefined"
           @click="onNavClick(link.href)"
         >

@@ -35,13 +35,13 @@ const scrollIn = (delay = 0) => ({
         </div>
 
         <div v-motion="scrollIn(0.1)" class="flex flex-col gap-4">
-          <p class="text-[#828293] leading-relaxed text-lg">
+          <p class="text-[#a3a6b9] leading-relaxed text-lg">
             Sono un AI Workflow Engineer con competenze full stack. Analizzo processi e costruisco automazioni, assistenti e strumenti AI per PMI, professionisti e piccoli team.
           </p>
-          <p class="text-[#828293] leading-relaxed text-lg">
+          <p class="text-[#a3a6b9] leading-relaxed text-lg">
             Prima di dedicarmi allo sviluppo web, ho lavorato per 26 anni nella GDO, a contatto con processi reali, team, fornitori, clienti e urgenze operative. Ho affrontato ogni giorno strumenti non sempre adatti e problemi da risolvere senza troppa teoria. È il motivo per cui capisco i problemi dell’attività prima di iniziare a progettare una soluzione.
           </p>
-          <p class="text-[#828293] leading-relaxed text-lg">
+          <p class="text-[#a3a6b9] leading-relaxed text-lg">
             La tecnologia è importante. Ma deve servire il lavoro, non diventare un altro problema da gestire.
           </p>
           <NuxtLink
@@ -67,7 +67,7 @@ const scrollIn = (delay = 0) => ({
             <div class="font-extrabold text-gradient mb-2" :class="/^\d/.test(stat.value) ? 'text-3xl leading-none' : 'text-xl leading-tight'">
               {{ stat.value }}{{ stat.suffix }}
             </div>
-            <div class="text-xs text-[#828293] leading-tight">{{ stat.label }}</div>
+            <div class="text-xs text-[#8a8a9a] leading-tight">{{ stat.label }}</div>
           </div>
         </div>
       </div>

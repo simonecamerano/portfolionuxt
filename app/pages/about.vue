@@ -103,7 +103,7 @@ const hobbies = [
     <div class="max-w-6xl mx-auto">
       <NuxtLink
         to="/"
-        class="inline-flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors group mb-12"
+        class="inline-flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors group mb-12"
       >
         <svg class="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
@@ -129,7 +129,7 @@ const hobbies = [
             Reinventarsi. Non è tardi, se sai
             <span class="text-gradient"> dove vuoi arrivare.</span>
           </h1>
-          <p class="text-[#8a8a9a] text-lg leading-relaxed mt-6 max-w-2xl">
+          <p class="text-[#a3a6b9] text-lg leading-relaxed mt-6 max-w-2xl">
             Credo nel valore della curiosità, della perseveranza e nella forza di costruire
             nuove competenze. Il mio percorso unisce esperienza sul campo, attenzione alle
             persone e capacità di trasformare i processi in sistemi digitali.
@@ -171,7 +171,7 @@ const hobbies = [
           <div class="font-extrabold text-gradient mb-3" :class="/^\d/.test(stat.value) ? 'text-4xl leading-none' : 'text-2xl leading-tight'">
             {{ stat.value }}{{ stat.suffix }}
           </div>
-          <p class="text-sm text-[#8a8a9a]">{{ stat.label }}</p>
+          <p class="text-sm text-[#a3a6b9]">{{ stat.label }}</p>
         </div>
       </section>
 
@@ -188,7 +188,7 @@ const hobbies = [
             Come sono arrivato a progettare workflow AI.
           </h2>
         </div>
-        <div class="flex flex-col gap-5 text-[#8a8a9a] leading-relaxed">
+        <div class="flex flex-col gap-5 text-[#a3a6b9] leading-relaxed">
           <p v-for="paragraph in storyParagraphs" :key="paragraph">
             {{ paragraph }}
           </p>
@@ -208,9 +208,9 @@ const hobbies = [
               class="glass rounded-2xl p-5"
               style="border-color: rgba(255,255,255,0.08);"
             >
-              <p class="text-xs font-semibold uppercase tracking-[0.12em] text-[#828293] mb-2">{{ item.period }}</p>
+              <p class="text-xs font-semibold uppercase tracking-[0.12em] text-[#8a8a9a] mb-2">{{ item.period }}</p>
               <h3 class="font-bold text-[#f0f0f5] mb-2">{{ item.title }}</h3>
-              <p class="text-sm text-[#8a8a9a] leading-relaxed">{{ item.text }}</p>
+              <p class="text-sm text-[#a3a6b9] leading-relaxed">{{ item.text }}</p>
             </div>
           </div>
         </div>
@@ -230,7 +230,7 @@ const hobbies = [
               <span class="text-sm font-black text-gradient">0{{ index + 1 }}</span>
               <div>
                 <h3 class="font-bold text-[#f0f0f5] mb-2">{{ principle.title }}</h3>
-                <p class="text-[#8a8a9a] leading-relaxed">{{ principle.text }}</p>
+                <p class="text-[#a3a6b9] leading-relaxed">{{ principle.text }}</p>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@ const hobbies = [
             style="border-color: rgba(255,255,255,0.08);"
           >
             <h3 class="font-bold text-[#f0f0f5] mb-3">{{ group.title }}</h3>
-            <p class="text-sm text-[#8a8a9a] leading-relaxed mb-5">{{ group.text }}</p>
+            <p class="text-sm text-[#a3a6b9] leading-relaxed mb-5">{{ group.text }}</p>
             <div class="flex flex-wrap gap-2">
               <span
                 v-for="item in group.items"
@@ -295,7 +295,7 @@ const hobbies = [
             style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08);"
           >
             <h3 class="font-bold text-[#f0f0f5] mb-3">{{ hobby.title }}</h3>
-            <p class="text-sm text-[#8a8a9a] leading-relaxed">{{ hobby.text }}</p>
+            <p class="text-sm text-[#a3a6b9] leading-relaxed">{{ hobby.text }}</p>
           </div>
         </div>
       </section>
@@ -308,7 +308,7 @@ const hobbies = [
           <h2 class="text-2xl md:text-3xl font-extrabold text-[#f0f0f5] tracking-tight">
             Vuoi vedere cosa ho costruito?
           </h2>
-          <p class="text-[#8a8a9a] mt-2">
+          <p class="text-[#a3a6b9] mt-2">
             Dai un'occhiata ai progetti oppure scrivimi per parlare di una collaborazione.
           </p>
         </div>

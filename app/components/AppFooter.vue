@@ -9,7 +9,7 @@ const { scelto, riapri } = useConsensoTracciamento()
   >
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="text-center sm:text-left">
-        <p class="text-sm text-[#8a8a9a]">
+        <p class="text-sm text-[#a3a6b9]">
           © {{ new Date().getFullYear() }} Simone Camerano. Tutti i diritti riservati.
         </p>
         <p class="text-xs text-[#8a8a9a] mt-1">
@@ -24,21 +24,21 @@ const { scelto, riapri } = useConsensoTracciamento()
         <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2">
           <NuxtLink
             to="/servizi"
-            class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+            class="text-sm text-[#a3a6b9] hover:text-white transition-colors duration-200"
           >
             Servizi
           </NuxtLink>
 
           <NuxtLink
             to="/servizi#faq"
-            class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+            class="text-sm text-[#a3a6b9] hover:text-white transition-colors duration-200"
           >
             Domande frequenti
           </NuxtLink>
 
           <NuxtLink
             to="/privacy"
-            class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+            class="text-sm text-[#a3a6b9] hover:text-white transition-colors duration-200"
           >
             Privacy
           </NuxtLink>
@@ -47,7 +47,7 @@ const { scelto, riapri } = useConsensoTracciamento()
             <button
               v-if="scelto"
               type="button"
-              class="text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+              class="text-sm text-[#a3a6b9] hover:text-white transition-colors duration-200"
               @click="riapri"
             >
               Preferenze tracciamento
@@ -60,7 +60,7 @@ const { scelto, riapri } = useConsensoTracciamento()
             href="https://github.com/simonecamerano"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+          class="flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors duration-200"
           aria-label="Profilo GitHub di Simone Camerano"
         >
           <!-- GitHub icon -->
@@ -74,7 +74,7 @@ const { scelto, riapri } = useConsensoTracciamento()
           href="https://www.linkedin.com/in/simone-camerano"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+          class="flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors duration-200"
           aria-label="Profilo LinkedIn di Simone Camerano"
         >
           <!-- LinkedIn icon -->
@@ -88,7 +88,7 @@ const { scelto, riapri } = useConsensoTracciamento()
           href="https://www.facebook.com/simonecamerano.dev"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+          class="flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors duration-200"
           aria-label="Pagina Facebook di Simone Camerano"
         >
           <!-- Facebook icon -->
@@ -102,7 +102,7 @@ const { scelto, riapri } = useConsensoTracciamento()
           href="https://www.instagram.com/simonecamerano.dev/"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors duration-200"
+          class="flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors duration-200"
           aria-label="Profilo Instagram di Simone Camerano"
         >
           <!-- Instagram icon -->

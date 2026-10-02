@@ -76,17 +76,17 @@ const resetForm = () => {
           </h2>
         </div>
 
-        <p class="text-[#828293] text-lg leading-relaxed max-w-sm">
+        <p class="text-[#a3a6b9] text-lg leading-relaxed max-w-sm">
           Raccontami cosa succede oggi: quali strumenti usate, quali passaggi si ripetono e dove il flusso si blocca.
         </p>
-        <p class="text-[#828293] text-lg leading-relaxed max-w-sm">
+        <p class="text-[#a3a6b9] text-lg leading-relaxed max-w-sm">
           Capiremo se serve un’automazione, un assistente AI, uno strumento su misura oppure una soluzione più semplice.
         </p>
 
         <div class="flex flex-col gap-3">
           <a
             href="mailto:simone@simonecamerano.dev"
-            class="inline-flex items-center gap-3 text-[#8a8a9a] hover:text-white transition-colors duration-200 group"
+            class="inline-flex items-center gap-3 text-[#a3a6b9] hover:text-white transition-colors duration-200 group"
           >
             <span
               class="w-9 h-9 rounded-xl flex items-center justify-center text-sm glass flex-shrink-0"
@@ -120,7 +120,7 @@ const resetForm = () => {
             <div class="text-5xl">🎉</div>
             <div>
               <p class="text-xl font-bold text-[#f0f0f5]">Messaggio inviato!</p>
-              <p class="text-sm text-[#828293] mt-2">Ti rispondo al più presto. A presto!</p>
+              <p class="text-sm text-[#a3a6b9] mt-2">Ti rispondo al più presto. A presto!</p>
             </div>
             <button type="button" class="mt-2 text-sm font-medium text-gradient hover:opacity-70 transition-opacity" @click="resetForm">
               Invia un altro messaggio →
@@ -130,13 +130,13 @@ const resetForm = () => {
           <template v-else>
             <div class="grid sm:grid-cols-2 gap-5">
               <div class="flex flex-col gap-2">
-                <label for="contact-name" class="text-sm font-medium text-[#8a8a9a]">Nome <span class="text-purple-400" aria-hidden="true">*</span></label>
+                <label for="contact-name" class="text-sm font-medium text-[#a3a6b9]">Nome <span class="text-purple-400" aria-hidden="true">*</span></label>
                 <input id="contact-name" v-model="form.name" type="text" required autocomplete="name" placeholder="Mario Rossi"
                   class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
                   style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);" />
               </div>
               <div class="flex flex-col gap-2">
-                <label for="contact-email" class="text-sm font-medium text-[#8a8a9a]">Email <span class="text-purple-400" aria-hidden="true">*</span></label>
+                <label for="contact-email" class="text-sm font-medium text-[#a3a6b9]">Email <span class="text-purple-400" aria-hidden="true">*</span></label>
                 <input id="contact-email" v-model="form.email" type="email" required autocomplete="email" placeholder="mario@email.com"
                   class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
                   style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);" />
@@ -144,14 +144,14 @@ const resetForm = () => {
             </div>
 
             <div class="flex flex-col gap-2">
-              <label for="contact-subject" class="text-sm font-medium text-[#8a8a9a]">Oggetto <span class="text-purple-400" aria-hidden="true">*</span></label>
+              <label for="contact-subject" class="text-sm font-medium text-[#a3a6b9]">Oggetto <span class="text-purple-400" aria-hidden="true">*</span></label>
               <input id="contact-subject" v-model="form.subject" type="text" required placeholder="Automazione, workflow AI, strumento interno..."
                 class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);" />
             </div>
 
             <div class="flex flex-col gap-2">
-              <label for="contact-message" class="text-sm font-medium text-[#8a8a9a]">Messaggio <span class="text-purple-400" aria-hidden="true">*</span></label>
+              <label for="contact-message" class="text-sm font-medium text-[#a3a6b9]">Messaggio <span class="text-purple-400" aria-hidden="true">*</span></label>
               <textarea id="contact-message" v-model="form.message" required rows="5" placeholder="Descrivi il processo, il problema o l'obiettivo..."
                 class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200 resize-none"
                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);" />
@@ -159,7 +159,7 @@ const resetForm = () => {
 
             <label
               for="contact-privacy"
-              class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm text-[#8a8a9a]"
+              class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm text-[#a3a6b9]"
               style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08);"
             >
               <input
@@ -217,7 +217,7 @@ const resetForm = () => {
             {{ faq.q }}
             <span class="text-[#c4b5fd] transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
           </summary>
-          <p class="text-[#828293] text-sm leading-relaxed mt-3">{{ faq.a }}</p>
+          <p class="text-[#a3a6b9] text-sm leading-relaxed mt-3">{{ faq.a }}</p>
         </details>
       </div>
       <NuxtLink

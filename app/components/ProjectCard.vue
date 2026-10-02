@@ -48,7 +48,7 @@ withDefaults(defineProps<{
     <div class="p-6 flex flex-col flex-1 gap-4">
       <h3 class="text-xl font-bold text-[#f0f0f5]">{{ project.title }}</h3>
 
-      <p class="text-sm text-[#828293] leading-relaxed flex-1">
+      <p class="text-sm text-[#a3a6b9] leading-relaxed flex-1">
         {{ project.description }}
       </p>
 

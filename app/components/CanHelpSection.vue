@@ -52,7 +52,7 @@ const cards = [
         <h2 class="text-4xl md:text-5xl font-extrabold text-[#f0f0f5] tracking-tight max-w-3xl mx-auto leading-[1.1]">
           L’AI crea valore quando risolve <span class="text-gradient-cyan">un problema concreto.</span>
         </h2>
-        <p class="text-[#828293] leading-relaxed mt-6 max-w-2xl mx-auto">
+        <p class="text-[#a3a6b9] leading-relaxed mt-6 max-w-2xl mx-auto">
           Prima della tecnologia vengono il tempo perso, i passaggi fragili e le informazioni che non arrivano quando servono.
         </p>
       </div>
@@ -67,7 +67,7 @@ const cards = [
           style="border-color: rgba(255,255,255,0.08);"
         >
           <h3 class="text-[#c4b5fd] font-semibold text-base mb-2">{{ card.title }}</h3>
-          <p class="text-[#828293] text-sm leading-relaxed">{{ card.body }}</p>
+          <p class="text-[#a3a6b9] text-sm leading-relaxed">{{ card.body }}</p>
         </div>
       </div>
 

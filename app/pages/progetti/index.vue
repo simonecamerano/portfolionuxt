@@ -34,7 +34,7 @@ const filtered = computed(() =>
     <div class="max-w-6xl mx-auto">
       <NuxtLink
         to="/"
-        class="inline-flex items-center gap-2 text-sm text-[#8a8a9a] hover:text-white transition-colors group mb-12"
+        class="inline-flex items-center gap-2 text-sm text-[#a3a6b9] hover:text-white transition-colors group mb-12"
       >
         <svg class="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
@@ -60,7 +60,7 @@ const filtered = computed(() =>
         <h1 class="text-5xl md:text-6xl font-extrabold text-[#f0f0f5] tracking-tight mt-2">
           Tutti i progetti
         </h1>
-        <p class="text-[#828293] mt-4 text-lg max-w-xl">
+        <p class="text-[#a3a6b9] mt-4 text-lg max-w-xl">
           {{ projects.length }} lavori tra app full stack, frontend, giochi e landing page.
         </p>
       </div>
@@ -82,7 +82,7 @@ const filtered = computed(() =>
           :class="
             selectedCategory === cat
               ? 'text-[#05080d]'
-              : 'text-[#8a8a9a] hover:text-white hover:bg-white/[0.06]'
+              : 'text-[#a3a6b9] hover:text-white hover:bg-white/[0.06]'
           "
           :style="
             selectedCategory === cat
@@ -126,7 +126,7 @@ const filtered = computed(() =>
       <!-- Empty state (in case all filtered out) -->
       <div
         v-if="filtered.length === 0"
-        class="py-24 text-center text-[#8a8a9a] text-sm"
+        class="py-24 text-center text-[#a3a6b9] text-sm"
       >
         Nessun progetto in questa categoria.
       </div>

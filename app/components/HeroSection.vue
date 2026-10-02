@@ -115,7 +115,7 @@ onUnmounted(() => cancelAnimationFrame(frame))
       </div>
     </div>
 
-    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex items-center gap-3 font-mono text-[10px] tracking-[0.2em] text-[#636579]" aria-hidden="true"><span>SCORRI PER ENTRARE NEL PROCESSO</span><span class="cinema-scroll" /></div>
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] text-[#a3a6b9]" aria-hidden="true"><span>SCORRI PER ENTRARE NEL PROCESSO</span><span class="cinema-scroll" /></div>
   </section>
 </template>
 

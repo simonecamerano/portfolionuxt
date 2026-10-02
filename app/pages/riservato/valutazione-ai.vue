@@ -99,7 +99,7 @@ async function inviaForm() {
           Scopri come l'<span class="text-gradient">AI</span> può aiutare davvero la tua azienda
         </h1>
 
-        <p class="text-lg text-[#8a8a9a] leading-relaxed max-w-md">
+        <p class="text-lg text-[#a3a6b9] leading-relaxed max-w-md">
           26 anni di esperienza operativa nella Grande Distribuzione, prima di passare
           allo sviluppo software: non solo teoria sull'AI, ma processi aziendali
           reali. Una chiamata gratuita per capire, senza impegno, dove
@@ -145,7 +145,7 @@ async function inviaForm() {
           <input v-model="form.honeypot" type="text" name="hp_x7q2" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="flex flex-col gap-2">
-            <label for="val-nome" class="text-sm font-medium text-[#8a8a9a]">Nome e cognome <span class="text-violet-300" aria-hidden="true">*</span></label>
+            <label for="val-nome" class="text-sm font-medium text-[#a3a6b9]">Nome e cognome <span class="text-violet-300" aria-hidden="true">*</span></label>
             <input
               id="val-nome" v-model="form.nome" type="text" required autocomplete="name" placeholder="Mario Rossi"
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
@@ -154,7 +154,7 @@ async function inviaForm() {
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="val-telefono" class="text-sm font-medium text-[#8a8a9a]">Telefono <span class="text-violet-300" aria-hidden="true">*</span></label>
+            <label for="val-telefono" class="text-sm font-medium text-[#a3a6b9]">Telefono <span class="text-violet-300" aria-hidden="true">*</span></label>
             <input
               id="val-telefono" v-model="form.telefono" type="tel" required autocomplete="tel" placeholder="333 1234567"
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
@@ -163,7 +163,7 @@ async function inviaForm() {
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="val-email" class="text-sm font-medium text-[#8a8a9a]">Email <span class="text-violet-300" aria-hidden="true">*</span></label>
+            <label for="val-email" class="text-sm font-medium text-[#a3a6b9]">Email <span class="text-violet-300" aria-hidden="true">*</span></label>
             <input
               id="val-email" v-model="form.email" type="email" required autocomplete="email" placeholder="mario@email.com"
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
@@ -172,7 +172,7 @@ async function inviaForm() {
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="val-azienda" class="text-sm font-medium text-[#8a8a9a]">Azienda <span class="text-[#828293]">(facoltativo)</span></label>
+            <label for="val-azienda" class="text-sm font-medium text-[#a3a6b9]">Azienda <span class="text-[#a3a6b9]">(facoltativo)</span></label>
             <input
               id="val-azienda" v-model="form.azienda" type="text" autocomplete="organization" placeholder="Nome dell'azienda"
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200"
@@ -181,7 +181,7 @@ async function inviaForm() {
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="val-messaggio" class="text-sm font-medium text-[#8a8a9a]">Cosa vorresti capire? <span class="text-[#828293]">(facoltativo)</span></label>
+            <label for="val-messaggio" class="text-sm font-medium text-[#a3a6b9]">Cosa vorresti capire? <span class="text-[#a3a6b9]">(facoltativo)</span></label>
             <textarea
               id="val-messaggio" v-model="form.messaggio" rows="3" placeholder="Descrivi brevemente dove pensi possa aiutarti l'AI..."
               class="input-field px-4 py-3 rounded-xl text-sm text-[#f0f0f5] placeholder-[#3a3a4a] outline-none transition-all duration-200 resize-none"
@@ -191,7 +191,7 @@ async function inviaForm() {
 
           <label
             for="val-consenso"
-            class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm text-[#8a8a9a]"
+            class="flex items-start gap-3 rounded-xl px-4 py-3 text-sm text-[#a3a6b9]"
             style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08);"
           >
             <input
@@ -222,7 +222,7 @@ async function inviaForm() {
             <span v-else>Prenota la chiamata gratuita</span>
           </button>
 
-          <p class="text-xs text-[#828293] text-center leading-relaxed">
+          <p class="text-xs text-[#8a8a9a] text-center leading-relaxed">
             Nessuna pressione a comprare: se per te non ha senso, te lo dico chiaramente.
           </p>
         </form>
@@ -236,7 +236,7 @@ async function inviaForm() {
           <div class="text-5xl">🎉</div>
           <div>
             <p class="text-xl font-bold text-[#f0f0f5]">Prenotazione ricevuta</p>
-            <p class="text-sm text-[#8a8a9a] mt-2 leading-relaxed">
+            <p class="text-sm text-[#a3a6b9] mt-2 leading-relaxed">
               Ti chiamo entro pochi minuti. Se in questo momento non puoi rispondere,
               rispondi alla mail di conferma con due o tre fasce orarie in cui ti trovo.
             </p>
