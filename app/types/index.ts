@@ -35,9 +35,12 @@ export interface Project {
   // Optional: omit when there is nothing public to link (e.g. private repo)
   link?: string
   featured: boolean
-  // Optional vertical demo video (9:16), shown instead of the screenshot on the detail page
+  // Optional demo video. Vertical (9:16, default) replaces the screenshot in
+  // the hero; horizontal (16:9) keeps the screenshot there and gets its own
+  // full-width section below, where its subtitles stay readable
   video?: string
   videoPoster?: string
+  videoAspect?: '9/16' | '16/9'
   // Optional fields for the detail page, add when ready
   github?: string
   year?: number

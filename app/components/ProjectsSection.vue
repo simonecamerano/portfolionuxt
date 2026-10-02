@@ -28,11 +28,11 @@ const featuredProjects = projects.filter((p) => p.featured)
       </div>
 
       <!-- Cards grid with stagger -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         <div
           v-for="(project, i) in featuredProjects"
           :key="project.id"
-          v-motion="editorialStagger(i, i % 3 === 0 ? 'left' : 'up')"
+          v-motion="editorialStagger(i, i % 2 === 0 ? 'left' : 'up')"
         >
           <ProjectCard :project="project" owner-view />
         </div>

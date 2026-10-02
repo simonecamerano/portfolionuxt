@@ -2,6 +2,83 @@ import type { Project } from '~/types'
 
 export const projects: Project[] = [
   {
+    id: 17,
+    slug: 'demo-agenzia-immobiliare',
+    title: 'Demo agenzia immobiliare',
+    category: 'AI Automation',
+    ownerLabel: 'Agenzie immobiliari',
+    description:
+      "Dalla richiesta sul sito al foglio visita: la richiesta arriva all'agente di zona, il cliente prenota da solo sull'agenda dell'agente e l'agente riceve il foglio visita con le esigenze del cliente già lette.",
+    image: '/images/immobiliare-demo.png',
+    video: '/videos/immobiliare-demo.mp4',
+    videoPoster: '/videos/immobiliare-demo-poster.jpg',
+    videoAspect: '16/9',
+    tags: ['Nuxt 3', 'PostgreSQL', 'Ollama', 'Zod', 'PDFKit', 'Vitest'],
+    featured: true,
+    year: 2026,
+    longDescription:
+      "Un sistema completo per un'agenzia immobiliare, dalla richiesta di informazioni su un annuncio fino alla visita fissata. Il cliente scrive dal sito con parole sue, la richiesta va all'agente che segue quella zona, il cliente riceve un link per scegliere uno degli orari liberi dell'agente e, a prenotazione fatta, l'agente riceve il foglio visita in PDF. Agenzia, immobili, agenti e clienti sono inventati; le email sono simulate in una casella dentro la demo e non partono mai.",
+    caseStudy: {
+      problem: {
+        headline: 'Il problema: tra la richiesta e la visita ci sono troppi passaggi a mano',
+        text: "Una richiesta su un annuncio arriva spesso alla casella dell'agenzia, non all'agente giusto. Poi serve una telefonata per capire cosa cerca il cliente, un'altra per trovare un orario che vada bene a tutti e due, e il foglio visita da preparare prima di uscire. Ogni passaggio è un'occasione per arrivare tardi, mentre il cliente sta scrivendo anche ad altre agenzie.",
+        points: [
+          "Richieste che arrivano in ufficio e vanno smistate a mano all'agente di zona",
+          'Telefonate avanti e indietro solo per fissare un orario',
+          'Esigenze del cliente scritte in un messaggio libero, da rileggere prima della visita',
+          'Foglio visita da compilare ogni volta, con i dati già scritti nella richiesta',
+        ],
+      },
+      solution: {
+        headline: "La soluzione: una catena unica, dall'annuncio al foglio visita",
+        text: "Ogni richiesta segue lo stesso percorso: regole semplici decidono a chi va, il cliente prenota da solo e l'agente riceve tutto pronto. L'AI interviene in un solo punto, dove una regola non basta: legge il messaggio libero del cliente e ne tira fuori esigenze, vincoli, budget, disponibilità e domande da preparare.",
+        points: [
+          "Smistamento a regole per comune e zona, con l'agente di riferimento della sede quando la zona non ha un agente",
+          "Email all'agente con i dati dell'annuncio e del cliente, email al cliente con l'agente assegnato e il link per prenotare",
+          "Prenotazione sugli orari liberi dell'agente nei giorni successivi, con lo slot bloccato appena scelto",
+          'Foglio visita in PDF su due pagine: la prima da far firmare al visitatore, la seconda solo per l\'agente',
+          'Lettura del messaggio con un modello AI in locale (Ollama): i messaggi dei clienti non escono dal PC; Claude o altri provider sono un\'opzione di configurazione',
+          'Il flusso non si blocca mai sull\'AI: se il modello non risponde, richiesta, email e foglio visita partono lo stesso',
+          'Suite di test automatici con Vitest su smistamento, agenda, prenotazione e PDF',
+        ],
+      },
+      archFlow: [
+        'Richiesta dal sito',
+        "Smistamento all'agente di zona",
+        'Lettura AI del messaggio',
+        'Email ad agente e cliente',
+        "Prenotazione sull'agenda",
+        'Foglio visita in PDF',
+      ],
+      demonstrates: [
+        'Un processo commerciale reale automatizzato da un capo all\'altro, non un singolo pezzo',
+        'AI usata in un punto preciso, con output strutturato e validato, non testo libero',
+        'Modello in locale di default, con il provider come scelta e non come vincolo',
+        'Progettazione prudente: se l\'AI fallisce il lavoro dell\'agenzia va avanti lo stesso',
+        'Lettura del problema dal lato di chi lavora in agenzia, non solo dal lato tecnico',
+      ],
+      replicability: {
+        text: "Zone, agenti, orari e testi delle email stanno in configurazione. Agenda e invio email sono pezzi sostituibili: in un incarico vero diventano il calendario Google o il gestionale dell'agenzia e un servizio di invio con il suo dominio.",
+        useCases: [
+          'Agenzie con più sedi e agenti divisi per zona',
+          'Agenzie che ricevono richieste dai portali e dal proprio sito',
+          'Studi e attività che fissano appuntamenti dopo una richiesta scritta',
+        ],
+      },
+      responsibleNote: {
+        headline: 'Cosa mostra la demo e cosa no',
+        text: "La demo gira in locale con dati inventati e mostra come si può costruire il sistema, non un prodotto preconfezionato. In un incarico reale smistamento, orari e documenti si definiscono insieme all'agenzia.",
+        points: [
+          'Agenzia, immobili, agenti, clienti e numeri sono di fantasia; le foto vengono da Pexels e sono illustrative',
+          'Le email non partono: sono mostrate in una casella simulata',
+          'Il foglio visita è un fac-simile: il testo va validato dall\'agenzia prima dell\'uso',
+          'Restano fuori dalla demo login, pannello agenzia, collegamento al gestionale e a Google Calendar',
+        ],
+      },
+      ctaText: "Le richieste di visita arrivano ma si perdono tra telefonate e agende? Posso aiutarti a capire quale passaggio conviene automatizzare per primo.",
+    },
+  },
+  {
     id: 16,
     slug: 'horeca-inbox',
     title: 'Horeca Inbox',

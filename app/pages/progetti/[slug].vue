@@ -13,6 +13,8 @@ const currentIndex = projects.findIndex((p) => p.slug === route.params.slug)
 const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null
 const nextProject = currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null
 
+const isWideVideo = project.video && project.videoAspect === '16/9'
+
 const readmeHtml = ref('')
 if (project.github) {
   const repo = project.github.replace('https://github.com/', '').replace(/\/$/, '')
@@ -136,7 +138,7 @@ useSeoMeta({
             aria-hidden="true"
           />
           <div
-            v-if="project.video"
+            v-if="project.video && !isWideVideo"
             class="relative mx-auto w-full max-w-[320px] rounded-3xl overflow-hidden bg-black"
             style="border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 9/16;"
           >
@@ -169,6 +171,28 @@ useSeoMeta({
           </div>
         </div>
       </div>
+
+      <!-- ── Horizontal demo video ────────────────────────── -->
+      <section v-if="isWideVideo" class="mt-20" aria-labelledby="video-demo-title">
+        <h2 id="video-demo-title" class="text-2xl font-extrabold text-[#f0f0f5] tracking-tight mb-6">
+          Guarda la demo
+        </h2>
+        <div
+          class="relative rounded-3xl overflow-hidden bg-black"
+          style="border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9;"
+        >
+          <video
+            :src="project.video"
+            :poster="project.videoPoster"
+            class="w-full h-full block object-contain"
+            muted
+            playsinline
+            controls
+            preload="metadata"
+            :aria-label="`Video dimostrativo di ${project.title}`"
+          />
+        </div>
+      </section>
 
       <!-- ── Case Study sections ──────────────────────────── -->
       <template v-if="project.caseStudy">
