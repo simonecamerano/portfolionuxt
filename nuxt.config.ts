@@ -79,7 +79,7 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg?v=1' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg?v=2' },
       ],
       script: [
         {
