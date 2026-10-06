@@ -10,8 +10,8 @@ export const projects: Project[] = [
     description:
       "Dalla richiesta sul sito al foglio visita: la richiesta arriva all'agente di zona, il cliente prenota da solo sull'agenda dell'agente e l'agente riceve il foglio visita con le esigenze del cliente già lette.",
     image: '/images/immobiliare-demo.png',
-    video: '/videos/immobiliare-demo-v2.mp4',
-    videoPoster: '/videos/immobiliare-demo-v2-poster.jpg',
+    video: '/videos/immobiliare-demo-v3.mp4',
+    videoPoster: '/videos/immobiliare-demo-v3-poster.jpg',
     videoAspect: '16/9',
     tags: ['Nuxt 3', 'PostgreSQL', 'Ollama', 'Zod', 'PDFKit', 'Vitest'],
     featured: true,
