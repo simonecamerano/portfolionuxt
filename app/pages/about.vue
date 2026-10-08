@@ -34,6 +34,11 @@ const timeline = [
     period: 'start2impact',
     text: 'Un percorso strutturato per consolidare frontend, backend, workflow moderno e sviluppo di progetti completi.',
   },
+  {
+    title: 'Agenti AI e integrazioni con Claude',
+    period: 'Anthropic Academy, 2026',
+    text: 'Corsi ufficiali di Anthropic su Model Context Protocol, Claude API, Claude Code, subagenti e agent skills: gli strumenti con cui costruisco agenti e collego tra loro i software dei clienti.',
+  },
 ]
 
 const principles = [
