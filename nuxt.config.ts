@@ -18,6 +18,18 @@ export default defineNuxtConfig({
     '/favicon.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
     '/og-image-v2.png': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
     '/cv.pdf': { headers: { 'cache-control': 'public, max-age=86400' } },
+    // URL del vecchio sito statico ancora noti a Google (Search Console li
+    // segnala come 404): 301 verso la pagina nuova equivalente. Il vecchio PDF
+    // del CV puo' essere ancora linkato da CV e profili gia' inviati.
+    '/index.html': { redirect: { to: '/', statusCode: 301 } },
+    '/en/**': { redirect: { to: '/', statusCode: 301 } },
+    '/about_page/**': { redirect: { to: '/about', statusCode: 301 } },
+    '/projects_page/**': { redirect: { to: '/progetti', statusCode: 301 } },
+    '/contact_page/**': { redirect: { to: '/#contatti', statusCode: 301 } },
+    '/cv_page/**': { redirect: { to: '/cv.pdf', statusCode: 301 } },
+    '/assets/files/**': { redirect: { to: '/cv.pdf', statusCode: 301 } },
+    '/progetti/tictacvue': { redirect: { to: '/progetti', statusCode: 301 } },
+    '/progetti/LICENSE': { redirect: { to: '/progetti', statusCode: 301 } },
     '/riservato/**': {
       headers: {
         // Vale anche se la pagina viene servita senza eseguire JS. Niente
