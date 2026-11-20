@@ -33,7 +33,7 @@ useSeoMeta({
           Privacy Policy
         </h1>
         <p class="text-[#a3a6b9] mt-4 leading-relaxed">
-          Ultimo aggiornamento: 16 settembre 2026.
+          Ultimo aggiornamento: 20 novembre 2026.
         </p>
       </header>
 
@@ -99,7 +99,9 @@ useSeoMeta({
           <strong>Come oppormi.</strong> Basta scrivere a
           <a href="mailto:simone@simonecamerano.dev">simone@simonecamerano.dev</a> e chiedere di non essere più
           contattato. Non serve motivare la richiesta e viene applicata subito. Conservo solo il minimo
-          indispensabile a non ricontattarti per errore in futuro.
+          indispensabile a non ricontattarti per errore in futuro. La cancellazione dai dati in uso è
+          immediata; le copie di sicurezza del database si rinnovano da sole e il dato ne esce entro dieci
+          giorni.
         </p>
 
         <h2>Clienti con un incarico in corso</h2>
@@ -120,8 +122,10 @@ useSeoMeta({
         <p>
           <strong>Chi tratta questi dati per mio conto.</strong> Gli stessi fornitori elencati
           più sotto nella sezione "Fornitori che trattano i dati", in particolare Anthropic,
-          GitHub, IONOS e OpenAI, più eventuali fornitori di infrastruttura specifici del
-          progetto, indicati nel contratto.
+          OpenAI, IONOS e Google, più eventuali fornitori di infrastruttura specifici del
+          progetto, indicati nel contratto. I documenti che mi affidi restano in una cartella
+          cifrata sul mio computer e non vengono caricati su GitHub, che conserva solo le mie
+          note di lavoro.
         </p>
         <p>
           <strong>Per quanto tempo.</strong> Per la durata dell'incarico e per i dieci anni
@@ -175,17 +179,23 @@ useSeoMeta({
             statistiche descritto più sotto. I dati restano nell'Unione Europea.
           </li>
           <li>
-            <strong>Anthropic</strong> (Stati Uniti): assistente basato su intelligenza artificiale, usato per
-            organizzare e rielaborare le note di lavoro e i documenti dell'attività.
+            <strong>Anthropic</strong> (Anthropic Ireland Limited, dati conservati negli Stati Uniti):
+            assistente basato su intelligenza artificiale, usato per organizzare e rielaborare le note di
+            lavoro e i documenti dell'attività.
           </li>
           <li>
             <strong>GitHub</strong>, società del gruppo Microsoft (Stati Uniti): archiviazione in repository
-            privati dei documenti e delle note di lavoro.
+            privati delle note di lavoro. Non riceve i documenti dei clienti.
           </li>
           <li>
-            <strong>OpenAI</strong> (Stati Uniti): secondo assistente basato su intelligenza artificiale, usato
-            in sola lettura per una revisione indipendente del lavoro e per la produzione di contenuti: non
-            scrive mai nei repository di lavoro.
+            <strong>OpenAI</strong> (OpenAI Ireland Limited, dati conservati negli Stati Uniti): secondo
+            assistente basato su intelligenza artificiale, usato per una revisione indipendente del lavoro e
+            per la produzione di contenuti. Legge le note di lavoro o una loro copia separata e non modifica
+            mai l'archivio originale.
+          </li>
+          <li>
+            <strong>Google Cloud Italy S.r.l.</strong> (Italia), per Google Workspace: copia della posta in
+            arrivo, calendario degli appuntamenti e funzioni di intelligenza artificiale integrate.
           </li>
           <li>
             <strong>Fiscozen S.p.A.</strong> (Italia): piattaforma per la fatturazione e servizio di
@@ -207,13 +217,16 @@ useSeoMeta({
 
         <h2>Trasferimento dei dati fuori dall'Unione Europea</h2>
         <p>
-          EmailJS, Anthropic, GitHub e OpenAI hanno sede negli Stati Uniti e conservano i dati su server situati fuori
-          dall'Unione Europea. Il trasferimento avviene sulla base delle clausole contrattuali standard approvate
-          dalla Commissione Europea, previste dall'art. 46 del RGPD e incluse nei contratti di trattamento dei
-          dati stipulati con ciascuno di questi fornitori.
+          EmailJS, Anthropic, GitHub e OpenAI conservano i dati su server situati fuori dall'Unione Europea,
+          principalmente negli Stati Uniti. Il trasferimento avviene sulla base delle clausole contrattuali
+          standard approvate dalla Commissione Europea, previste dall'art. 46 del RGPD e incluse nei contratti
+          di trattamento dei dati stipulati con ciascuno di questi fornitori. Google può trattare i dati anche
+          fuori dall'Unione Europea, sulla base delle clausole contrattuali standard e del Data Privacy
+          Framework.
         </p>
         <p>
-          Nessuno di questi fornitori offre l'archiviazione dei dati in Unione Europea per i servizi utilizzati.
+          Nessuno dei primi quattro fornitori offre l'archiviazione dei dati in Unione Europea per i servizi
+          utilizzati.
           Se hai bisogno che i tuoi dati non lascino il territorio europeo, scrivimi prima di inviare qualsiasi
           documento: esistono soluzioni alternative che si possono concordare per il singolo incarico.
         </p>
