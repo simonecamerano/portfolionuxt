@@ -33,7 +33,7 @@ useSeoMeta({
           Privacy Policy
         </h1>
         <p class="text-[#a3a6b9] mt-4 leading-relaxed">
-          Ultimo aggiornamento: 20 novembre 2026.
+          Ultimo aggiornamento: 21 novembre 2026.
         </p>
       </header>
 
@@ -171,7 +171,7 @@ useSeoMeta({
             risposte automatiche.
           </li>
           <li>
-            <strong>IONOS SE</strong> (Germania): dominio, caselle di posta e posta elettronica certificata.
+            <strong>IONOS SE</strong> (Germania): dominio e posta elettronica certificata.
             I dati restano nell'Unione Europea.
           </li>
           <li>
@@ -194,8 +194,8 @@ useSeoMeta({
             mai l'archivio originale.
           </li>
           <li>
-            <strong>Google Cloud Italy S.r.l.</strong> (Italia), per Google Workspace: copia della posta in
-            arrivo, calendario degli appuntamenti e funzioni di intelligenza artificiale integrate.
+            <strong>Google Cloud Italy S.r.l.</strong> (Italia), per Google Workspace: caselle di posta
+            elettronica, calendario degli appuntamenti e funzioni di intelligenza artificiale integrate.
           </li>
           <li>
             <strong>Fiscozen S.p.A.</strong> (Italia): piattaforma per la fatturazione e servizio di
